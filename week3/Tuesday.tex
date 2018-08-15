@@ -1,0 +1,444 @@
+\chapterimage{space} % Chapter heading image
+
+\chapter{Week3}
+
+\section{Tuesday}\index{week3_Tuesday_lecture}
+\subsection{Introduction}
+\subsubsection{Why do we learn Linear Algebra?}
+So, we raise the question again, why do we learn LA?
+\begin{itemize}
+\item
+Baisis of AI/ML/SP/etc.\\
+In information age, \textit{artificial intelligence, machine learning, structured programming}, and otherwise gains great popularity among researchers. LA is the basis of them, so in order to explore science in modern age, you should learn LA well.
+\item
+Solving linear system of equations.\\
+How to solve linear system of equations efficiently and correctly is the \emph{key} question for mathematicians.
+\item
+Internal grace.\\
+LA is very beautiful, hope you enjoy the beauty of math.
+\item
+Interview questions.\\
+LA is often used for interview questions for phd. Because the upper bound of difficulty for LA is \emph{infinity}, interviewer often choose LA to question phd.
+\end{itemize}
+\subsubsection{What is LA?}
+The main part of Mathematics is given below:
+\[
+\text{mathematics}\begin{cases}
+&\text{Analysis+Calculus} \\
+&\text{Algebra:foucs on structure} \\
+&\text{Geometry}
+\end{cases}
+\]
+All parts of math are based on \emph{axiom systems}. And \emph{LA} is the significant part of \textit{Algebra}, which focus on the linear structure.
+
+\newpage
+
+\subsection{Review of 2 weeks}
+\emph{Motivating question: How to solve linear system equations?}\\
+The basic method is \emph{Gaussian Elimination} (To make equations \textit{simpler}. The main idea is \textit{induction})\\
+\hspace*{1cm}Given one equation $ax=b$, you can easily sovle it:
+\[
+\qquad\qquad \implies \text{``if $a>0$, no solution.'' or }x=\frac{b}{a} 
+\]
+\hspace*{1cm}By induction, \textit{if you can sovle $n\x n$ systems, can you solve $(n+1)\x(n+1)$ systems?}\\
+In this process, math notations is needed:
+\begin{itemize}
+\item
+matrix multiplication
+\item
+matrix inverse
+\item
+transpose, symmetric matrices
+\end{itemize}
+So in first two weeks, we just learn two things:
+\begin{itemize}
+\item
+\textit{linear system could be solved \emph{almost} by G.E.}
+\item
+\textit{Furthermore, Gaussian Elimination is (almost) LU decomposition.}
+\end{itemize}
+But there is a question remained to be solved:\\
+\hspace*{1cm}For \emph{singular} system, How to solve it?
+\begin{itemize}
+\item
+When will it has no solution, when it has infinitely many solutions? (Note that singular system don'y has unique solution.)
+\item
+If it has infinitely many solutions, how to find and express these solutions?
+\end{itemize}
+If we express system as matrix, we only to answer the question: \emph{How to solve rectangular?}\\
+\subsection{Examples of solving equations}
+
+\begin{itemize}
+\item
+For square case, we often convert the system into $\bm{Rx} = \bm c$, where $\bm R$ is of \textit{row echelon form}.
+\item
+But for rectangular case, \textit{row echelon form}(ref) is not enough, we must convert it into \emph{reduced row echelon form}(rref):
+\[\bm U\text{(ref)} = \left[
+\begin{array}{@{}ccccccc@{}}
+\cellcolor{cyan!50}1&0&\x&\x&\x&0&\x\\
+0&\cellcolor{cyan!50}1&\x&\x&\x&0&\x\\
+0&0&0&0&0&\cellcolor{cyan!50}1&\x\\
+0&0&0&0&0&0&0
+\end{array}
+\right]
+\implies
+\bm R\text{(rref)} = \left[
+\begin{array}{@{}ccccccc@{}}
+\cellcolor{cyan!50}1&0&\x&\x&\x&0&\x\\
+0&\cellcolor{cyan!50}1&\x&\x&\x&0&\x\\
+0&0&0&0&0&\cellcolor{cyan!50}1&\x\\
+0&0&0&0&0&0&0
+\end{array}
+\right]\]
+\end{itemize}
+\begin{example}
+We discuss how to solve square matrix of \emph{rref}:
+If all rows have nonzero entry, we have:
+\[
+\begin{bmatrix}
+1&&\bigzero&\\
+&1&&\\
+&&1&\\
+&\bigzero&&1
+\end{bmatrix}\bm x = \bm c
+\implies \bm x = \bm c
+\]
+We already sovled this system, but note that \textit{the last row could be all zero}:
+\[
+\begin{bmatrix}
+1&&&\\
+&1&&\\
+&&1&\\
+&&&0
+\end{bmatrix}\bm x = \bm c\implies
+\begin{cases}
+x_1 = c_1\\
+x_2 = c_2\\
+x_3 = c_3\\
+0 = c_4
+\end{cases}
+\]
+\newpage
+So the result has two cases:
+\begin{itemize}
+\item
+If $c_4\ne0$, we have no solution of this system.
+\item
+If $c_4=0$, we have infinitely many solutions, which can be expressed as:
+\[
+x_{\text{complete}} = \begin{pmatrix}
+c_1\\c_2\\c_3\\x_4
+\end{pmatrix} = \begin{pmatrix}
+c_1\\c_2\\c_3\\0
+\end{pmatrix}+x_4\begin{pmatrix}
+0\\0\\0\\1
+\end{pmatrix}
+\]
+where $x_4$ could be arbitarary number.
+\end{itemize}
+Hence for the $n\x n$ systems, does Gaussian Elimination work?\\
+Answer: Almost, except ``pivot=0''case.
+\begin{itemize}
+\item
+All pivots $\ne0\implies$ system has unique solution.
+\item
+Some pivots $=0$ (The matrix is singular)
+\begin{enumerate}
+\item
+No solution.
+\item
+Infinitely many solution.
+\end{enumerate}
+\end{itemize}
+\end{example}
+\subsubsection{What is G.E. doing? (Nonsingular case.)}
+\emph{Abstrastion}: We use matrix to represent system of equations (Chinese mathematicians fail to do this.):
+\[\begin{cases}
+a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = b_1 \\ 
+a_{21}x_1 + a_{22}x_2 + \dots + a_{23}x_n = b_2  \\
+\dots 	 	\\
+a_{m1}x_1 + a_{m2}x_2 + \dots + a_{m3}x_n = b_m  
+\end{cases}
+\implies
+\bm{Ax} = \bm b\]
+By postmultiplying $\bm E_{ij}$ and $\bm P_{ij}$ we do one step of elimination:
+\[
+\bm E_{ij}\bm A\bm x = \bm b\qquad\bm P_{ij}\bm A\bm x = \bm b
+\]
+By several steps of elimination, we obtain the final result:
+\[
+\bm{\hat LPAx} = \bm{\hat LPb}
+\]
+where $\bm{\hat LPA}$ represents a upper triangular matrix $\bm U$, $\hat L$ is the lower triangular matrix.
+\[
+\implies \bm{\hat LPA} = \bm U\implies
+\bm{PA} = \bm{\hat L}^{-1}\bm U\triangleq\bm{LU}
+\]
+So Gaussian Elimination is almost the $LU$ decomposition.\\
+\subsubsection{Example for solving rectangular system of rref}
+Recall the definition for rref:
+\begin{definition}[reduced row echelon form]
+Suppose a matrix has $r$ \textit{nonzero} rows, each row has leading $1$ as pivots. If all columns with pivots (call it pivot column) are all zero entries apart from the pivot in this column, then this matrix is said to be \emph{reduced row echelon form}(\emph{rref}).
+\end{definition}
+Next we want to show an example for how to solve non-square system of rref, note that in last lecture we know the solution is given by:
+\[
+\bm x_{\text{complete}} =\bm x_p +\bm x_{\text{special}} 
+\]
+
+\begin{example}
+We try to solve the system $\begin{bmatrix}
+1&3&0&-1\\0&0&1&1\\0&0&0&0
+\end{bmatrix}\bm x = \bm c$.
+\begin{itemize}
+\item
+\emph{step 1:}Find null space. Thus we only need to solve $\bm{Rx} = \bm 0$.
+\[
+\implies \begin{bmatrix}
+1&3&0&-1\\0&0&1&1\\0&0&0&0
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\\x_3\\x_4
+\end{bmatrix} = \begin{bmatrix}
+0\\0\\0
+\end{bmatrix}\implies \left\{\begin{rgathered}
+x_1+3x_2+0x_3-x_4=0\\
+x_3+x_4=0
+\end{rgathered}\right.
+\]
+What should we do next? We want to express the \emph{pivot variable} as the form of \emph{free variable.}\\
+Note that the pivot columns in $\bm R$ are column $1$ and $3$, so the pivot variable is $x_1$ and $x_3$. The free variable is the remaining variable, say, $x_2$ and $x_4$.\\
+Hence the expression for $x_1$ and $x_3$ is given by:
+\[
+\left\{\begin{lgathered}
+x_1=-3x_2+x_4\\
+x_2=-x_4
+\end{lgathered}\right.
+\]
+Hence all solutions to $\bm{Rx} = \bm 0$ are
+\[
+\bm x_{\text{special}} = \begin{bmatrix}
+-3x_2+x_4\\x_2\\-x_4\\x_4
+\end{bmatrix} = x_2\begin{bmatrix}
+-3\\1\\0\\0
+\end{bmatrix} + x_4\begin{bmatrix}
+1\\0\\-1\\1
+\end{bmatrix}
+\]
+where $x_2$ and $x_4$ can be taken arbitararily.
+\item
+\emph{step 2:}find particular solution to $\bm{Rx} = \bm c$.\\
+The trick for this step is to set $x_2=x_4=0$. (\textit{set free variable to be zero and then derive the pivot variable.})\\
+\[
+\implies \begin{bmatrix}
+1&3&0&-1\\0&0&1&1\\0&0&0&0
+\end{bmatrix}\begin{bmatrix}
+x_1\\0\\x_3\\0
+\end{bmatrix} = \begin{bmatrix}
+c_1\\c_2\\c_3
+\end{bmatrix}
+\implies
+\left\{\begin{rgathered}
+x_1 =c_1\\
+x_3 =c_2\\
+0 =c_3
+\end{rgathered}\right.
+\]
+$\implies$ 
+\begin{itemize}
+\item
+if $c_3 = 0$, then exists particular solution $\bm x_p = \begin{bmatrix}
+c_1\\0\\c_2\\0
+\end{bmatrix}$;
+\item
+if $c_3\ne 0$, then $\bm{Rx} = \bm c$ has no solution.
+\end{itemize}
+\item
+\emph{Final solution:} Assume $c_3= 0$, then all solution to $\bm{Rx} = \bm c$ is given by:
+\[
+\bm x_{complete} = \bm x_p + \bm x_{\text{special}} = 
+\begin{bmatrix}
+c_1\\0\\c_2\\0
+\end{bmatrix} + x_2\begin{bmatrix}
+-3\\1\\0\\0
+\end{bmatrix} + x_4\begin{bmatrix}
+1\\0\\-1\\1
+\end{bmatrix}
+\]
+\end{itemize}
+\end{example}
+Next we show how to solve a general rectangular:
+\newpage
+\subsection{How to solve a general rectangular}
+For linear system $\bm{Ax} = \bm b$, where $\bm A$ is rectangular, we can solve this system as follows:\\
+\begin{itemize}
+\item
+\emph{step1: }Gaussian Elimination.\\
+With proper rows permutaion (postmultiply $\bm P_{ij}$) and row transformation (postmultiply $\bm E_{ij}$) we convert $\bm A$ into $\bm R$(rref), then we only need to solve $\bm{Rx} = \bm c$.
+\begin{example}
+The first example is a $3\x 4$ matrix with two pivots:
+\[
+\bm A = \begin{bmatrix}
+1&1&2&3\\2&2&8&10\\3&3&10&13
+\end{bmatrix}
+\]
+clearly $a_{11}=1$ is the first pivot, clear row 2 and row 3 of this matrix:
+\[
+\bm A
+\xLongrightarrow[\bm E_{31} = \begin{bmatrix}
+1&0&0\\0&1&0\\-3&0&1
+\end{bmatrix}]{\bm E_{21} = \begin{bmatrix}
+1&0&0\\-2&1&0\\0&0&1
+\end{bmatrix}}
+\begin{bmatrix}
+1&1&2&3\\0&0&4&4\\0&0&4&4
+\end{bmatrix}
+\xLongrightarrow[\bm E_{32} = \begin{bmatrix}
+1&0&0\\0&1&0\\0&-1&1
+\end{bmatrix}]{\bm E_{12} = \begin{bmatrix}
+1&-\frac{1}{2}&0\\0&1&0\\0&0&1
+\end{bmatrix}}
+\begin{bmatrix}
+1&1&0&1\\0&0&4&4\\0&0&0&0
+\end{bmatrix}\\
+\]
+\[\implies \begin{bmatrix}
+1&1&0&1\\0&0&1&1\\0&0&0&0
+\end{bmatrix}\]
+If we want to solve $\bm{Ax} = \bm b$, firstly we should convert $\bm A$ into $\begin{bmatrix}
+1&1&0&1\\0&0&1&1\\0&0&0&0
+\end{bmatrix}$(rref).
+\end{example}
+Then we should identify \emph{pivot variables} and \emph{free variables}. we can follow the direction to derive these:\\
+pivot$\implies$pivot columns$\implies$pivot columns$\implies$pivot variable
+\begin{example}
+we want to identify \emph{pivot variables} and \emph{free variables} of $\bm R$: 
+\[
+\bm R = \left[
+\begin{array}{@{}ccccccc@{}}
+\cellcolor{cyan!50}1&0&\x&\x&\x&0&\x\\
+0&\cellcolor{cyan!50}1&\x&\x&\x&0&\x\\
+0&0&0&0&0&\cellcolor{cyan!50}1&\x\\
+0&0&0&0&0&0&0
+\end{array}
+\right]
+\]
+The pivot are $r_{11},r_{22},r_{36}$. So the pivot columns are column $1,2,6$. So the \textit{pivot variables} are $x_1,x_2,x_6$; the \textit{free variables} are $x_3,x_4,x_5,x_7$.
+\end{example}
+\item
+\emph{step2: }Compute null space $N(\bm A)$.
+In order to find $N(\bm A)$, we only need to compute $N(\bm R)$.
+\begin{itemize}
+\item
+For each of $(n-r)$ free variables,\\
+\hspace*{1cm}set value of \emph{it} to be $1$.\\
+\hspace*{1cm}set other \emph{free variables} to be 0.\\
+\hspace*{1cm}Then solve $\bm{Rx} = \bm 0$ to get special solution $y_j$ for $j=1,2,\dots,n-r$.
+\begin{example}
+continue with $3\x 4$ matrix example:
+\[
+\bm R = \begin{bmatrix}
+1&1&0&1\\0&0&1&1\\0&0&0&0
+\end{bmatrix}\]
+We want to find special solutions to $\bm{Rx} = \bm 0$:
+\begin{enumerate}
+\item
+Set $x_2=1$ and $x_4=0$. Solve $\bm{Rx} = \bm 0$, then $x_1=-1$ and $x_3 = 0$. \\Hence one special solution is $y_1 = \begin{bmatrix}
+-1\\1\\0\\0
+\end{bmatrix}$.
+\item
+Set $x_2=0$ and $x_4=1$. Solve $\bm{Rx} = \bm 0$, then $x_1=-1$ and $x_3 = -1$. \\Then another special solution is $y_2 = \begin{bmatrix}
+-1\\0\\-1\\1
+\end{bmatrix}$.
+\end{enumerate}
+\end{example}
+\item
+When we get $(n-r)$ special solutions to $\bm{Rx} = \bm 0$: $y_1,y_2,\dots,y_{n-r}.$
+\\Then $N(\bm A) = \text{span}(y_1,y_2,\dots,y_{n-r})$.
+\begin{example}
+We continue the example above, when we get all special solutions $y_1 = \begin{bmatrix}
+-1\\1\\0\\0
+\end{bmatrix},y_2 = \begin{bmatrix}
+-1\\0\\-1\\1
+\end{bmatrix}$, \emph{the null space contains all linear combinations of the special solutions.}\\
+\[
+\bm x_{\text{special}} = span(\begin{bmatrix}
+-1\\1\\0\\0
+\end{bmatrix},\begin{bmatrix}
+-1\\0\\-1\\1
+\end{bmatrix}) = x_2\begin{bmatrix}
+-1\\1\\0\\0
+\end{bmatrix} + x_4\begin{bmatrix}
+-1\\0\\-1\\1
+\end{bmatrix}
+\]
+where $x_2,x_4$ here could be arbitarary.
+\end{example}
+\end{itemize}
+\item
+\emph{step3: }Compute a particular solution $\bm x_p$.\\
+The easiest way is to ``read'' from $\bm{Rx} = \bm c = \begin{bmatrix}
+c_1\\c_2\\\vdots\\c_n
+\end{bmatrix}$:\\
+Suppose $\bm R\in\mathbb{R}^{m\x n}$ has $r (\le m)$ pivot variables, then it has $(m-r)$ zero rows and (n-r) free variables. In order to have solution, we must have $c_{r+1}=\dots=c_n=0$. In other words, \emph{For a solution to exist, zero rows in $\bm R$ must also be zero in $\bm c$.}
+\begin{example}
+If $\bm{Rx} = \begin{bmatrix}
+1&3&0&2\\0&0&1&4\\\bm 0&\bm 0&\bm 0&\bm 0
+\end{bmatrix}\bm x = \bm c = \begin{bmatrix}
+c_1\\c_2\\c_3
+\end{bmatrix}$, then in order to have a solution, we must let $c_3\ne 0$.
+\end{example}
+\newpage
+
+So we have to discuss the particular solution case by case:
+\begin{itemize}
+\item
+\emph{case1:} one of $c_{r+1},\dots,c_n$ is nonzero, then the system has \emph{no} solution.
+\item
+\emph{case2:} $c_{r+1}=\dots=c_n$, then a particular solution exists:
+\[
+\bm x_p = \begin{bmatrix}
+x_1\\x_2\\\vdots\\x_n
+\end{bmatrix}
+\]
+We set all \emph{free variables} to be zero, and pivot variables are from $\bm c$. More specifically, the first entry in $\bm c$ is exactly the value for the first pivot variable;the second entry in $\bm c$ is exactly the value for the second pivot variable$\dots\dots$
+\begin{example}
+If $\bm{Rx} = \begin{bmatrix}
+1&3&0&2\\0&0&1&4\\\bm 0&\bm 0&\bm 0&\bm 0
+\end{bmatrix}\bm x = \bm c = \begin{bmatrix}
+c_1\\c_2\\0
+\end{bmatrix}$, we want to compute particular solution 
+\[\bm x_p = \begin{bmatrix}
+x_1\\x_2\\x_3\\x_4
+\end{bmatrix}\]
+Then we know $x_2,x_4$ are free variable, so $x_2=x_4=0$; $x_1,x_3$ are pivot variable, so we have $\begin{pmatrix}
+x_1\\x_3
+\end{pmatrix} = \begin{pmatrix}
+c_1\\c_2
+\end{pmatrix}$.\\
+Hence the solution for $\bm{Rx} = \bm c$ is $\begin{bmatrix}
+c_1\\0\\c_2\\0
+\end{bmatrix}$.
+\end{example}
+\end{itemize}
+\item
+\emph{Final step:} All solution of $\bm{Ax} = \bm b$ are $\bm x_{\text{complete}} = \bm x_p + \bm x_{\text{special}}$, where $x_{\text{special}}\in N(\bm A)$. $\bm x_p$ is defined in step3, $\bm x_{\text{special}}$ is defined in step2.
+\end{itemize}
+However, where does the number $r$ come? $r$ denotes the \emph{rank} of a matrix, which will be discussed next lecture.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

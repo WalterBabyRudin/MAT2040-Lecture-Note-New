@@ -1,0 +1,207 @@
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+%\chapter{Week2}
+
+\section{Wednesday}\index{week2_Wednesday_lecture}
+\subsection{Remarks on Gaussian Elimination}
+\begin{enumerate}
+\item
+Gaussian Elimination to compute $\bm A^{-1}$ 
+$\xleftrightarrow{}$
+Solving $\bm{Ax_{i}} =e_i$ for $i=1,2,\dots,n$.\\
+For each $i$ solving $\bm{Ax_i} = e_i$ takes $O(n^3)$.\\ Hence solving $nn$ such systems take $O(n^4)$ time.\\
+However, if we solve $\bm{Ax_i} = e_i$ for $i=1,2,\dots,n$ simultaneously(that means we write all $b_i$ at the right side of the Augmented matrix.) ,by Gaussian Elimination takes $O(n^3)$ time.
+\item
+Gaussian Elimination is not a good job for large scale sparse matrix (\emph{sparse matrix} is a matrix in which most of the elements are zero. If given a $1000\times 1000$ sparse matrix, it is expensive to do Gaussian Elimination on this matrix).\\
+Actually, for such matrix we use iterative method to solve it.(We have $\sum_{j=0}^{\infty}N^{j} = \bm A^{-1}$.)
+\item
+Given nonsingular matrix $\bm A$, Gaussian Elimination is really a sequence of multiplications by $\bm E$'s and $\bm P$'s:
+\[
+\bm E\ldots\bm E\bm P \bm A= \bm D
+\]
+where $\bm D$ is a diagonal matrix.(By doing row operation we can also convert $\bm A$ into $\bm D$.)\\
+By postmultiplying $\bm D^{-1}$ we obtain 
+\[
+\bm D^{-1}(\bm E\ldots\bm E\bm P \bm A) = \bm I
+\]
+where the diagonals of $\bm D^{-1}$ are $1$ divides by pivots.\\
+Hence we have
+\[
+\bm D^{-1}(\bm E\ldots\bm E\bm P \bm A) = \bm I
+\implies (\bm D^{-1}\bm E\ldots\bm E\bm P )\bm A = \bm I
+\]\[
+\implies
+\bm A = (\bm D^{-1}\bm E\ldots\bm E\bm P )^{-1} = \bm P^{-1}\bm E^{-1}\ldots\bm E^{-1}\bm D
+\]
+
+\end{enumerate}
+\subsection{Properties of matrix}
+\begin{enumerate}
+\item
+If $\bm A$ is a diagonal matrix which is given by
+$
+\bm A = \begin{bmatrix}
+d_1&&0\\
+&\vdots&\\
+0&&d_n
+\end{bmatrix}$,\\ then $\bm A^{-1}$ exists $\implies$ $d_1d_2d_3\dots d_n \ne 0$$\implies$
+$
+\bm A^{-1} = \begin{bmatrix}
+d_1^{-1}&&0\\
+&\vdots&\\
+0&&d_n^{-1}
+\end{bmatrix}
+$
+\item
+If $\bm D_1,\bm D_2$ are diagonal and their product exists, then we have
+\[
+\bm D_1\bm D_2 = \bm D_2\bm D_1
+\]
+\item
+If $\bm A,\bm B$ are both invertible, then $\bm{AB}$ is also invertible. The inverse of product $\bm{AB}$ is 
+\[
+(\bm{AB})^{-1} = \bm B^{-1}\bm A^{-1}
+\]
+\begin{proof}[Proofoutline.]
+To see why the order is reversed, firstly multiply $\bm{AB}$ with $\bm B^{-1}\bm A^{-1}$:
+\[
+\bm{AB}(\bm B^{-1}\bm A^{-1}) = \bm{A}(\bm B\bm B^{-1})\bm A^{-1} = \bm A \bm I\bm A^{-1} = \bm A\bm A^{-1} = \bm I
+\]
+Similarly, $\bm B^{-1}\bm A^{-1}$ times $\bm{AB}$ leads to the same result. Hence we draw the conclusion: Inverse come in reverse order.
+\end{proof}
+\item
+The same reverse order applies to three or more matrix:\\
+If $\bm A,\bm B,\bm C$ are nonsingular, then $(\bm{ABC})^{-1} = \bm C^{-1}\bm B^{-1}\bm A^{-1}$.
+\item
+It's hard to say whether $(\bm A+\bm B)$ is invertible, but we have an interesting property:
+\[
+(\bm I-\bm A)^{-1} = \sum_{i=1}^{\infty}\bm A^{i}\qquad\text{when $\bm A$ is ``small'', we will explain ``small'' later.}
+\]
+\item
+\emph{A triangular matrix is invertible if and only if no diagonal entries are zero.}\\
+In order to explain it, let's discuss an example:
+\begin{example}\qquad\\
+We want to find the inverse of a lower triangular matrix $\bm A$:
+\[
+\bm A = \begin{bmatrix}
+1&0&0&0\\
+1&1&0&0\\
+1&1&1&0\\
+1&1&1&1
+\end{bmatrix}
+\]
+Thus we do Gaussian Elimination to compute solution to $\bm{Ax} = \bm I$:
+\[\left[
+\begin{array}{@{}cccc|cccc@{}}
+1&0&0&0&1&0&0&0\\
+1&1&0&0&0&1&0&0\\
+1&1&1&0&0&0&1&0\\
+1&1&1&1&0&0&0&1
+\end{array}\right]
+\implies 
+\left[
+\begin{array}{@{}cccc|cccc@{}}
+1&0&0&0&1&0&0&0\\
+0&1&0&0&-1&1&0&0\\
+0&0&1&0&0&-1&1&0\\
+0&0&0&1&0&0&-1&1
+\end{array}\right]
+\]
+Note that this result is obtained by three row operations:\\
+``Add $(-1)\x$ row 3 to row 4'';\\``Add $(-1)\x$ row 2 to row 3'';\\``Add $(-1)\x$ row 1 to row 2''.
+\end{example}
+Hence we know why a nonzero diagonal lower triangular matrix is invertible. Because only in this case can we continue the Gaussian Elimination to convert it into identity matrix.
+\item
+Given an invertible lower triangular matrix $\bm A$, the inverse of $\bm A$ remains lower triangular.
+\item
+If $\bm A$ is $n\x n$ matrix and it is invertible. Then $\bm A$ could be decomposed into $\bm{LDU}$, such decomposition is unique.
+\begin{proof}
+Assume $\bm A$ could be written as $\bm A = \bm L_{1}\bm D_{1}\bm U_{1} = \bm L_{2}\bm D_{2}\bm U_{2}$.\\
+And for the latter equation, we aftermultiply $\bm U_{1}^{-1}$ to obtain:
+\[
+\bm L_{1}\bm D_{1}\bm U_{1} = \bm L_{2}\bm D_{2}\bm U_{2}
+\implies 
+\bm L_{1}\bm D_{1} = \bm L_{2}\bm D_{2}\bm U_{2}\bm U_{1}^{-1}
+\]
+And then by postmultiplying $\bm L_{2}^{-1}$ we obtain:
+\[
+\bm L_{2}^{-1}\bm L_{1}\bm D_{1} = \bm D_{2}\bm U_{2}\bm U_{1}^{-1}
+\]
+Notice that the product of $\bm L_{2}^{-1}\bm L_{1}$ is lower triangular with unit diagonal. (This is because LDU decomposition requires $\bm L$ and $\bm U$ to have unit diagonal.) Hence the product $\bm L_{2}^{-1}\bm L_{1}\bm D_{1}$ must be lower triangular matrix. Similarly, the product $\bm D_{2}\bm U_{2}\bm U_{1}^{-1}$ must be upper triangular matrix. Hence they must be diagonal matrix.\\
+Also, notice that the diagonal of $\bm L_{2}^{-1}\bm L_{1}\bm D_{1}$ is the same as the diagonal of $\bm D_{1}$(This is because the diagonal of $\bm L_{2}^{-1}\bm L_{1}$ has unit diagonal.) Hence $\bm L_{2}^{-1}\bm L_{1}\bm D_{1} = \bm D_{1}$. Similarly, $\bm D_{2}\bm U_{2}\bm U_{1}^{-1} = \bm D_{2}$. Hence we obtain $\bm D_{1} = \bm D_{2}$.\\
+And we also obtain $\bm L_{2}^{-1}\bm L_{1}\bm D_{1} = \bm D_{1}\implies \bm L_{2}^{-1}\bm L_{1} = \bm D_{1}\bm D_{1}^{-1} = \bm I\implies \bm L_{1} = \bm L_{2}$. Similarly, we have $\bm U_{1} = \bm U_{2}$.
+\end{proof}
+\end{enumerate}
+\subsection{matrix transpose}
+We introduce a new matrix, it is the \emph{transpose} of $\bm A$, which is denoted by $\bm A\trans$. \textit{The columns of $\bm A\trans$ are the rows of $\bm A$.} For example, given a column vector $x\in \mathbb{R}^{n}$, the transpose $x\trans = (x_1,x_2,\dots,x_n)$ is row vector.\\
+When $\bm A$ is $m\x n$ matrix, the transpose is $n\x m$:
+\[
+\bm A = \begin{bmatrix}
+2 & 1 & 4\\0 &0 &3
+\end{bmatrix}\qquad \bm A\trans = \begin{bmatrix}
+2&0\\1&0\\4&3
+\end{bmatrix}\qquad (\bm A\trans)\trans = \bm A
+\] 
+The entry in row $i$, column $j$ of $\bm A\trans$ comes from row $j$, column $i$ of the original matrix $\bm A$:
+\[
+\text{\emph{Exchange rows and columns}}\qquad (\bm A\trans)_{ij} = \bm A_{ji}
+\]
+The rules for transposes are very direct:
+\begin{proposition}\qquad \\
+\begin{itemize}
+\item
+\emph{Sum}\qquad The transpose of $\bm A+\bm B$ is $\bm A\trans + \bm B\trans$.
+\item
+\emph{Product}\qquad The transpose of $\bm{AB}$ is $(\bm{AB})\trans = (\bm B)\trans(\bm A)\trans.$
+\end{itemize}
+\end{proposition}
+\newpage
+
+\begin{proof}[Proofoutline.]
+To understand why the product rule holds, we start with $(\bm{A}x)\trans = x\trans\bm A\trans:$\\
+\emph{$\bm{A}x$ combines the columns of $\bm A$ while $x\trans\bm A\trans$ combines the rows of $\bm A\trans$.}\\
+It is the same combination of the same vectors! So the transpose of the column $\bm{A}x$ is the row $x\trans\bm A\trans$. Now we can prove the formula $(\bm{AB})\trans = (\bm B)\trans(\bm A)\trans$, where $\bm B$ has several columns.\\
+Assuming $\bm B = \left[
+\begin{array}{c|c|c|c}
+b_1&b_2&\ldots&b_k
+\end{array}\right]$, Transposing $\bm{AB} = \left[
+\begin{array}{c|c|c|c}
+\bm Ab_1&\bm Ab_2&\ldots&\bm Ab_k
+\end{array}\right]$ gives $\begin{bmatrix}
+b_1\trans\bm A\trans\\b_2\trans\bm A\trans\\\vdots\\b_k\trans\bm A\trans
+\end{bmatrix}$, which is actually $\bm B\trans\bm A\trans$.
+\end{proof}
+\subsubsection{symmetric matrix}
+For a \textit{symmetric matrix}, transposing $\bm A$ into $\bm A\trans$ makes no change.
+\begin{definition}[symmetric matrix]
+A matrix $\bm A$ is \emph{symmetric matrix} if we have $\bm A = \bm A\trans$. This means that $\begin{bmatrix}
+a_{ij}
+\end{bmatrix} = \begin{bmatrix}
+a_{ji}
+\end{bmatrix}$.
+\end{definition}
+Choose any matrix $\bm A$, probably rectangular. Postmultiply $\bm A\trans$ to $\bm A$. Then the product $\bm A\trans\bm A$ is automatically a square symmetric matrix:\\
+\begin{center}
+\emph{The transpose of $\bm A\trans\bm A$ is $\bm A\trans(\bm A\trans)\trans$, which is $\bm A\trans\bm A$.}
+\end{center}
+The matrix $\bm A\bm A\trans$ is also symmetric. But $\bm A\bm A\trans$ is a different matrix from $\bm A\trans\bm A$. \\
+We should make the transpose notation clear:\\
+\begin{remark}
+For two vector $x$ and $y$,
+\begin{itemize}
+\item
+\emph{The dot product or inner product is $x\trans y$.}
+\item
+\emph{The rank one product or outer product is $xy\trans$.}
+\end{itemize}
+$x\trans y$ is a number while $xy\trans$ is a matrix.
+\end{remark}
+And we introduce a matrix that seems opposite to symmetric matrix:
+\begin{definition}[Skew-symmetric]
+For matrix $\bm A$, if we have $\bm A\trans = -\bm A$, then we say $\bm A$ is \emph{skew-symmetric} or \emph{anti-symmetric}.
+\end{definition}
+And moreover, any $n\x n$ matrix can be decomposed as the sum of a symmetric and skew-symmetric matrices. Let's prove it in the next lecture.
+
+
+
+

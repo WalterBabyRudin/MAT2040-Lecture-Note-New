@@ -1,0 +1,378 @@
+\chapterimage{PIA12348} % Chapter heading image
+
+%\chapter{Week3}
+
+\section{Friday}\index{week3_Friday_lecture}
+\subsection{Review}
+\begin{proposition}\label{solution_for_undetermined_system}
+Undetermined system $\bm{Ax} = \bm b (m<n\text{ or number of equations < number of unknowns})$ has no solution or infinitely many solutions.
+\end{proposition}
+We want to understand the meaning of rank: number of ''true'' equations. \\Then we introduce definition of \textit{linearly independence} and \textit{linearly dependence.}\\
+Dependence has relation with system:
+\begin{proposition}
+$\bm{Ax} = \bm 0$ has nonzero solutions if and only if the column vectors of $\bm A$ are dep.
+\end{proposition}
+Combining it with proposition  (\ref{solution_for_undetermined_system}) we derive the corollary:
+\begin{corollary}
+Any $(n+1)$ vectors in $\mathbb{R}^{n}$ are dep.
+\end{corollary}
+\begin{proposition}
+Undetermined system $\bm{Ax} = \bm b (m\ge n\text{ or number of equations $\ge$ number of unknowns})$ may have no solution or unique solution or infinitely many solutions.
+\end{proposition}
+From this proposition we derive the corollary immediately:
+\begin{corollary}
+Any $(n-1)$ vectors in $\mathbb{R}^{n}$ cannot span the whole space.
+\end{corollary}
+Then we introduce the definition of basis:
+\begin{definition}[Basis]
+A set of ind. vectors that span this space is called the \emph{basis} of this space.
+\end{definition}
+Then we introduce a theorem says \emph{All basis of a given vector space have the same size.}\\
+Hence we introduce \emph{dimension} to denote the \textit{number of vectors in a basis.}
+\subsection{More on basis and dimension}
+The basis of a given vector space has to satisfy two constraints:
+\[
+\underbrace{\text{lin. ind.}}_{\text{not too many}}+\underbrace{\text{ span the space}}_{\text{not too few}}
+\]
+The \emph{lin. ind.} constraint let the size of basis not too many. For example, if given $1000$ vectors of $\mathbb{R}^{3}$, they are very likely to be dep. \\
+\emph{Spanning the space} let the size of basis not too few. For example, given only $3$ vectors of $\mathbb{R}^{100}$, they cannot span the whole space obviously.\\
+We claim: \begin{align*}
+\text{A basis }&=\text{ maximal ind. set}\\
+&=\text{ minimal spanning set}
+\end{align*}
+\begin{definition}[spanning set]
+$v_1,v_2,\dots,v_n$ is the spanning set of $\bm V$ iff. $\bm V = \text{span}\{v_1,v_2,\dots,v_n\}$.
+\end{definition}
+\begin{example}
+$v_1 = \begin{pmatrix}
+1\\2\\1
+\end{pmatrix}$ is not a basis of $\mathbb{R}^{3}$.\\
+We can add $v_2 = \begin{pmatrix}
+1\\0\\0
+\end{pmatrix}$, which is ind. of $v_1$. But they still don't form a basis.\\
+Then we add one more vector $v_3 = \begin{pmatrix}
+0\\1\\0
+\end{pmatrix}$, then $v_1,v_2,v_3$ form a basis of $\mathbb{R}^{3}$.
+\end{example}
+\begin{theorem}\label{theorem_3.3}
+Let $\bm V$ be a space of dimension $n>0$, then
+\begin{enumerate}
+\item
+Any set of $n$ ind. vectors span $\bm V$.
+\item
+Any $n$ vectors that span $\bm V$ are ind.
+\end{enumerate}
+\end{theorem}
+
+Here I list the proof outline, you should follow the direction to prove it in detail.
+\begin{proof}[proofoutline.]\qquad\\
+\begin{enumerate}
+\item
+Suppose $v_1,v_2,\dots,v_n$ are ind. and $v$ is arbitarary vector in $\bm V$. Firstly, show that $v_1,v_2,\dots,v_n,v$ is dep. Thus derive the equation $c_1v_1+c_2v_2+\dots+c_{n}v_n+c_{n+1}v = \bm 0$. Argue that scalar $c_{n+1}\ne 0$. Then express $v$ in form of $v_1,v_2,\dots,v_n$. It follows that $v_1,v_2,\dots,v_n$ span $\bm V$.
+\item
+Suppose $v_1,v_2,\dots,v_n$ span $\bm V$. Assume $v_1,v_2,\dots,v_n$ are dep. Then show that $v_n$ could be written as form of other $(n-1)$ vectors, it follows that $v_1,v_2,\dots,v_{n-1}$ still span $\bm V$. If $v_1,v_2,\dots,v_{n-1}$ are also dep, we can continue eliminating one vector. We continue this way until we get an ind. spanning set with $k<n$ elements, which contradicts dim($\bm V$)$=n$. Therefore, $v_1,v_2,\dots,v_n$ must be ind.\end{enumerate}
+\end{proof}
+\enlargethispage{1cm}
+\begin{example}\label{span_dimension_three}
+$\begin{pmatrix}
+1\\1\\2
+\end{pmatrix},\begin{pmatrix}
+2\\1\\3
+\end{pmatrix},\begin{pmatrix}
+1\\3\\2
+\end{pmatrix}$ are ind. $\implies$ they span $\mathbb{R}^{3}$.
+\end{example}
+\newpage
+\subsubsection{Clarification of dimension}
+Firstly, we need to understand ``set'':
+\begin{enumerate}
+\item
+$P\triangleq\{\text{All polynomials}\} = \text{span}\{1,x,x^2,\dots\}\implies \text{dim}(P)=\infty$.
+\item
+$P_3\triangleq\{\text{All polynomials with degree $\le$ 3}\} = \text{span}\{1,x,x^2,x^3\}\implies \text{dim}(P)=4$.
+\item
+$Q\triangleq\text{span}\{x^2,1+x^3+x^{10},x^{300}\}\implies \text{dim}(Q) = 3.$
+\end{enumerate}
+\begin{remark}
+dim of space $\ne$ dim of the space it lives in.\\
+For example, the line in $\mathbb{R}^{100}$ has dim $1$.
+\end{remark}
+\subsection{What is rank?}
+rank is \textit{the number of nonzero pivots of rref of A.}
+\begin{example}\qquad\\
+\[
+\bm A = \begin{bmatrix}
+1&3&3&4\\2&6&9&7\\-1&-3&3&4
+\end{bmatrix}
+\xLongrightarrow{\text{row transform}}
+\bm U = \begin{bmatrix}
+1&3&0&-1\\0&0&1&1\\0&0&0&0
+\end{bmatrix}
+\]
+$\bm U$ has two pivots, hence rank($\bm A$) = rank($\bm U$) = 2.
+\end{example}
+However, the definition for rank is too complicated, can we define rank of $\bm A$ directly?\\
+\emph{Key question: What quantity is not changed under row transformation?}\\
+\textit{Answer: }Dimension of row space.
+\begin{definition}[column space]
+The \emph{column space} of a matrix is the subspace of $\mathbb{R}^{n}$ spanned by the columns.\\
+In other words, suppose $\bm A = \left[\begin{array}{c|c|c}
+a_1&\dots&a_n
+\end{array}\right]$, the column space is given by
+\[
+\text{col}(\bm A) = \text{span}\{a_1,a_2,\dots,a_n\}.
+\]
+\end{definition}
+\begin{definition}[row space]
+The \emph{row space} of a matrix is the subspace of $\mathbb{R}^{n}$ spanned by the rows.\\
+The \emph{row space} of $\bm A$ is $\text{col}(\bm A\trans)$, it is the column space of $\bm A\trans$.\\
+In other words, suppose $\bm A = \left[\begin{array}{c}
+a_1\\
+\hline
+\dots\\
+\hline
+a_n
+\end{array}\right]$, the row space is given by
+\[
+\row(\bm A) = \Span\{a_1,a_2,\dots,a_n\}.
+\]
+\end{definition}
+\begin{proposition}\label{row_transformation}
+Row transforamtion doesn't change the row space
+\end{proposition}
+\begin{proof}
+After row transformation, \textit{new rows are linear combinations of old rows.} \\Hence we have $\row(new rows) \subset\row(old rows)$.\\
+Assuming $\bm A\xLongrightarrow{\text{Row Transfom}}\bm B$, then we have $\row(\bm B)\subset\row(\bm A)$.\\
+Since row transformations are invertible, we also have $\bm B\xLongrightarrow{\text{Row Transfom}}\bm A$, hence we have $\row(\bm A)\subset\row(\bm B)$.\\
+Hence we obtain $\row(\bm B)=\row(\bm A)$.
+\end{proof}
+\newpage
+Hence $\rank(\bm A) = \text{pivots of $\bm U$} = \dim(\row(\bm U)) = \dim(\row(\bm A))$.\\
+Hence we have a much simpler definition for rank:
+\begin{definition}[rank]
+The \emph{dimension of the column space} is the \emph{rank of a matrix}.
+\end{definition}
+In example (\ref{span_dimension_three}), we find $\dim(\row(\bm A)) = \dim(\col(\bm A)) = 2$, is this a coincidence? \textit{The fundamental theorem of linear algebra} gives this answer:
+\begin{theorem}\label{column_rank_row_rank}
+The row space and column space both have dimension $\bm r$. Sometimes we call $\dim(\col(\bm A))$ as \textit{column rank}, we call $\dim(\row(\bm A))$ as \textit{row rank}. \\Thus it says \textit{column rank=row rank= rank}.\\
+In other words, $\dim(\row(\bm A)) = \dim(\col(\bm A)).$
+\end{theorem}
+Let's discuss an example to have an idea of proving it.
+\begin{example}
+\qquad\\
+\[
+\bm A = \begin{bmatrix}
+1&3&3&4\\2&6&9&7\\-1&-3&3&4
+\end{bmatrix}
+\xLongrightarrow{\text{row transform}}
+\bm U = \begin{bmatrix}
+1&3&0&-1\\0&0&1&1\\0&0&0&0
+\end{bmatrix}
+\]
+We notice that \emph{column rank of $\bm A =\bm 2$} and \emph{column rank of $\bm U =\bm 2$}.\\
+Why do they have the same \emph{column space dimension}?\\
+\begin{itemize}
+\item
+\textit{Wrong reason: }''$\bm A$ and $\bm U$ has the same column space''. This is false. For example, the first column of $\bm A$ is $\begin{pmatrix}
+1\\2\\-1
+\end{pmatrix}\notin\col(\bm U)$. The column spaces of $\bm A$ and $\bm U$ are \emph{different}, but the dimension of them are the \emph{same}----equal to 2.
+\item
+\textit{Right reason: }The \emph{same} combinations of the columns are zero (or nonzero) for $\bm A$ and $\bm U$. Say it in another way: $\bm{Ax} = \bm 0$ iff. $\bm{Ux} = \bm 0$. In other words, the $r$ pivot columns(of both) are independent; the $(n-r)$ free columns(of both) are dependent. \\
+For example, for $\bm U$, column $1$ and $3$ are ind.(pivot columns); column $2$ and $4$ are dep.(free columns).\\
+For $\bm A$, column $1$ and $3$ are also ind.(pivot columns); column $2$ and $4$ are also dep.(free columns).
+\end{itemize}
+\end{example}
+We will show \emph{Row transformation doesn't change ind. relations of columns.}
+\begin{proposition}
+Suppose matrix $\bm A$ is converted into $\bm B$ by row transformation. If a set of columns of $\bm A$ are ind. then so are corresponding columns of $\bm B$.
+\end{proposition}
+\begin{proof}
+Assume $\bm A = \left[\begin{array}{c|c|c}
+a_1&\dots&a_n
+\end{array}\right], \bm B = \left[\begin{array}{c|c|c}
+b_1&\dots&b_n
+\end{array}\right]$.\\
+Without loss of generality (We often denote it as ``WLOG''), we assume $a_1,a_2,\dots,a_k$ are ind.(We can achieve it by switching columns.)\\
+We define $\bm{\hat{A}} = \left[\begin{array}{c|c|c}
+a_1&\dots&a_k
+\end{array}\right],\bm{\hat{B}} = \left[\begin{array}{c|c|c}
+b_1&\dots&b_k
+\end{array}\right]$.\\
+\begin{enumerate}
+\item
+Notice that $\bm{\hat{A}}$ could be converted into $\bm{\hat{B}}$ by row transformation.\\
+Hence $\bm{\hat{A}x}=\bm 0$ and $\bm{\hat{B}x}=\bm 0$ has same solutions.
+\item
+On the other hand, $a_1,a_2,\dots,a_k$ are ind. columns.\\
+Hence $\bm{\hat{A}x}=\bm 0$ has only zero solution.
+\end{enumerate}
+Combining (1) and (2), $\bm{\hat{B}x}=\bm 0$ has only zero solution. Hence $b_1,b_2,\dots,b_k$ are ind.
+\end{proof}
+\newpage
+Thus we can answer why $\bm A$ and $\bm U$ has the same column space dimension:
+\begin{proposition}\label{column_rank}
+Row transformation doesn't change the column rank.
+\end{proposition}
+\begin{proof}
+Assume $\bm A\xLongrightarrow{\text{row transform}}\bm B$.\\
+Assume $\dim(\col(\bm A)) = r$, then we pick $r$ ind. columns if $\bm A$. After row transformation, they are still ind. Hence $\dim(\col(\bm B))\ge r = \dim(\col(\bm A))$.\\
+Since row transformations are invertible, we get $\bm B\xLongrightarrow{\text{row transform}}\bm A$.\\ Similarly, $\dim(\col(\bm A))\ge \dim(\col(\bm B))$.\\
+Hence $\dim(\col(\bm A))= \dim(\col(\bm B))$.
+\end{proof}
+Thus using proposition (\ref{row_transformation}) and (\ref{column_rank}) we can proof theorem (\ref{column_rank_row_rank}):
+\begin{proof}[Proof for theorem \ref{column_rank_row_rank}]
+Assume $\bm A\xLongrightarrow{\text{row transform}}\bm U$(rref).\\
+\begin{itemize}
+\item
+Proposition $(\text{\ref{row_transformation}})\implies \dim(\row(\bm A) = \dim(\row(\bm U))$.
+\item
+Proposition $(\text{\ref{column_rank}})\implies \dim(\col(\bm A) = \dim(\col(\bm U))$.
+\item
+Notice that $\dim(\row(\bm U))$ denotes number of pivots, $\dim(\col(\bm U))$ denotes number of pivot columns. Obviously, $\dim(\row(\bm U))=\dim(\col(\bm U))$.
+\end{itemize}
+Hence $\dim(\row(\bm A))=\dim(\col(\bm A))$.
+\end{proof}
+\begin{remark}
+$\dim(\row(\bm U))$ denotes number of pivots, actually, it denotes the number of ``true'' equations. $\dim(\col(\bm U))$ denotes the number of pivot columns, actually, it denotes the number of ``true'' variables.\\
+\emph{Theorem \ref{column_rank_row_rank} implies number of ``true'' equations should equal to number of ``true'' variables.}
+\end{remark}
+\subsubsection{What is null space dimension?}
+Assume the system $\bm{Ax}=\bm b$ has $n$ variables.\\
+\emph{Number of pivot varibales + Number of free variables = $\bm n$}.
+\[
+\implies \rank(\bm A) + \rank(N(\bm A)) = n
+\]
+where $\rank(\bm A) = \dim(\col(\bm A))$.\\
+$\bm b\in\col(\bm A)$ iff. $\bm{Ax} = \bm b$ for some $\bm x$.\\
+Hence $\col(\bm A)$ denotes all possible vectors in the form $\bm{Ax}$. Hence we call $\col(\bm A)$ as ``\emph{range space}'' of $\bm A$, which is denoted as range($\bm A$).\\
+Finally we have $\dim(\text{range($\bm A$)}) + \dim(N(\bm A)) = n$.
+\begin{proposition}
+If $\bm{Ax} = \bm b$ has at least one solution, then $\rank(\bm A) = \rank(\begin{bmatrix}
+\bm A&\bm b
+\end{bmatrix})$.
+\end{proposition}
+\begin{example}
+If $\bm A = \begin{bmatrix}
+a_1&a_2&a_3
+\end{bmatrix}$, if $\bm{Ax} = \bm b$ has at least one solution, then $\rank(\begin{bmatrix}
+a_1&a_2&a_3
+\end{bmatrix}) = \rank(\begin{bmatrix}
+a_1&a_2&a_3&b
+\end{bmatrix})$.
+\end{example}
+\begin{proof}[Proofoutline.]
+\[
+\bm{Ax} = \bm b\Longleftrightarrow \bm b\in\col(\bm A)
+\]
+Hence $\bm b$ is the linear combination of columns of $\bm A$. So Adding one more column $\bm b$ doesn't change the dimension of $\col(\bm A)$. Hence $\rank(\bm A) = \rank(\begin{bmatrix}
+\bm A&\bm b
+\end{bmatrix})$.
+\end{proof}
+\begin{proposition}
+If $\rank(\bm A)\le n-1$ for $m\x n$ matrix $\bm A$, then $\bm{Ax} = \bm b$ has no or infinitely many solutions.
+\end{proposition}
+\begin{proof}[Proofoutline.]
+\[
+\dim(\col(\bm A))+\dim(N(\bm A)) = n
+\implies \dim(N(\bm A))\ge 1
+\]
+So we have special solution for $\bm{Ax} = \bm b$. For particular solution, if it doesn't exist, then we have no solution, otherwise we have infinitely many solutions.
+\end{proof}
+\begin{definition}[Full Rank]
+For $m\x n$ matrix $\bm A$, if $\rank(\bm A) = \min(m,n)$, then we say $\bm A$ is \emph{full rank}.
+\end{definition}
+\begin{theorem}
+For $n\x n$ matrix $\bm A$, it is invertible iff. $\rank(\bm A) = n$.
+\end{theorem}
+\begin{proof}\qquad\\
+\textit{Sufficiency.    }Assume $\rank(\bm A)=r<n$, then by row transformation, we can convert $\bm A$ into $\bm U = \begin{bmatrix}
+\bm I_{r}&\bm B\\\bm 0&\bm 0
+\end{bmatrix}$(rref), where $\bm B$ is $r\x(n-r)$ matrix. We can represent the process in matrix notation:
+\[
+\bm P\bm A = \bm U(\text{rref})
+\]
+$\bm P$ is the product of row transformation matrix, which is obviously invertible.\\
+Since $\bm A$ is invertible, we let $\bm A^{-1} = \begin{bmatrix}
+\bm C_{1}\\\bm C_{2}
+\end{bmatrix}$, where $\bm C_{1}$ is an $r\x n$ matrix. Hence 
+\[
+\bm P = \bm P\bm I_{n}=\bm P(\bm A\bm A^{-1}) = (\bm{PA})\bm A^{-1} = \bm U\bm A^{-1} = \begin{bmatrix}
+\bm I_{r}&\bm B\\\bm 0&\bm 0
+\end{bmatrix}\begin{bmatrix}
+\bm C_{1}\\\bm C_{2}
+\end{bmatrix} = \begin{bmatrix}
+\bm C_{1}+\bm B\bm C_{2}\\\bm 0
+\end{bmatrix}
+\]
+Since $\bm P$ has $(n-r)$ rows as zero rows, so it is not invertible, which makes contradiction.\\
+\textit{Necessity.   }If $\bm A$ is full rank, then it has $n$ pivots, then by row transformation we can convert it into $\bm I$(rref). We can represent this process in matrix notation:
+\[
+\bm P\bm A = \bm I
+\]
+where $\bm P$ is the product of row transformation matrix. Hence $\bm P$ is the left inverse of $\bm A$, $\bm A$ is invertible.
+\end{proof}
+\subsubsection{Matrices of rank 1}
+\begin{example}\[
+\bm A = \begin{bmatrix}
+2&1&1\\4&2&2\\8&4&4\\-2&-1&-1
+\end{bmatrix}\xlongequal{\bm v\trans = \begin{bmatrix}
+2&1&1
+\end{bmatrix}}\begin{bmatrix}
+\bm v\trans\\2\bm v\trans\\4\bm v\trans\\-\bm v\trans
+\end{bmatrix} = \begin{bmatrix}
+1\\2\\4\\-1
+\end{bmatrix}\bm v\trans\xlongequal{\bm u=\begin{bmatrix}
+1&2&4&-1
+\end{bmatrix}\trans}\bm u\bm v\trans
+\]
+Here $\rank(\bm A) = 1$.
+\end{example}
+\begin{proposition}
+Every rank 1 matrix $\bm A$ has the form $\bm A = \bm u\bm v\trans = \text{column vector}\x\text{row vector}$.
+\end{proposition}
+\newpage
+\begin{proof}
+We set $\bm A = \begin{bmatrix}
+\bm c_1\\\bm c_2\\\vdots\\\bm c_n
+\end{bmatrix}$, where $\bm c_i$ is row vector.
+WLOG, we set $\bm c_1\ne\bm 0$ and $\bm c_1 = \begin{pmatrix}
+a_1b_1&a_1b_2&\dots&a_1b_n
+\end{pmatrix}$, where $a_1\ne0,b_i(i=1,\dots,n)$ are not all zero.\\
+Since $\rank(\bm A) = 1$, we have $\dim(\row(\bm A)) = 1$. Hence $\bm c_i$ is dep. with $\bm c_1$. So we set $b_i = \frac{a_i}{a_1}$ for $i=1,2,\dots,n$. Thus we construct the form of $\bm A$:
+\[
+\bm A = \begin{bmatrix}
+a_1b_1&a_1b_2&\dots&a_1b_n\\
+a_2b_1&a_2b_2&\dots&a_2b_n\\
+\vdots&\vdots&&\vdots\\
+a_nb_1&a_nb_2&\dots&a_nb_n\\
+\end{bmatrix} = \begin{bmatrix}
+a_1\\a_2\\\vdots\\a_n
+\end{bmatrix}\begin{bmatrix}
+b_1&b_2&\dots&b_n
+\end{bmatrix}
+\]
+\end{proof}
+Question: What about the form of rank 2?
+
+\textit{Enjoy midterm!}\\
+\includegraphics[width =10cm]{do_it}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

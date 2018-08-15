@@ -1,0 +1,349 @@
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+%\chapter{Week2}
+
+\section{Friday}\index{week2_Friday_lecture}
+\subsection{symmetric matrix}
+\begin{definition}[symmetric matrix]
+A $n\x n$ matrix $\bm A$ is \emph{symmetric matrix} if we have $\bm A\trans = \bm A$, which means $ \begin{bmatrix}
+a_{ij}
+\end{bmatrix} = \begin{bmatrix}
+a_{ji}
+\end{bmatrix}.$
+\end{definition}
+For example, matrix $\bm A$ is symmetric matrix:
+\[
+\text{\emph{symmetric matrix}}\qquad \bm A = \begin{bmatrix}
+2&1\\1&3
+\end{bmatrix}=\bm A\trans
+\]
+\begin{definition}[skew-symmetric matrix]
+A $n\x n$ matrix $\bm A$ is \emph{skew-symmetric matrix} or say, \emph{anti-symmetric matrix} if we have $\bm A = -\bm A\trans$.
+\end{definition}
+For example, matrix $\bm B$ is skew-symmetric matrix:
+\[\text{\emph{skew-symmetric matrix}}\qquad \bm B = \begin{bmatrix}
+0&-1\\1&0
+\end{bmatrix}=-\bm B\trans\]
+And there is an interesting theorem given by
+\begin{theorem}
+Any $n\x n$ matrix can be decomposed as the sum of a \textit{symmetric} and \textit{skew-symmetric} matrices.
+\end{theorem}
+\begin{proof}[Proofoutline.]
+Given any $n\x n$ matrix $\bm A$, we can write $\bm A$ as:
+\[
+\bm A = \underbrace{\frac{\bm A+\bm A\trans}{2}}_{symmetric} + \underbrace{\frac{\bm A-\bm A\trans}{2}}_{skew-symmetric}
+\]
+\end{proof}
+\newpage
+\subsection{Interaction of inverse and transpose}
+\begin{proposition}
+If $\bm A$ exists, then $\bm A\trans$ also exists, and $(\bm A\trans)^{-1} = (\bm A^{-1})\trans$.
+\end{proposition}
+\begin{proof}
+\[(\bm A^{-1}\bm A)\trans = \bm A\trans(\bm A^{-1})\trans = \bm I \implies (\bm A^{-1})\trans = (\bm A\trans)^{-1}\]
+\end{proof}
+\begin{corollary}
+If matrix $\bm A$ is symmetric and invertible, then $\bm A^{-1}$ remains symmetric.
+\end{corollary}
+\begin{proof}
+\[
+(\bm A^{-1})\trans = (\bm A\trans)^{-1} = \bm A^{-1}
+\implies \text{$\bm A^{-1}$ is symmetric.}
+\]
+\end{proof}
+\begin{proposition}
+If $\bm M = \begin{bmatrix}
+\bm A&\bm B\\\bm C&\bm D
+\end{bmatrix}$, then $\bm M\trans = \begin{bmatrix}
+\bm A\trans&\bm C\trans\\\bm B\trans&\bm D\trans
+\end{bmatrix}.$
+\end{proposition}
+\begin{corollary}
+Given matrix $\bm M = \begin{bmatrix}
+\bm A&\bm B\\\bm C&\bm D
+\end{bmatrix}$, matrix $\bm M = \bm M\trans$ if and only if $\bm A=\bm A\trans,\bm D =\bm D\trans,\bm B\trans = \bm C.$
+\end{corollary}
+\begin{proposition}
+Suppose $\bm A$ is $n\x n$, symmetric, and nonsingular matrix. When we do LDU decomposition such that $\bm A = \bm L\bm D\bm U$, $\bm U$ is exactly $\bm L\trans$.
+\end{proposition}
+\begin{proof}[Proofoutline.]
+Suppose $\bm A = \bm{LDU}$, then $\bm A\trans = (\bm{LDU})\trans = \bm U\trans\bm D\trans\bm L\trans$.\\
+Since $\bm D$ is diagonal matrix, we have $\bm D = \bm D\trans$.\\
+Hence $\bm A\trans = \bm U\trans\bm D\bm L\trans = \bm A \implies \bm U\trans\bm D\bm L\trans = \bm{LDU} = \bm A.$\\
+Since $\bm U\trans$ is also lower triangular matrix, $\bm L\trans$ is also upper triangular matrix, $\bm U\trans\bm D\bm L\trans$ is also LDU decomposition of $\bm A$.\\
+Since LDU decomposition is unique, we obtain $\bm U\trans = \bm L,\bm L\trans = \bm U$.\\
+Hence $\bm A = \bm{LDU} = \bm{LD}\bm L\trans$.
+\end{proof}
+\subsection{Vector Space}
+We move to a new chapter-vector spaces. We know matrix calculation(such as $\bm Ax = \bm b$) involves many numbers. you may think they are linear combinations of $n$ vectors.  This chapter moves from numbers and vectors to a third level of understanding(the highest level).Instead of individual columns, we look at  "spaces" of vectors. And this chapter ends with the "\textit{Fundamental Theorem of Linear Algebra}".\\
+We begin with the most important vector spaces. They are denoted as $\mathbb{R}^{n}$.
+\begin{definition}
+The space $\mathbb{R}^{n}$ contains all column vectors $v$ such that $v$ has $n$ entries.
+\end{definition}
+And we denote vectors as \textit{a
+column between brackets}, or \textit{along a line using commas and parentheses:}\\
+\[
+\begin{bmatrix}
+4\\\pi
+\end{bmatrix}\text{ is in $\mathbb{R}^{2}$}\qquad(1,1,1)\text{ is in $\mathbb{R}^{3}.$}
+\]
+\newpage
+\enlargethispage{2cm}
+\begin{definition}[vector space]
+A \emph{vector space} $\bm V$ is a set of vectors such that these vectors satisfy \textit{vector addition} and \textit{scalar multiplication}:
+\begin{itemize}
+\item
+\emph{vector addition:}If vector $v$ and $w$ is in $\bm V$, then $v+w\in \bm V.$
+\item
+\emph{scalar multiplication:}If vector $v\in \bm V$, then $cv\in \bm V$ for any real numbers $c$.
+\end{itemize}
+\end{definition}
+In other words, the set of vectors is \emph{closed} under \textit{addition} $v + w$ and \textit{multiplication} $cv$. In short, \emph{any linear combination is closed in vector space.}\\
+\begin{proposition}
+Every vector space must contain the zero vector.
+\end{proposition}
+\begin{proof}
+Given $v\in\bm V\implies -v\in\bm V\implies v+(-v) = \bm 0\in \bm V.$
+\end{proof}
+\begin{example}
+$\bm V = \left\{\begin{pmatrix}
+a_1\\a_2\\\vdots\\a_n\\\vdots
+\end{pmatrix}\mid \{a_n\}\text{ is infinite length sequences.} \right\}$ is a vector space.\\
+This is because for any vector $v = \begin{pmatrix}
+a_1\\a_2\\\vdots\\a_n\\\vdots
+\end{pmatrix},w = \begin{pmatrix}
+b_1\\b_2\\\vdots\\b_n\\\vdots
+\end{pmatrix}$, \\we can define vector addition and scalar multiplication as follows:
+\[
+v+w = \begin{pmatrix}
+a_1+b_1\\a_2+b_2\\\vdots\\a_n+b_n\\\vdots
+\end{pmatrix}\qquad
+cv = \begin{pmatrix}
+ca_1\\ca_2\\\vdots\\ca_n\\\vdots
+\end{pmatrix}\text{ for any $c\in\mathbb{R}$}
+\]
+$\bm V = span\left\{v_1=\begin{pmatrix}
+\frac{1}{2}\\\frac{1}{4}\\\vdots\\\frac{1}{2^n}\\\vdots
+\end{pmatrix},v_2=\begin{pmatrix}
+\frac{1}{3}\\\frac{1}{9}\\\vdots\\\frac{1}{3^n}\\\vdots
+\end{pmatrix},v_3=\begin{pmatrix}
+\frac{1}{4}\\\frac{1}{16}\\\vdots\\\frac{1}{4^n}\\\vdots
+\end{pmatrix}\right\} = \{\alpha_1v_1+\alpha_2v_2+\alpha_3v_3\mid \alpha_1,\alpha_2,\alpha_3\in\mathbb{R}.\}$ is also vector space. Here you may understand the notation ``\textit{span}'', the span of $v_1,v_2,v_3$ contains all linear combinations of vectors $v_1,v_2,v_3$.Also, $\bm V$ is a vector space. How to check?\\
+Given any two vectors $u,w$ in $\bm V$, suppose $u = \alpha_1v_1+\alpha_2v_2+\alpha_3v_3, v=\beta_1v_1+\beta_2v_2+\beta_3v_3$, then we obtain:
+\[
+\begin{split}
+\gamma_1u+\gamma_2v &= \gamma_1(\alpha_1v_1+\alpha_2v_2+\alpha_3v_3)+\gamma_2(\beta_1v_1+\beta_2v_2+\beta_3v_3) \\&= (\gamma_1\alpha_1+\gamma_2\beta_1)v_1+(\gamma_1\alpha_2+\gamma_2\beta_2)v_2+(\gamma_1\alpha_3+\gamma_2\beta_3)v_3
+\end{split}
+\]
+where $\gamma_1,\gamma_2\in\mathbb{R}$. Hence any linear combination of $u$ and $w$ are also in $\bm V$. Hence $\bm V$ is a vector space. The inner product of $u$ and $v$ is series:
+\[
+<u,v> = \sum_{i\in \mathbb{N}}u_{i}v_{i}
+\]
+\end{example}
+\newpage
+\begin{example}
+$\bm F = \{f(x)\mid f:[0,1]\mapsto \mathbb{R}\}$ is also a vector space. (verify it by yourself.) This vector space contains all real functions defined on $[0,1]$. And the vector space $\bm F$ is infinite dimensional. \\Given two functions $f$ and $g$ in $\bm F$, the inner product of $f$ and $g$ is given by
+\[
+<f,g> = \int_0^1f(x)g(x)\diff x
+\]
+Also, we can use span to form a vector space:
+\[
+\bm F = span\{sinx,x^3,e^x\} = \{\alpha_1sinx+\alpha_2x^3+\alpha_3e^x\mid \alpha_1,\alpha_2,\alpha_3\in\mathbb{R}.\}
+\]
+This set $\bm F$ is also a vector space.
+\end{example}
+\begin{example}
+$\bm V = \left\{\begin{bmatrix}
+a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}
+\end{bmatrix}\mid a_{ij}\in\mathbb{R}\text{ for $i=1,2; j=1,2,3.$}\right\}$ is also a vector space. (easy to verify). Moreover, it is equivalent to the span of six basic vectors:\\
+\[
+\bm V = span\left\{
+\begin{bmatrix}
+1&0&0\\0&0&0
+\end{bmatrix},\begin{bmatrix}
+0&1&0\\0&0&0
+\end{bmatrix},\begin{bmatrix}
+0&0&1\\0&0&0
+\end{bmatrix},\begin{bmatrix}
+0&0&0\\1&0&0
+\end{bmatrix},\begin{bmatrix}
+0&0&0\\0&1&0
+\end{bmatrix},\begin{bmatrix}
+0&0&0\\0&0&1
+\end{bmatrix}
+\right\}
+\]
+We say $\bm V$ is 6-dimension without introducing the definiton of dimension formally.
+\end{example}
+\begin{example}
+$\bm V = \{\begin{bmatrix}
+a_{ij}
+\end{bmatrix}_{3\x 3}\mid \text{any $3\x 3$ matrices}\}$ is also a vector space.\\ Obviously, it is 9-dimension. We usually express it as $dim(\bm V) = 9$.\\$\bm V_1 = \{\begin{bmatrix}
+a_{ij}
+\end{bmatrix}_{3\x 3}\mid \text{any $3\x 3$ symmetric matrices}\}$ is a special vector space. \\Notice that $\bm V_1\subset\bm V$, so we say $\bm V_1$ is a \textit{subspace} of $\bm V$.\\
+In the future we will know $dim(\bm V_1) = 6<9$.
+\end{example}
+We use more examples to explain subspace:
+\begin{example}
+Choose a plane through the origin $(0,0,0)$, note that this plane in three-dimensional space is not $\mathbb{R}^{2}$ (Even if it looks like $\mathbb{R}^{2}$). The vectors in the plane have three components and they belongs to $\mathbb{R}^{3}$. So this plane is a subspace of $\mathbb{R}^{3}$.\\ Notice that \textit{Every subspace also contains the zero vector} since subspace is a special vector space. So Here is a list of all the possible subspaces of $\mathbb{R}^{3}$:\\
+\begin{itemize}
+\item
+($\bm L$) Any line through $(0,0,0)$
+\item
+($\bm R$) The whole space
+\item
+($\bm P$) Any plane through (0,0,0)
+\item
+($\bm Z$) The single vector $(0,0,0)$
+\end{itemize}
+\end{example}
+\subsubsection{The solution to $\bm{Ax}= \bm 0$}
+We can use vector space to discuss the solution of system of equation, firstly, let's introduce some definitions:
+\begin{definition}[homogeneous equations]
+A system of linear equations is said to be \emph{homogeneous} if the constants on the righthand
+side are all zero. In other words, $\bm{Ax} = \bm 0$ is said to be \emph{homogeneous}.
+\end{definition}
+\begin{definition}[column space]
+The column space consists of all linear combinations of the columns of matrix $\bm A$. In other words, if $m\x n$ matrix $\bm A$ is denoted by $\bm A = \left[
+\begin{array}{c|c|c|c}
+a_1&a_2&\ldots&a_n
+\end{array}\right]$, then the column space is denoted by $\bm C(\bm A) = span(a_1,a_2,\dots,a_n)\subset\mathbb{R}^{m}$.
+\end{definition}
+\begin{definition}[null space]
+The null space of $m\x n$ matrix $\bm A$ consists of all solutions to $\bm{Ax} = \bm 0$. And null space can be denoted as $\bm N(\bm A) = \{\bm x\mid\bm{Ax} = \bm 0\}\subset\mathbb{R}^{n}$.
+\end{definition}
+\begin{proposition}
+The null space $\bm N(\bm A)$ is a vector space.
+\end{proposition}
+\begin{proof}[Proofoutline.]
+For any two vectors $\bm x,\bm y\in\bm N(\bm A)$, we have $\bm{Ax} = \bm 0,\bm{Ay} = \bm 0$.\\
+\[\implies \bm A(\alpha\bm x +\beta\bm y) = \alpha(\bm{Ax})+\beta(\bm{Ay}) = \alpha\bm 0+\beta\bm 0 = \bm 0\qquad \alpha,\beta\in\mathbb{R}.\]
+Hence the linear combination of $\bm x$ and $\bm y$ is also in $\bm N(\bm A)$. Hence $\bm N(\bm A)$ is a vector space.
+\end{proof}
+\begin{example}
+Describe the null space of $\bm A = \begin{bmatrix}
+1&0\\5&0\\2&3
+\end{bmatrix}.$\\
+Obviously, converting matrix into linear system of equation we obtain:
+\[
+\left\{\begin{lgathered}
+x_1+0x_2=0\\5x_1+4x_2=0\\2x_1+3x_2=0
+\end{lgathered}\right.
+\]
+Then easily we obtain the solution $\left\{\begin{lgathered}
+x_1=0\\x_2=0
+\end{lgathered}\right.$. Hence the null space is $\bm N(\bm A) = \bm 0$.
+\end{example}
+\begin{example}
+Describe the null space of $\bm A = \begin{bmatrix}
+1&0&1\\5&4&9\\2&3&5
+\end{bmatrix}.$\\
+In the next lecture we will know its null space is a line. And we find that $\bm A\begin{pmatrix}
+1\\1\\-1
+\end{pmatrix}= \bm 0$. Hence $\begin{pmatrix}
+1\\1\\-1
+\end{pmatrix}$ is a special solution. Note that \textit{the null space contains all linear combinations of special solutions.} Hence the null space is $\bm N(\bm A) = \left\{c\begin{pmatrix}
+1\\1\\-1
+\end{pmatrix}\mid c\in\mathbb{R}\right\}$.
+\end{example}
+\subsubsection{The complete solution to $\bm{Ax} = \bm b$}
+In order to find all solutions of $\bm{Ax} = \bm b$, ($\bm A$ may not be square matrix.) let's introduce two kinds of solutions:\\
+\[
+\qquad\bm{x_{particular}}\qquad\emph{The particular solution solves $\bm{Ax_p} = \bm b$}
+\]
+\[
+\qquad\bm{x_{nullspace}}\qquad\emph{The special solutions solves $\bm{Ax_n} = \bm 0$}
+\]
+\newpage
+That's talk about a theorem to help us solve the complete solution to $\bm{Ax} = \bm b$.
+\begin{theorem}
+Solution set of $\bm{Ax} = \bm b$ can be represented as $\bm{x_{complete}} = \bm{x_p} + \bm{x_n}$.
+\end{theorem}
+\begin{proof}
+\begin{proof}[Sufficiency.]Given $\bm{x_{complete}} = \bm{x_p} + \bm{x_n}$, it suffices to show $\bm{x_{complete}}$ is the solution to $\bm{Ax} = \bm b$. And we notice that 
+\[
+\bm A\bm{x_{complete}} = \bm A(\bm{x_p} + \bm{x_n}) = \bm A\bm{x_p}+\bm A\bm{x_n} = \bm b+\bm 0 = \bm b.
+\]
+Hence $\bm{x_{complete}}$ is the solution to $\bm{Ax} = \bm b$.
+\end{proof}
+\begin{proof}[Necessity.]Suppose $\bm x$ is another solution to $\bm{Ax} = \bm b$, it suffices to show $\bm x = \bm{x_p} + \bm{x_n}$. \\Hence we only need to show $\bm x- \bm{x_p}\in \bm N(\bm A)$.\\
+Notice that $\bm A(\bm x-\bm{x_p}) = \bm A\bm x-\bm A\bm{x_p} = \bm b-\bm b = \bm 0$. \\Hence $\bm x- \bm{x_p}\in \bm N(\bm A)$. Thus $\bm x = \bm{x_p}+\bm{x_n}$.
+\end{proof}\end{proof}
+\begin{example}
+There are $n=2$ unknowns but only $m=1$ equations:
+\[
+x_1+x_2 = 2.
+\]
+It's easy to check that the particular solution can be $\bm{x_p} = \begin{pmatrix}
+1\\1
+\end{pmatrix}$, the special solutions could be $\bm{x_n} = c\begin{pmatrix}
+1\\-1
+\end{pmatrix}$, $c$ can be taken arbitararily.\\ Hence the complete solution for the equations could be written as \[\bm{x_{complete}} = \bm{x_p}+\bm{x_n} = \begin{pmatrix}
+c+1\\-c+1
+\end{pmatrix}.\]
+So we summarize that if there are $n$ unknowns and $m$ equations such that $m<n$, then $\bm{Ax} = \bm b$ is \emph{underdetermined} (It has many solutions).
+\begin{figure}[H]
+\centering
+\includegraphics{week2/complete.jpg}
+\caption{Complete solution = one particular solution + all nullspace solutions}
+\end{figure}
+\end{example}
+\subsubsection{Row-Echelon Matrices}
+Given $m\x n$ matrix $\bm A$, we can still do Gaussian Elimination to convert $\bm A$ into $\bm U$, where $\bm U$ is of \emph{Row Echelon form}. The whole process could be expressed as:
+\[
+\bm{PA} = \bm{LDU}
+\]
+where $\bm L$ is $m\x m$ lower triangular matrix, $\bm U$ is $m\x n$ matrix that is of \textit{row echelon form}.\\
+For example, here is a $4\x 7$ row echelon matrix with the three pivots $\bm 1$ highlighted in blue:
+\[
+\bm U = \left[
+\begin{array}{@{}ccccccc@{}}
+\cellcolor{cyan!50}1&\x&\x&\x&\x&\x&\x\\
+0&\cellcolor{cyan!50}1&\x&\x&\x&\x&\x\\
+0&0&0&0&0&\cellcolor{cyan!50}1&\x\\
+0&0&0&0&0&0&0
+\end{array}
+\right]
+\]
+\begin{remark}
+\begin{itemize}
+\item
+Columns 3,4,5,7 have no pivots, and we say the free variables are $x_3,x_4,x_5,x_7.$
+\item
+Columns 1,2,6 have pivots, and we say the pivot variables are $x_1,x_2,x_6.$
+\end{itemize}
+\end{remark}
+Moreover, we can convert $\bm U$ into $\bm R$ that is of \emph{reduced row echelon form}. For example, the $\bm U$ we listed above can be converted into:
+\[
+\bm R = \left[
+\begin{array}{@{}ccccccc@{}}
+\cellcolor{cyan!50}1&0&\x&\x&\x&0&\x\\
+0&\cellcolor{cyan!50}1&\x&\x&\x&0&\x\\
+0&0&0&0&0&\cellcolor{cyan!50}1&\x\\
+0&0&0&0&0&0&0
+\end{array}
+\right]
+\]
+\emph{The reduced row echelon matrix $\bm R$ has zeros above the pivots as well as below. Zeros above the pivots come from upward elimination.}
+\begin{remark}
+Remember the two steps (forward and back elimination) in solving $\bm{Ax} = \bm b$:
+\begin{enumerate}
+\item
+\emph{Forward Elimination} takes $\bm A$ to $\bm U$. (or its reduced form $\bm R$)
+\item
+\emph{Back Elimination} in $\bm{Ux} = \bm c$ or $\bm{Rx} = \bm d$ produces $\bm x$.
+\end{enumerate}
+\end{remark}
+
+\subsubsection{Problem Size Analysis}
+When faced with $m\x n$ matrix $\bm A$, notice that `$m$' denotes \emph{number of equations}, `$n$' denotes \emph{number of variables}. Assume `$r$' denotes \emph{number of pivots}, then we know `$r$' is also \emph{number of pivot variables}, `$n-r$' is \emph{number of free variables}, and finally we have $m-r$ \emph{redundant equations}.
+
+
+
+
+
+
+
+
+
+

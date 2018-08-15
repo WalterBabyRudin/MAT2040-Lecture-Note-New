@@ -1,0 +1,511 @@
+\chapterimage{chapter_head_2.pdf} % Chapter heading image
+
+%\chapter{Week3}
+
+\section{Thursday}\index{week3_Thursday_lecture}
+\subsection{Review}
+Last time you may be confused about how to compute $N(\bm A)$ or $y_1,y_2,\dots,y_{n-r}$ (step2). Now let's review the whole steps for solving rectangular bu using block matrix:\\
+\begin{itemize}
+\item
+Firstly, we convert our rref into the form $\begin{bmatrix}
+\bm I&\bm B\\\bm 0&\bm 0
+\end{bmatrix}$ by switching columns.
+\begin{example}
+Last time our rref is given by:
+\[
+\bm R = \begin{bmatrix}
+1&3&0&-1\\0&0&1&1\\0&0&0&0
+\end{bmatrix}
+\]
+We notice that column 3 is pivot column, so we can switch it into the second column. (By switching column 2 and column 3):
+\[
+\bm R\implies \begin{bmatrix}
+1&0&3&-1\\0&1&0&1\\0&0&0&0
+\end{bmatrix} = \begin{bmatrix}
+\bm I&\bm B\\\bm 0&\bm 0
+\end{bmatrix}
+\]
+\end{example}
+\item
+Then our system equation is translated (We use $3\x 4$ matrix to show the whole process.):
+\[
+\bm{Rx} = \bm c\implies \begin{bmatrix}
+\bm I&\bm B\\\bm 0&\bm 0
+\end{bmatrix}\begin{bmatrix}
+x_1\\x_2\\x_3\\x_4
+\end{bmatrix} = \begin{bmatrix}
+c_1\\c_2\\c_3
+\end{bmatrix}
+\]
+\newpage
+
+Because we have changed the columns, so here row $2$ and row $3$ is also switched respectively. And then $x_1$ and $x_2$ are pivot variables, $x_3$ and $x_4$ are free variables. Then we derive:
+\[
+\implies
+\left\{\begin{aligned}
+\bm I\begin{bmatrix}
+x_1\\x_2
+\end{bmatrix}+ \bm B\begin{bmatrix}
+x_3\\x_4
+\end{bmatrix} &= \begin{bmatrix}
+c_1\\c_2
+\end{bmatrix}\\
+0 &= c_3
+\end{aligned}\right.
+\]
+\item
+If $c_3\ne 0$, then there is no solution; next, let's assume $c_3=0$. Then \textit{pivot variables} could be expressed as the form of \textit{free variables}:
+\[
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix} = \begin{pmatrix}
+c_1\\c_2
+\end{pmatrix} - \bm B\begin{pmatrix}
+x_3\\x_4
+\end{pmatrix}
+\]
+Hence all solutions to $\bm{Rx} = \bm c$ is obtained:
+\[
+\bm x = \begin{bmatrix}
+x_1\\x_2\\x_3\\x_4
+\end{bmatrix} = \begin{bmatrix}
+x_1\\x_2\\0\\0
+\end{bmatrix} + \begin{bmatrix}
+0\\0\\x_3\\x_4
+\end{bmatrix} = 
+\begin{bmatrix}
+c_1\\c_2\\0\\0
+\end{bmatrix} - \begin{bmatrix}
+\bm B\begin{pmatrix}
+x_3\\x_4
+\end{pmatrix}\\0\\0
+\end{bmatrix} +\begin{bmatrix}
+0\\0\\x_3\\x_4
+\end{bmatrix}
+\]
+Suppose $-\bm B = \begin{bmatrix}
+\bm{\hat y_1}&\bm{\hat y_2}
+\end{bmatrix}$, then pivot variables is equivalent to
+\[
+\implies\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix} = \begin{pmatrix}
+c_1\\c_2
+\end{pmatrix}+x_3\bm{\hat y_1} + x_4\bm{\hat y_2}
+\]
+\item
+So the complete solution to the system is
+
+\begin{align}
+\bm x &= \begin{pmatrix}
+c_1\\c_2\\0\\0
+\end{pmatrix} +  \begin{pmatrix}
+x_3\bm{\hat y_1} + x_4\bm{\hat y_2}\\0\\0
+\end{pmatrix} + \begin{pmatrix}
+0\\0\\x_3\\x_4
+\end{pmatrix}\\
+&=\begin{pmatrix}
+c_1\\c_2\\0\\0
+\end{pmatrix} +  x_3\begin{pmatrix}
+\bm{\hat y_1}\\0\\0
+\end{pmatrix}+x_4\begin{pmatrix}
+\bm{\hat y_2}\\0\\0
+\end{pmatrix} + x_3\begin{pmatrix}
+0\\0\\1\\0
+\end{pmatrix} + x_4\begin{pmatrix}
+0\\0\\0\\1
+\end{pmatrix}\\
+&=\underbrace{\begin{pmatrix}
+c_1\\c_2\\0\\0
+\end{pmatrix}}_{\bm x_p}
++\underbrace{x_3\begin{pmatrix}
+\bm{\hat y_1}\\1\\0
+\end{pmatrix} + x_4\begin{pmatrix}
+\bm{\hat y_2}\\0\\1
+\end{pmatrix}}_{\bm x_{\text{special}}}
+\end{align}                                          
+where $x_3$ and $x_4$ could be arbitarary.
+\item
+Notice that the block matrix is given by:
+\[\begin{pmatrix}
+\bm{\hat y_1}&\bm{\hat y_2}\\1&0\\0&1
+\end{pmatrix}
+= \begin{pmatrix}
+-\bm B\\\bm I
+\end{pmatrix}\implies
+\begin{pmatrix}
+\bm I&\bm B\\\bm 0&\bm 0
+\end{pmatrix}\begin{bmatrix}
+-\bm B\\\bm I
+\end{bmatrix} = \begin{bmatrix}
+-\bm B+\bm B\\\bm 0
+\end{bmatrix} = \begin{bmatrix}
+\bm 0\\\bm 0
+\end{bmatrix}
+\]
+\end{itemize}
+If our rectangular matrix is $m\x n(m>n)$, how to solve it?\\
+Answer: Also, we do G.E. to get rref, which will be of the form
+\[
+\begin{bmatrix}
+1&&\\&1&\\&&1\\0&\dots&0
+\end{bmatrix}\text{ or }\begin{bmatrix}
+1& & & & \\
+ &\ddots&&&\\
+ & & 1&&\\
+ &&&0&\\
+ &&&&0\\0&0&0&\dots&0
+\end{bmatrix}
+\]
+\subsection{Remarks on solving linear system equations}
+\emph{The two possibilities for linear equations depend on $m$ and $n$:}
+\begin{theorem}
+Let $m$ denote number of equations, $n$ denote number of variables. For number of solutions for $\bm{Ax} = \bm b$, where $\bm A\in\mathbb{R}^{m\x n}$, we obtain:
+\begin{itemize}
+\item
+$m<n$: either no solution or infinitely many solutions
+\item
+$m\ge n$: no solution;unique solution ($N(\bm A) =\bm 0$); or infinitely many solutions.
+\end{itemize}
+\end{theorem}
+\begin{proof}[Proofoutline for $m<n$ case:]
+Recall we can convert $\bm{Ax} = \bm b$ into $\bm{Rx} = \bm{c}$:
+\[
+\begin{bmatrix}
+1&&&\x&\x\\&\ddots&&\x&\x\\&&1&\x&\x\\0&0&0&0&0\\\dots&&&&\\0&0&0&0&0
+\end{bmatrix}\bm x = \begin{bmatrix}
+c_1\\\vdots\\c_r\\c_{r+1}\\\vdots\\c_n
+\end{bmatrix}
+\]
+Note that $x_1.x_2.\dots,x_r$ is pivot variables (This is because of column switching). Hence we have $(n-r)$ free variables, thus $N(\bm A)$ is spanned by $(n-r)$ special vectors $y_1,y_2,\dots,y_{n-r}$.\\
+Hence we only need to show $n>r$ \textit{given the condition} $n>m$:\\
+Obviously, $r\le m$, and we have $n>m$, so we obtain $n>r$.
+\end{proof}
+So we get the proposition immediately:
+\begin{proposition}
+For system $\bm{Ax} = \bm b$, where $\bm A\in\mathbb{R}^{m\x n},$ $m<n$,\\
+\hspace*{1cm}it either has no solution or infinitely many solutions.
+\end{proposition}
+\begin{corollary}\label{corollary_infinite_condition}
+For system $\bm{Ax} = \bm 0$, where $\bm A\in\mathbb{R}^{m\x n},$ $m<n$,\\
+\hspace*{1cm} it always has infinitely many solutions.
+\end{corollary}
+\newpage
+
+\subsubsection{What is r?}
+We ask the question again, what is $r$? Let's see some examples before answering this question.
+\begin{example}
+If we want to solve system of equations of size $1000$ as the following:
+\[
+\left\{\begin{aligned}
+x_1+x_2&=3\\2x_1+2x_2&=6\\\dots\\1000x_1+1000x_2&=3000
+\end{aligned}\right.
+\]
+It seems very difficult when hearding it has 1000 equations, but the remaining 999 equations could be redundant (They actually don't exist):
+\[
+\begin{bmatrix}
+1&1\\2&2\\\vdots&\vdots\\1000&1000
+\end{bmatrix}\implies
+\begin{bmatrix}
+1&1\\0&0\\\vdots&\vdots\\0&0
+\end{bmatrix}
+\]
+\end{example}
+Here we see only one equation $x_1+x_2=3$ is true, the remaining part is not true. So we claim that $r$ is the number of ``true'' equations. But what is the definition for ``true'' equations? Let's discuss the definition for \textit{linear dependence} first.
+\subsection{Linearly dependence}
+\begin{definition}[linearly dependence]
+The vectors $\bm v_1,\bm v_2,\dots,\bm v_n$ in linear space $\bm V$ are \emph{linearly dependent} if there exists $c_1,c_2,\dots,c_n\in\mathbb{R}$ s.t.
+\[
+c_1\bm v_1+c_2\bm v_2 +\dots+c_n\bm v_n = \bm 0.
+\]
+In other words, it means one of $v_i$ could be expressed as linear combination of others. When assuming $c_n\ne 0$, we can express $\bm v_n$ as:
+\[
+\bm v_n = -\frac{c_1}{c_n}\bm v_1-\frac{c_2}{c_n}\bm v_2 -\dots-\frac{c_{n-1}}{c_n}\bm v_{n-1}.
+\]
+\end{definition}
+\begin{definition}[linearly independence]
+The vectors $\bm v_1,\bm v_2,\dots,\bm v_n$ in linear space $\bm V$ are \emph{linearly independent} if the two statements are equivalent:
+\begin{itemize}
+\item
+$c_1\bm v_1+c_2\bm v_2 +\dots+c_n\bm v_n = \bm 0$
+\item
+All scalars $c_1=c_2=\dots=c_n=0$.
+\end{itemize}
+In other words, if $\bm v_1,\bm v_2,\dots,\bm v_n$ are not \emph{linearly dependent}, they must be \emph{linearly independent}.
+\end{definition}
+\begin{remark}
+Note that \emph{only} in this course, if we say vectors are dependent, we mean they are \emph{linearly} dependent. And we often express \textit{dependent} as \textit{dep.}; we also sometimes express \textit{linearly dependent} as \textit{lin. dep.}; express \textit{linearly independent} as \textit{lin. ind.}
+\end{remark}
+Here we pick some examples to help you understand lin. dep. and lin. ind.:
+\newpage
+\begin{example}\qquad\\
+\begin{itemize}
+\item
+$\bm v_1=(1,1)$ and $\bm v_2 = (2,2)$ are \emph{dep.} because
+\[
+(-2)\x\bm v_1 + \bm v_2 = \bm 0.
+\]
+\item
+The only one vector $\bm v_1=2$ is \emph{ind.} because 
+\[
+c\bm v_1 = \bm 0
+\Longleftrightarrow
+c=0.
+\]
+\item
+The only one vector $\bm v_1=0$ is \emph{dep.} because
+\[
+2\x\bm v_1 = \bm 0
+\]
+\item
+$\bm v_1 = (1,2)$ and $\bm v_2 = (0,0)$ are \emph{dep.} because
+\[
+0\x\bm v_1 + 1\x\bm v_2 = \bm 0.
+\]
+\item
+The upper triangular matrix $\bm A = \begin{bmatrix}
+3&4&2\\0&1&5\\0&0&2
+\end{bmatrix}$ has three column vectors:
+\[
+\bm v_1 = \begin{bmatrix}
+3\\0\\0
+\end{bmatrix},\bm v_2 = \begin{bmatrix}
+4\\1\\0
+\end{bmatrix},\bm v_3 = \begin{bmatrix}
+2\\5\\2
+\end{bmatrix}
+\]
+$\bm v_1,\bm v_2,\bm v_3$ are \emph{ind.} because
+\[
+c_1\bm v_1 + c_2\bm v_2 + c_3\bm v_3 = \bm 0
+\Longleftrightarrow
+c_1=c_2=c_3=0. (\text{Why?})
+\]
+\end{itemize}
+\end{example}
+\subsubsection{Relation between \textit{lin.ind.} and \textit{equations}}
+The following statements are equivalent:
+\begin{itemize}
+\item
+Vectors $a_1,a_2,\dots,a_n\in\mathbb{R}^{m}$ are dep.
+\item
+$\exists$ $c_i$ not all zero s.t. $\sum_{i=1}^{n}c_ia_i = \bm 0$.
+\item
+$\exists$ some $\bm c\ne\bm 0$ s.t.
+\[
+\bm{Ac} = \left[\begin{array}{c|c|c}
+a_1&\dots&a_n
+\end{array}\right]\bm c = \bm 0
+\]
+\end{itemize}
+So what if $m<n$, when checking corollary (\ref{corollary_infinite_condition}), we immediately obtain:
+\begin{corollary}
+When vectors $a_1,a_2,\dots,a_n\in\mathbb{R}^{m}(m<n)$ are dependent, there exists infinitely solutions $c_1,c_2,\dots,c_n$ such that $\sum_{i=1}^{n}c_ia_i = \bm 0$.
+\end{corollary}
+So we say the true equations are those linearly independent equations.
+\newpage
+
+\subsection{Basis and dimension}
+\begin{definition}[Basis]
+The vectors $v_1,\dots,v_n$ form a \emph{basis} for a vector space $\bm V$ if and only if:
+\begin{enumerate}
+\item
+$v_1,\dots,v_n$ are \emph{linearly independent}.
+\item
+$v_1,\dots,v_n$ span $\bm V$.
+\end{enumerate}
+\end{definition}
+\begin{example}
+In $\mathbb{R}^{3}$, $\begin{bmatrix}
+1\\0\\0
+\end{bmatrix},\begin{bmatrix}
+0\\1\\0
+\end{bmatrix},\begin{bmatrix}
+0\\0\\1
+\end{bmatrix}$ form a basis.\\
+$\begin{bmatrix}
+1\\0\\0
+\end{bmatrix}$ is not a basis, since it doesn't span $\mathbb{R}^{3}$.\\
+$\begin{bmatrix}
+1\\0\\0
+\end{bmatrix},\begin{bmatrix}
+0\\1\\0
+\end{bmatrix},\begin{bmatrix}
+0\\0\\1
+\end{bmatrix},\begin{bmatrix}
+2\\0\\0
+\end{bmatrix}$ don't form a basis, since they don'y linearly independent.\\
+$\begin{bmatrix}
+1\\0\\0
+\end{bmatrix},\begin{bmatrix}
+1\\2\\3
+\end{bmatrix},\begin{bmatrix}
+2\\1\\3
+\end{bmatrix}$ form a basis.
+\end{example}
+We feel that the number of vectors for basis of $\mathbb{R}^{3}$ is always 3, is this a coincidence? The theorem below gives the answer.
+\begin{theorem}\label{theorem_3.2}
+If $v_1,v_2,\dots,v_m$ is a basis; $w_1,w_2,\dots,w_n$ is a basis for the same vector space $\bm V$, then $n=m$.
+\end{theorem}
+In order to proof it, let's try simple case first:
+\begin{proof}[proofoutline.]\qquad\\
+
+\begin{itemize}
+\item
+Let's consider $\bm V = \mathbb{R}$ case first:\\
+For $\mathbb{R}$, 1 forms a basis.\\
+Given any two vectors $x$ and $y$, they are not a basis for $\mathbb{R}$. It is because that
+\begin{itemize}
+\item
+if $x=0$ or $y=0$, they are not ind.
+\item
+otherwise, $y = \frac{y}{x}\x x\implies \frac{y}{x}\x x + (-1)\x y = 0$. So they are not ind.
+\end{itemize}\item
+Then we consider $\bm V = \mathbb{R}^3$ case:\\
+For $\mathbb{R}^3$, $\begin{bmatrix}
+1\\0\\0
+\end{bmatrix},\begin{bmatrix}
+0\\1\\0
+\end{bmatrix},\begin{bmatrix}
+0\\0\\1
+\end{bmatrix}$ is a basis.\\
+We want to show if $v_1,v_2,\dots,v_m$ is a basis, then $m=3$.
+
+
+
+\begin{itemize}
+\item
+Let's proof $m=4$ is impossible ($4$ vectors in $\mathbb{R}^{3}$ cannot be a basis.):\\
+We only need to show for $\forall a_1,a_2,a_3,a_4\in\mathbb{R}^{3}$ they must be dep.\\
+$\Longleftrightarrow$$\bm{Ax} = \bm 0$ has nonzero solutions, where $\bm A = \left[\begin{array}{c|c|c|c}
+a_1&a_2&\dots&a_4
+\end{array}\right]\in \mathbb{R}^{3\x 4}$. \\
+By corollary (\ref{corollary_infinite_condition}), it is obviously true.
+\item
+The same argument could show any basis for $\mathbb{R}^{3}$ satisfies $m\le 3$.
+\item
+Then let's prove $m=2$ is impossible (2 vectors in $\mathbb{R}^{2}$ cannot be a basis):\\
+We only need to show for $\forall a_1,a_2\in \mathbb{R}^{3}$, they cannot span the whole space.\\
+If this is not true, then $\bm{Ax} = \bm b$ must have solution, where $\bm A = \left[\begin{array}{c|c}
+a_1&a_2
+\end{array}\right]\in \mathbb{R}^{3\x 2}$.\\
+However, this kind matrix may have no solution, which forms a contradiction.
+\item
+The same arugment could show any basis for $\mathbb{R}^{3}$ satisfies $m\ge 3$.
+\end{itemize}
+\item
+The same arugment could show any basis for $\mathbb{R}^{n}$ satisfies $m=n$.
+\item
+Next, let's consider general vector space:\\
+We assume $n<m$ (contradiction).\\
+We have known $v_1,\dots,v_n$ is a basis, our goal is to show $w_1,\dots,w_m$ cannot form a basis.\\
+$\Leftarrow\exists$ $\bm c = \begin{bmatrix}
+c_1&c_2&\dots&c_m
+\end{bmatrix}\trans\ne\bm 0$ s.t.
+\begin{equation}\label{combination}
+c_1w_1+c_2w_2+\dots+c_mw_m = 0.
+\end{equation}
+Moreover, we can express $w_1,\dots,w_m$ in form of $v_1,\dots,v_n$:
+\begin{equation}\label{basis_for_w}
+\left\{\begin{aligned}
+w_1 &= a_{11}v_1 +\dots+a_{1n}v_n\\
+\dots\\
+w_m &= a_{m1}v_1 +\dots + a_{mn}v_n
+\end{aligned}\right.
+\end{equation}
+By (\ref{basis_for_w}), we can write (\ref{combination}) as:
+\[
+\begin{aligned}
+0 &= \sum_{j=1}^{m}c_jw_j\\
+  &= \sum_{j=1}^{m}c_j(\sum_{i=1}^{n}a_{ji}v_i)\\
+  &= \sum_{j=1}^{m}\sum_{i=1}^{n}c_ja_{ji}v_i\\
+  &= \sum_{i=1}^{n}\sum_{j=1}^{m}c_ja_{ji}v_i\\
+  &= \sum_{i=1}^{n}v_i\x(\sum_{j=1}^{m}c_ja_{ji})\\
+  &= v_1\x(\sum_{j=1}^{m}c_ja_{j1}) + v_2\x(\sum_{j=1}^{m}c_ja_{j2}) +\dots +v_n\x(\sum_{j=1}^{m}c_ja_{jn})
+\end{aligned}
+\]
+So, in order to let LHS=0, we only need to let each of RHS=0, more specifically, we only need to let $
+\sum_{j=1}^{m}c_ja_{j1} = \sum_{j=1}^{m}c_ja_{j2} = \dots = \sum_{j=1}^{m}c_ja_{jn} = 0.$
+\\To write it into matrix form, we only need to let system $\bm A\trans \bm c = \bm 0$ has solution. \\where $\bm A = \begin{bmatrix}
+a_{ij}
+\end{bmatrix}_{1\le i\le m;1\le j\le n}$ and $\bm c = \begin{bmatrix}
+c_1&c_2&\dots&c_m
+\end{bmatrix}\trans$.\\
+By corollary (\ref{corollary_infinite_condition}), since $\bm A\trans$ is $n\x m$ matrix where $n<m$, it has infinitely nonzero solution.
+\end{itemize}
+\end{proof}
+During the proof, we face two difficulties:
+\begin{enumerate}
+\item
+For arbitararily $\bm V$, we write a concrete form to express $w_1,w_2,\dots,w_m$.
+\item
+We write matrix form to express $\sum_{j=1}^{m}c_ja_{j1} = \sum_{j=1}^{m}c_ja_{j2} = \dots = \sum_{j=1}^{m}c_ja_{jn} = 0.$
+\end{enumerate}
+Next since all basis contains the same number of vectors, we can define the number of vectors to be dimension:
+\begin{definition}[Dimension]
+The \emph{dimension} for a vector space is the number of vectors in a basis for it.
+\end{definition}
+\begin{remark}
+Remember that vector space $\{0\}$ has dimension $0$.\\In order to denote the dimension for a given vector space $\bm V$, we often write it as dim($\bm V$).
+\end{remark}
+\begin{example}
+\begin{itemize}
+\item
+$\mathbb{R}^{n}$ has dimension $n$.
+\item
+$\{\text{All $m\x n$ matrix}\}$ has dimension $m\cdot n$.
+\item
+$\{\text{All $n\x n$ symmetric matrix}\}$ has dimension $\frac{n(n+1)}{2}$.
+\item
+Let $\bm P$ denote the vector space of all polynomials $f(x) = a_0+a_1x+\dots+a_nx^n$.\\
+dim($\bm P$)$\ne 3$ since $1,x,x^2,x^3$ are ind.\\
+The same argument can show dim($\bm P$) is not equal to any real number, so dim($\bm P$)=$\infty$
+\end{itemize}
+\end{example}
+Human beings often ask a question: for a line and a plane, which is bigger?
+\begin{enumerate}
+\item
+Does plane has more point than a line?\\
+No, Cantor syas they have the same ``number'' of points by constructing a one-to-one mapping.\\
+Furthermore, $\mathbb{R},\mathbb{R}^2,\dots,\mathbb{R}^n$ has the same number of points.
+\item
+However, the plane has bigger dimension than a line. So from this point of view, a plane is bigger than a line.
+\end{enumerate}
+You should know some common knowledge for dimension:
+\begin{enumerate}
+\item
+Programmer lives in $\bm 2$ dimension world. (They only live with binary.)
+\item
+Engineer lives in $\bm 3$ dimension world. (They only live with enign.)
+\item
+Physician lives in $\bm 4$ dimension world. (They discuss time.)
+\item
+String theories states that our world is $\bm 11$ or $\bm 26$ dimension, which has been proved by Qingshi Zhu.
+\item
+For 3-body, they can perform dimension attack on you.
+\end{enumerate}
+\subsubsection{What is rank?}
+Finally let's answer the question: What is rank?\\
+rank=dimension of row space of a matrix.\\
+We will discuss it next lecture.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
