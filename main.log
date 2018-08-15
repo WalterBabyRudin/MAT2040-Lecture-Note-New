@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  16 AUG 2018 06:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  16 AUG 2018 06:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2213,12 +2213,18 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/pplx/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/pplx/b/it' tried instead on input line 34.
 
+<zh-hans_logo.png, id=551, 383.4325pt x 65.24374pt>
+File: zh-hans_logo.png Graphic file (type png)
+ <use zh-hans_logo.png>
+Package pdftex.def Info: zh-hans_logo.png used on input line 34.
+(pdftex.def)             Requested size: 383.43156pt x 65.24358pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
+ [3 <./zh-hans_logo.png>]
 LaTeX Font Info:    Try loading font information for OMS+pplx on input line 57.
 
 LaTeX Font Info:    No file OMSpplx.fd. on input line 57.
@@ -3389,7 +3395,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 271.
 
-<week2/complete.jpg, id=1340, 319.94531pt x 141.52875pt>
+<week2/complete.jpg, id=1343, 319.94531pt x 141.52875pt>
 File: week2/complete.jpg Graphic file (type jpg)
 
 <use week2/complete.jpg>
@@ -3433,7 +3439,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<week2/adj.jpg, id=1378, 162.6075pt x 106.14656pt>
+<week2/adj.jpg, id=1381, 162.6075pt x 106.14656pt>
 File: week2/adj.jpg Graphic file (type jpg)
  <use week2/adj.jpg>
 Package pdftex.def Info: week2/adj.jpg used on input line 57.
@@ -4018,7 +4024,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [108]
-<do_it.jpg, id=1664, 260.47313pt x 179.16937pt>
+<do_it.jpg, id=1667, 260.47313pt x 179.16937pt>
 File: do_it.jpg Graphic file (type jpg)
  <use do_it.jpg>
 Package pdftex.def Info: do_it.jpg used on input line 355.
@@ -4469,7 +4475,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 266.
 
-<week4/calculus.jpg, id=1895, 163.3603pt x 137.7647pt>
+<week4/calculus.jpg, id=1898, 163.3603pt x 137.7647pt>
 File: week4/calculus.jpg Graphic file (type jpg)
 
 <use week4/calculus.jpg>
@@ -4788,7 +4794,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 47.
 
-<week5/orthogonality.jpg, id=2049, 160.34906pt x 186.6975pt>
+<week5/orthogonality.jpg, id=2052, 160.34906pt x 186.6975pt>
 File: week5/orthogonality.jpg Graphic file (type jpg)
 
 <use week5/orthogonality.jpg>
@@ -4935,7 +4941,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [167]
-<week5/projection.jpg, id=2110, 144.54pt x 164.11313pt>
+<week5/projection.jpg, id=2113, 144.54pt x 164.11313pt>
 File: week5/projection.jpg Graphic file (type jpg)
 
 <use week5/projection.jpg>
@@ -4965,7 +4971,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [168 <./week5/projection.jpg>]
-<week5/projection_line.jpg, id=2119, 213.79875pt x 149.05687pt>
+<week5/projection_line.jpg, id=2122, 213.79875pt x 149.05687pt>
 File: week5/projection_line.jpg Graphic file (type jpg)
 
 <use week5/projection_line.jpg>
@@ -5055,7 +5061,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [175]
-<week5/gram.jpg, id=2161, 274.77657pt x 170.88844pt>
+<week5/gram.jpg, id=2164, 274.77657pt x 170.88844pt>
 File: week5/gram.jpg Graphic file (type jpg)
  <use week5/gram.jpg>
 Package pdftex.def Info: week5/gram.jpg used on input line 135.
@@ -5065,7 +5071,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
  []
 
-<week5/nextgram.jpg, id=2163, 195.73125pt x 272.51813pt>
+<week5/nextgram.jpg, id=2166, 195.73125pt x 272.51813pt>
 File: week5/nextgram.jpg Graphic file (type jpg)
 
 <use week5/nextgram.jpg>
@@ -5080,7 +5086,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [176 <./week5/gram.jpg>] <week5/finalgram.jpg, id=2170, 155.07938pt x 149.0568
+ [176 <./week5/gram.jpg>] <week5/finalgram.jpg, id=2173, 155.07938pt x 149.0568
 7pt>
 File: week5/finalgram.jpg Graphic file (type jpg)
 
@@ -5192,7 +5198,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 396.
 
-<week5/1810645243.jpg, id=2209, 263.48438pt x 401.5pt>
+<week5/1810645243.jpg, id=2212, 263.48438pt x 401.5pt>
 File: week5/1810645243.jpg Graphic file (type jpg)
 
 <use week5/1810645243.jpg>
@@ -5247,14 +5253,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<week6/determinant.jpg, id=2241, 469.00218pt x 219.82124pt>
+<week6/determinant.jpg, id=2244, 469.00218pt x 219.82124pt>
 File: week6/determinant.jpg Graphic file (type jpg)
 
 <use week6/determinant.jpg>
 Package pdftex.def Info: week6/determinant.jpg used on input line 26.
 (pdftex.def)             Requested size: 284.52756pt x 133.35619pt.
 
-<week6/regression.jpg, id=2242, 289.08pt x 293.59688pt>
+<week6/regression.jpg, id=2245, 289.08pt x 293.59688pt>
 File: week6/regression.jpg Graphic file (type jpg)
 
 <use week6/regression.jpg>
@@ -5273,7 +5279,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [189 <./week6/regression.jpg>]
-<week6/least_square.jpg, id=2256, 377.15906pt x 194.22563pt>
+<week6/least_square.jpg, id=2259, 377.15906pt x 194.22563pt>
 File: week6/least_square.jpg Graphic file (type jpg)
 
 <use week6/least_square.jpg>
@@ -5567,7 +5573,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 110.
 
-<week6/rotation.jpg, id=2392, 359.09157pt x 200.24812pt>
+<week6/rotation.jpg, id=2395, 359.09157pt x 200.24812pt>
 File: week6/rotation.jpg Graphic file (type jpg)
 
 <use week6/rotation.jpg>
@@ -5594,7 +5600,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 181.
 
-<week6/complex.jpg, id=2403, 371.88937pt x 195.73125pt>
+<week6/complex.jpg, id=2406, 371.88937pt x 195.73125pt>
 File: week6/complex.jpg Graphic file (type jpg)
 
 <use week6/complex.jpg>
@@ -5693,7 +5699,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 420.
 
-<week6/spec.jpg, id=2453, 523.20468pt x 188.20313pt>
+<week6/spec.jpg, id=2456, 523.20468pt x 188.20313pt>
 File: week6/spec.jpg Graphic file (type jpg)
  <use week6/spec.jpg>
 Package pdftex.def Info: week6/spec.jpg used on input line 435.
@@ -5771,7 +5777,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 8.
-<week7/shape.jpg, id=2509, 422.32782pt x 124.96687pt>
+<week7/shape.jpg, id=2512, 422.32782pt x 124.96687pt>
 File: week7/shape.jpg Graphic file (type jpg)
  <use week7/shape.jpg>
 Package pdftex.def Info: week7/shape.jpg used on input line 16.
@@ -6062,7 +6068,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [248]
-<week7/fundamental.jpg, id=2642, 358.33875pt x 250.68657pt>
+<week7/fundamental.jpg, id=2645, 358.33875pt x 250.68657pt>
 File: week7/fundamental.jpg Graphic file (type jpg)
 
 <use week7/fundamental.jpg>
@@ -6119,7 +6125,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 440.
 
-<week7/least_square.jpg, id=2667, 377.15906pt x 194.22563pt>
+<week7/least_square.jpg, id=2670, 377.15906pt x 194.22563pt>
 File: week7/least_square.jpg Graphic file (type jpg)
 
 <use week7/least_square.jpg>
@@ -6135,7 +6141,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [253]
-<week7/rank_r.jpg, id=2675, 439.6425pt x 283.0575pt>
+<week7/rank_r.jpg, id=2678, 439.6425pt x 283.0575pt>
 File: week7/rank_r.jpg Graphic file (type jpg)
  <use week7/rank_r.jpg>
 Package pdftex.def Info: week7/rank_r.jpg used on input line 460.
@@ -6222,7 +6228,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
-<exam/final/least_square.jpg, id=2712, 246.1697pt x 256.70906pt>
+<exam/final/least_square.jpg, id=2715, 246.1697pt x 256.70906pt>
 File: exam/final/least_square.jpg Graphic file (type jpg)
 
 <use exam/final/least_square.jpg>
@@ -7778,10 +7784,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 50534 strings out of 492995
- 1036421 string characters out of 6132703
- 1518120 words of memory out of 5000000
- 50742 multiletter control sequences out of 15000+600000
+ 50539 strings out of 492995
+ 1036520 string characters out of 6132703
+ 1518190 words of memory out of 5000000
+ 50746 multiletter control sequences out of 15000+600000
  167939 words of font info for 704 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,25n,98p,10504b,2066s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -7817,10 +7823,10 @@ er/sfsx2488.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super
 8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (394 pages, 1743927 bytes).
+Output written on main.pdf (394 pages, 1756063 bytes).
 PDF statistics:
- 3959 PDF objects out of 4296 (max. 8388607)
- 3318 compressed objects within 34 object streams
+ 3962 PDF objects out of 4296 (max. 8388607)
+ 3319 compressed objects within 34 object streams
  1449 named destinations out of 1728 (max. 500000)
- 89251 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 89256 words of extra memory for PDF output out of 106986 (max. 10000000)
 
