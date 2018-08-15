@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  16 AUG 2018 04:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  16 AUG 2018 05:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2178,7 +2178,7 @@ LaTeX Info: Redefining \nameref on input line 5.
 \openout6 = `main.out'.
 
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 32.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 33.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2205,13 +2205,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `T1/pplx/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/it' tried instead on input line 33.
+(Font)              Font shape `T1/pplx/b/it' tried instead on input line 34.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2219,23 +2219,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 56.
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 57.
 
-LaTeX Font Info:    No file OMSpplx.fd. on input line 56.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 57.
 
 
 LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 56.
+(Font)              using `OMS/cmsy/m/n' instead on input line 57.
 
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <8> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 56.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 57.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 
  []
 
@@ -2246,7 +2246,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 63.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 64.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2351,7 +2351,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88  \end{contributors}
+l.89  \end{contributors}
                          [5
 
 ]
@@ -2364,7 +2364,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.vi}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.93 \begin{foreword}
+l.94 \begin{foreword}
                       [6
 
 ]
@@ -2377,7 +2377,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.vii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.95 \end{foreword}
+l.96 \end{foreword}
                     [7
 
 ]
@@ -2390,7 +2390,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.viii}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.100 \begin{preface}
+l.101 \begin{preface}
                       [8
 
 ]
@@ -2407,7 +2407,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ix}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105 \end{preface}
+l.106 \end{preface}
                     [9
 
 ]
@@ -2420,7 +2420,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.x}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.117 \acknowledgments
+l.118 \acknowledgments
                        [10
 
 ]
@@ -8002,8 +8002,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 No file main.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
 (./main.aux (./week1/Tuesday.aux) (./week1/Thursday.aux) (./week1/Friday.aux)
 (./week1/Assignment_One.aux) (./week2/Tuesday.aux) (./week2/Wednesday.aux)
 (./week2/Assignment_Two.aux) (./week2/Friday.aux) (./week2/Assignment_Three.aux
@@ -8026,8 +8026,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
 (./Solution/Sample_midterm_solution.aux) (./Solution/midterm_solution.aux)
 (./Solution/Sample_final_solution.aux) (./Solution/Final_solution.aux)
 (./app01.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 257.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 257.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 23C7AE5C5068600AC3E352CE2DACA4F2;8972.
 
@@ -8036,9 +8036,6 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
 (\end occurred inside a group at level 9)
@@ -8056,7 +8053,7 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Here is how much of TeX's memory you used:
  50539 strings out of 492995
  1036474 string characters out of 6132703
- 1518153 words of memory out of 5000000
+ 1518159 words of memory out of 5000000
  50743 multiletter control sequences out of 15000+600000
  167939 words of font info for 704 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
