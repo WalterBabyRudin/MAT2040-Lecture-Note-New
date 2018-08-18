@@ -1,12 +1,9 @@
 
 \chapter{Week2}
-
 \section{Tuesday}\index{week2_Tuesday_lecture}
 \subsection{Review}
 \subsubsection{Solving a system of linear Equations}
-\begin{itemize}
-\item
-\emph{Gaussian Elimination}
+\paragraph{Gaussian Elimination}
 For the system of equations $\bm A\bm x = \bm b$, it has three cases for its solutions:
 \[
 \bm A\bm x = \bm b\left\{
@@ -17,7 +14,11 @@ For the system of equations $\bm A\bm x = \bm b$, it has three cases for its sol
 \end{lgathered}
 \right.
 \]
-And we claim that if for this system of equation it has \emph{infinitely} many solutions, then \textit{its columns(or rows) could be linearly combined to zero nontrivally.} To explain it more specifically, let's use augmented matrix to represent $\bm A\bm x = \bm b$ (Let's assume it's $3\times 3$ matrix):
+We claim that 
+\begin{quotation}
+if for this system of equation it has \emph{infinitely} many solutions, then \textit{its columns(or rows) could be linearly combined to zero nontrivially.} 
+\end{quotation}
+Let's raise an example to explain this statement. Let's use an augmented matrix to represent $\bm A\bm x = \bm b$ (Assume $\bm A$ is a $3\times 3$ matrix):
 \[
 \bm A\bm x = \bm b\Longleftrightarrow 
 \left[
@@ -28,7 +29,7 @@ a_{31}&a_{32}&a_{33}&b_3
 \end{array}
 \right]
 \]
-When we focus on the columns, we may have the question: in which case does its columns could be linear combined to zero? That means we need to choose the coefficients $c_1,c_2,c_3$ such that 
+When focusing on the columns, we may have the question: in which case does its columns could be linearly combined to zero? That means we need to choose the coefficients $c_1,c_2,c_3$ such that 
 \[
 c_1\begin{pmatrix}
 a_{11}\\a_{21}\\a_{31}
@@ -38,36 +39,49 @@ a_{12}\\a_{22}\\a_{32}
 a_{13}\\a_{23}\\a_{33}
 \end{pmatrix} = 0
 \]
-It's obvious that when $c_1=c_2=c_3=0$ we can linearly combine the columns. So $c_1=c_2=c_3=0$ is the \textit{trival} solution. But is there any nontrival solution? We claim that if this system of equation has \textit{infinitely} many solutions, we could linearly combine the columns \textit{nontrivally}. And we will prove it in the end of this lecture.\\
-And if we focus on the rows, we may have the similar question. And its conclusion is similar.
+\begin{itemize}
 \item
-\emph{matrix notation to describe Gaussian Elimination}
-Firstly let's consider we don't need to do row exchange case. For nonsingular matrix $\bm A$, We find that postmultiplying elementary matrix has the same effect as doing gaussian elimination. If we finally convert $\bm A$ into \textit{upper triangular matrix} $\bm U$, we can write this process in matrix notation:
+It's obvious that when $c_1=c_2=c_3=0$ we can linearly combine the columns. So $c_1=c_2=c_3=0$ is the \textit{trival} solution.
+\item
+But is there any \emph{nontrival} solution? We claim that if this system of equation has \textit{infinitely} many solutions, we could linearly combine the columns \textit{nontrivally}. We will prove this statement in the end of this lecutre.
+
+If we focus on the rows, we may have the similar question and conclusion.
+\end{itemize}
+\paragraph{Matrix to describe Gaussian Elimination}
+\begin{enumerate}
+\item
+Firstly let's consider the nonsingular matrix $\bm A$ without row exchange case. We find that postmultiplying elementary matrix has the same effect as doing gaussian elimination. If we finally convert $\bm A$ into \textit{upper triangular matrix} $\bm U$, we can write this process in matrix notation:
 \[
 \bm E_n \ldots \bm E_1\bm A = \bm U\implies \bm A = (\bm E_n \ldots \bm E_1)^{-1}\bm U
 \implies \bm A = \bm E_1^{-1} \ldots \bm E_n^{-1}\bm U
 \]
-And if we define $\bm L = \bm E_1^{-1} \ldots \bm E_n^{-1}$, which is easy to verify that it is lower triangular matrix. So finally we decompose $\bm A$ into the product of two triangular matrix:
+\begin{enumerate}
+\item
+If we define $\bm L := \bm E_1^{-1} \ldots \bm E_n^{-1}$, which is a lower triangular matrix, then we finally decompose $\bm A$ into the product of two triangular matrix:
 \[
 \bm A = \bm L\bm U
 \]
-Further more, we can decompose $\bm A$ into product of three matrix to make the diagonal entries of $\bm U$ to be zero:
+\item
+We can fuirther decompose $\bm A$ into product of three matrices to make the diagonal entries of $\bm U$ and $\bm L$ to be \emph{one}:
 \[
 \bm A = \bm L\bm D\bm U
 \]
-Note that the LDU decomposition is unique for any matrix, though we don't prove it.\\
-If we have to do row exchange, the process for converting $\bm A$ into $\bm U$ may be like 
-\[\bm E\ldots \bm E\bm P\ldots \bm E\bm P \ldots \bm E\bm A = \bm U\] but we can always do row exchange first to combine all elementary matrix together, which means we can change the process into:
-\[
-\bm E_n \ldots \bm E_1\bm P\bm A = \bm U\implies \bm P\bm A = \bm L\bm U
-\]
-And also, we can do LDU decomposition to get $ \bm P\bm A = \bm L\bm D\bm U$.
-\end{itemize}
-\subsection{Special matrix multiplication case}
-\begin{itemize}
+Recall that the LDU decomposition is unique for any matrix.
+\end{enumerate}
 \item
-Firstly let's introduce a new type of vector called unit vector:
-\begin{definition}[unit vector]\qquad \\
+If we have to do row exchange, the process for converting $\bm A$ into $\bm U$ may be like the form:
+\[
+\bm E\cdots \bm E\bm P\bm E\cdots \bm E\bm P \bm E\cdots \bm E\bm A = \bm U,
+\]
+but we can always do row exchange first to combine all elementary matrix together, which means we can convert this process into:
+\[
+\bm E \cdots \bm E\bm P\bm A = \bm U\implies \bm P\bm A = \bm L\bm U
+\]
+Also, we can do LDU decomposition to get $ \bm P\bm A = \bm L\bm D\bm U$.
+\end{enumerate}
+\subsection{Special matrix multiplication case}
+Firstly let's introduce a new type of vector named unit vector:
+\begin{definition}[unit vector]
 An $i$th unit vector is given by:
 \[
 e_i = \begin{bmatrix}
@@ -76,54 +90,61 @@ e_i = \begin{bmatrix}
 \]
 Only in $i$th row its entry is $1$, other entries of $e_i$ are all $0$.
 \end{definition}
+Then let's discuss some interesting matrix multiplication cases:
+\begin{enumerate}
+\item
+\begin{enumerate}
+\item
 Given $m\times n$ matrix $\bm A = \begin{bmatrix}
 a_{ij}
-\end{bmatrix}_{m\times n}$, the product of $\bm Ae_i$ is given by (verify by yourself!):
+\end{bmatrix}_{m\times n}$, the product $\bm Ae_i$ is given by:
 \[
 \bm Ae_i = \begin{bmatrix}
 a_{:i}
-\end{bmatrix}
+\end{bmatrix},
 \]
-Note that we use notation $\begin{bmatrix}
+where $\begin{bmatrix}
 a_{:i}
-\end{bmatrix}$ to denote the $i$th column of $\bm A$. (MATLAB or Julia language.)\\
-And given row vector $e_j\trans :=\begin{bmatrix}
+\end{bmatrix}$ denotes the $i$th column of $\bm A$. (It is from the MATLAB or Julia language.)
+\item
+Also, given a row vector $e_j\trans :=\begin{bmatrix}
 0&0& \ldots& 1& \ldots&0
-\end{bmatrix}$, the product of $e_j\trans\bm A$ is given by:
+\end{bmatrix}$, the product $e_j\trans\bm A$ is given by:
 \[
 e_j\trans\bm A = \begin{bmatrix}
 a_{j:}
-\end{bmatrix}
+\end{bmatrix},
 \]
-Note that we use notation $\begin{bmatrix}
+where $\begin{bmatrix}
 a_{j:}
-\end{bmatrix}$ to denote the $j$th row of $\bm A$.
-\newpage
+\end{bmatrix}$ denotes the $j$th row of $\bm A$.
+\end{enumerate}
 \item
-Secondly we want to compute the product $\bm 1\trans\bm A\bm 1$, where $\bm 1$ denotes a column vector that all entres of $\bm 1$ are $1$.\\
-Let's first compute $\bm A\times\bm 1$, where $\bm A$ is a $m\times n$ matrix and $\bm 1\in\mathbb{R}^n$:
+Secondly, we want to compute the product $\bm 1\trans\bm A\bm 1$, where $\bm 1$ denotes a column vector that all entries of $\bm 1$ are $1$ and $\bm 1\trans$ denotes the corresponding row vector.
+
+Let's first compute $\bm A\times\bm 1$, where $\bm A\in\mathbb{R}^{m\times n}$ and $\bm 1\in\mathbb{R}^n$:
 \[
 \bm A\times\bm 1 = \begin{pmatrix}
 \sum_{j=1}^{n}a_{1j}\\\sum_{j=1}^{n}a_{2j}\\\vdots\\\sum_{j=1}^{n}a_{mj}
 \end{pmatrix}
 \]
+It follows that
 \[
-\implies \bm 1\trans\bm A\bm 1 = \bm 1\trans(\bm A\bm 1) = \bm 1\trans\begin{pmatrix}
+\bm 1\trans\bm A\bm 1 = \bm 1\trans(\bm A\bm 1) = \bm 1\trans\begin{pmatrix}
 \sum_{j=1}^{n}a_{1j}\\\sum_{j=1}^{n}a_{2j}\\\vdots\\\sum_{j=1}^{n}a_{mj}
-\end{pmatrix} = <\bm 1,\bm A\bm 1> = \sum_{i=1}^{m}\sum_{j=1}^{n}a_{ij}
+\end{pmatrix} = \inp{\bm 1}{\bm A\bm 1} = \sum_{i=1}^{m}\sum_{j=1}^{n}a_{ij},
 \]
-where $\bm 1\trans$ is a $1\times m$ row vector.
 \item
-If vector $x\in\mathbb{R}^{m}$, $y\in\mathbb{R}^{n}$, we can compute $x\trans\bm A y$:
+For vectors $x\in\mathbb{R}^{m}$, $y\in\mathbb{R}^{n}$, we can compute $x\trans\bm A y$:
 \[
 x\trans\bm A y = x\trans\begin{pmatrix}
 \sum_{j=1}^{n}a_{1j}y_j\\\sum_{j=1}^{n}a_{2j}y_j\\\vdots\\\sum_{j=1}^{n}a_{mj}y_j
 \end{pmatrix} = \sum_{i=1}^{m}x_i(\sum_{i=1}^{n}a_{ij}y_j) = \sum_{i,j}a_{ij}x_iy_j
 \]
 \item
-If vector $x\in\mathbb{R}^{n}$, $y\in\mathbb{R}^{n}$, you should distinguish $x\trans y$ and $xy\trans$:
+For vectors $x\in\mathbb{R}^{n}$, $y\in\mathbb{R}^{n}$, you should distinguish $x\trans y$ and $xy\trans$:
 \[
-x\trans y = <x,y> = \sum_{i=1}^{n}x_iy_i
+x\trans y = \inp{x}{y}= \sum_{i=1}^{n}x_iy_i
 \]
 \[
 xy\trans = \begin{bmatrix}
@@ -136,23 +157,28 @@ x_iy_j
 \end{bmatrix}_{n\times n}
 \]
 \item
-If vector $x\in\mathbb{R}^{m}$, $y\in\mathbb{R}^{n}$, we can compute $x\trans\bm A y$ by using block matrix:\\
+For vectors $x\in\mathbb{R}^{m}$, $y\in\mathbb{R}^{n}$, we can compute $x\trans\bm A y$ by using block matrix:\\
 Firstly, We partition $\bm A$ into four parts:
 \[
 \bm A = \begin{bmatrix}
 \bm A_{11}&\bm A_{12}\\\bm A_{21}&\bm A_{22}
-\end{bmatrix}
+\end{bmatrix}_{(m_1+m_2)\times(n_1+n_2)}.
 \]
-where $\bm A_{11}$ is $m_1\times n_1$ matrix, $\bm A_{22}$ is $m_2\times n_2$ matrix.
+
 Then we partition vector $x$ and $y$ respectively:
 \[
+\begin{array}{ll}
 x = \begin{pmatrix}
 x_1\\x_2
-\end{pmatrix} \qquad y = \begin{pmatrix}
+\end{pmatrix}_{m_1+m_2},
+&
+y = \begin{pmatrix}
 y_1\\y_2
-\end{pmatrix}
+\end{pmatrix}_{n_1+n_2},
+\end{array}
 \]
-where $x_1$ has $m_1$ rows, $x_2$ has $m_2$ rows, $y_1$ has $n_1$ rows, $y_2$ has $n_2$ rows.\\
+where $x_1$ has $m_1$ rows, $x_2$ has $m_2$ rows, $y_1$ has $n_1$ rows, $y_2$ has $n_2$ rows.
+
 Then we can compute $x\trans\bm A y$:
 \[
 x\trans\bm A y = \begin{bmatrix}
@@ -161,17 +187,17 @@ x_1\trans&x_2\trans
 \bm A_{11}&\bm A_{12}\\\bm A_{21}&\bm A_{22}
 \end{bmatrix}\begin{pmatrix}
 y_1\\y_2
-\end{pmatrix} = \sum_{i=1}^{2}\sum_{j=1}^{2}x_{i}\trans\bm A_{ij} y_{j}
+\end{pmatrix} = \sum_{i=1}^{2}\sum_{j=1}^{2}x_{i}\trans\bm A_{ij} y_{j}.
 \]
-\newpage
-\item\begin{proposition}
-Postmultiplying $\bm Q$ for vector $v = \begin{bmatrix}
+\item
+\begin{proposition}
+Postmultiplying $\bm Q$ for the vector $v = \begin{bmatrix}
 x_1\\x_2
-\end{bmatrix}$ rotates $v$ in the plane anticlockwise by the angle $\theta$:
+\end{bmatrix}$ has the same effect of rotating $v$ in the plane \textit{anticlockwise} by the angle $\theta$, where
 \[
 \bm Q = \begin{bmatrix}
 cos\theta & -sin\theta \\ sin\theta & cos\theta
-\end{bmatrix}
+\end{bmatrix}.
 \]
 \end{proposition}
 \begin{proof}
@@ -196,7 +222,7 @@ This is the form that this vector has been rotated anticlockwise by the angle $\
 \item
 Given $m\times n$ matrix $\bm A = \begin{bmatrix}
 a_{ij}
-\end{bmatrix}$, how to flip this matrix vertically? We just need to postmultiply a matrix to obtain:
+\end{bmatrix}$, how to flip this matrix vertically? We just need to postmultiply a special matrix:
 \[
 \left[
 \begin{array}{@{}cccc@{}}
@@ -223,7 +249,7 @@ a_{11} & a_{12} & \cdots & a_{1n}
 \end{array}
 \right]
 \]
-If we aftermultiply this matrix into the matrix $\bm A$, we can flip $\bm A$ horizontally:
+If we aftermultiply this matrix for the matrix $\bm A$, we can flip $\bm A$ horizontally:
 \[
 \left[
 \begin{array}{@{}cccc@{}}
@@ -248,7 +274,7 @@ a_{mn} & a_{m(n-1)} & \cdots & a_{m1}
 \end{array}
 \right]
 \]
-\end{itemize}
+\end{enumerate}
 \subsection{Inverse}
 Let's introduce the definition for inverse matrix:
 \begin{definition}[Inverse matrix]
@@ -256,7 +282,7 @@ For $n\times n$ matrix $\bm A$, the matrix $\bm B$ is said to be the \emph{inver
 \end{definition}
 And inverse matrix has some interesting properties:
 \begin{proposition}
-Matrix inverse is \textit{unique}. In other words, if we have $\bm A\bm B_1 = \bm B_1\bm A=\bm I$ and $\bm A\bm B_2 =\bm B_2\bm A= \bm I$, then we obtain $\bm B_1 = \bm B_2$.
+\emph{Matrix inverse is Unique}. In other words, if we have $\bm A\bm B_1 = \bm B_1\bm A=\bm I$ and $\bm A\bm B_2 =\bm B_2\bm A= \bm I$, then we obtain $\bm B_1 = \bm B_2$.
 \end{proposition}
 \begin{proof}
 \[
@@ -266,8 +292,6 @@ Matrix inverse is \textit{unique}. In other words, if we have $\bm A\bm B_1 = \b
 \implies (\bm B_2\bm A)\bm B_1 =\bm I\bm B_1=\bm B_1= \bm B_2.
 \]
 \end{proof}
-\newpage
-
 \begin{proposition}
 If we have both $\bm A\bm B = \bm I$ and $\bm C\bm A = \bm I$, then we have $\bm C = \bm B$.
 \end{proposition}
@@ -291,22 +315,23 @@ x_1&x_2&\ldots&x_n
 x_{ij}
 \end{bmatrix}
 \]
-By definition, we have $\bm A\bm X = \bm I$, from the left side we derive
+By definition, we have $\bm A\bm X = \bm I$. We write it into block columns:
 \[
 \bm A\bm X = \bm A\left[
 \begin{array}{@{}c|c|c|c@{}}
 x_1&x_2&\ldots&x_n
 \end{array} \right]
-\]
-from the right side we have
-\[
+=
 \bm I = \left[
 \begin{array}{@{}c|c|c|c@{}}
 e_1&e_2&\ldots&e_n
-\end{array} \right]
+\end{array} \right],
 \]
-where $e_1,e_2,\dots,e_n$ are all unit vectors.\\
-Hence we obtain $\bm A\left[
+where $e_1,e_2,\dots,e_n$ are all unit vectors.
+
+Hence we obtain 
+\[
+\bm A\left[
 \begin{array}{@{}c|c|c|c@{}}
 x_1&x_2&\ldots&x_n
 \end{array} \right] = \left[
@@ -315,10 +340,17 @@ x_1&x_2&\ldots&x_n
 \end{array} \right] = \left[
 \begin{array}{@{}c|c|c|c@{}}
 e_1&e_2&\ldots&e_n
-\end{array} \right]$.\\
-Thus we only need to compute $n$ system of equations $\bm Ax_i = e_i$, where $i=1,2,\dots,n$. Hence we have to do $n$ Gaussian Elimination to convert $\bm A$ into identity matrix $\bm I$. Once we have done that, we get the inverse of $\bm A$ immediately. Let's discuss an example to show how to achieve it:
+\end{array} \right].
+\]
+Thus we only need to compute $n$ system of equations $\bm Ax_i = e_i, i=1,\dots,n$ to get the columns of the inverse matrix $\bm X$. Or equivalently, we need to do Gaussian Elimination to convert the augmented matrix $\left[
+\begin{array}{@{}c|c@{}}
+\bm A&\bm I
+\end{array} \right]$ into the form $\left[
+\begin{array}{@{}c|c@{}}
+\bm I&\bm X
+\end{array} \right]$. Once we have done that, we get the inverse of $\bm A$ immediately. Let's discuss an example to show how to achieve it:
 \begin{example}
-Assuming we have only $3$ systems of equations to solve. And we put them altogehter into one Augmented matrix. And the right side of augmented matrix has three columns:
+Assuming we have only $3$ systems of equations to solve. And we put them altogehter into one Augmented matrix. And the right side of augmented matrix is an identity matrix
 \[
 \left[\begin{array}{@{}c|c|c|c@{}}
 \bm A&e_1&e_2&e_3
@@ -387,18 +419,20 @@ Assuming we have only $3$ systems of equations to solve. And we put them altogeh
 \end{array}
 \right]
 \]
-which is equivalent to $\bm I\bm X = \begin{bmatrix}
+
+The final augmented matrix is equivalent to the system $\bm I\bm X = \begin{bmatrix}
 \frac{12}{16}&-\frac{5}{16}&-\frac{6}{16}\\
 \frac{1}{2}&-\frac{3}{8}&-\frac{1}{4}\\
 -1&1&1
-\end{bmatrix}$.\\
-Hence we obtain $\bm A^{-1} = \bm X = \begin{bmatrix}
+\end{bmatrix}$.
+
+Hence we obtain the inverse: $\bm A^{-1} = \bm X = \begin{bmatrix}
 \frac{12}{16}&-\frac{5}{16}&-\frac{6}{16}\\
 \frac{1}{2}&-\frac{3}{8}&-\frac{1}{4}\\
 -1&1&1
 \end{bmatrix}$.
 \end{example}
-Let's discuss in which case does the inverse exist:
+Then let's study in which case does the inverse exist:
 \begin{theorem}
 The inverse of $n\times n$ matrix $\bm A$ exists if and only if $\bm{Ax} = \bm b$ has a unique solution.
 \end{theorem}
@@ -409,9 +443,9 @@ none pivot values of $\bm A$ is zero.
 $\Leftrightarrow$
 $\bm{Ax} = \bm b$ has a unique solution $\bm x = \bm A^{-1}\bm b$.
 \end{proof}
-Finally let's discuss an interesting theorem that gives equivalent condition for columns combination and rows combination.
+At the end, let's prove the claim at the beginning of the lecture:
 \begin{theorem}
-Let $\bm A$ be $n\times n$ matrix, the followings are equivalent:
+Let $\bm A$ be $n\times n$ matrix, the following statements are equivalent:
 \begin{enumerate}
 \item
 Columns of $\bm A$ can be linearly combined to zero nontribally.
@@ -422,30 +456,31 @@ Row vectors of $\bm A$ can be linearly combined to zero nontrivally.
 \end{enumerate}
 \end{theorem}
 \begin{proof}[Proofoutline.]
-Columns of $\bm A$ can be linearly combined to zero nontribally.\\
-$\Leftrightarrow$
-If 
-$\bm A = \left[
+The following statements are equivalent:
+\begin{itemize}
+\item
+Columns of $\bm A$ can be linearly combined to zero nontribally.
+\item
+Given $\bm A = \left[
 \begin{array}{@{}c|c|c|c@{}}
 a_1&a_2&\dots&a_n
-\end{array}\right]$, then there exists $x_i \ne 0$ such that 
+\end{array}\right]$, then there exists $x_i$'s that are not all zero such that 
 \[
-a_1x_1+a_2x_2+\dots+a_nx_n = 0
+a_1x_1+a_2x_2+\dots+a_nx_n = 0.
 \]
-$\Leftrightarrow$
-$\bm{Ax} = \bm 0$ has nonzero solution $\overline{\bm x}$.\\
-$\Leftrightarrow$
-$2\overline{\bm x},3\overline{\bm x},\dots$ are also solutions to $\bm{Ax} = \bm 0$.\\
-$\Leftrightarrow$
+\item
+$\bm{Ax} = \bm 0$ has a nonzero solution $\overline{\bm x}$.
+\item
+$2\overline{\bm x},3\overline{\bm x},\dots$ are also solutions to $\bm{Ax} = \bm 0$.
+\item
 $\bm{Ax} = \bm 0$ has infinitely many solutions.
-\\$\Leftrightarrow$
-$\bm{A}^{-1}$ does not exist, otherwise we will only have unique solution $\bm A^{-1}\times \bm 0 = \bm 0$.
-\\$\Leftrightarrow$
-Gaussian Elimination breaks down.
-\\$\Leftrightarrow$
-There exists zero row in the row echelon form.
-\\$\Leftrightarrow$
+\item
+$\bm{A}^{-1}$ does not exist. (otherwise we will only have unique solution $\bm A^{-1}\times \bm 0 = \bm 0$.)
+\item
+Gaussian Elimination breaks down, i.e., there exists zero row in the row echelon form.
+\item
 Row vectors of $\bm A$ can be linearly combined to zero nontrivally.
+\end{itemize}
 \end{proof}
 
 
