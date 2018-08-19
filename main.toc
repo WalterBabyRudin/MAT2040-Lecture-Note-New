@@ -78,10 +78,13 @@
 \contentsline {subsection}{\numberline {2.4.1}symmetric matrix}{56}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Interaction of inverse and transpose}{57}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Vector Space}{58}{subsection.2.4.3}
+\contentsline {paragraph}{From Numbers to Vectors}{58}{subsection.2.4.3}
+\contentsline {paragraph}{Third Level Undetstanding}{58}{subsection.2.4.3}
+\contentsline {paragraph}{Notation}{58}{definitionT.2.7}
 \contentsline {subsubsection}{\numberline {2.4.3.1}The solution to $\bm {Ax}= \bm {0}$}{62}{subsubsection.2.4.3.1}
-\contentsline {subsubsection}{\numberline {2.4.3.2}The complete solution to $\bm {Ax} = \bm {b}$}{64}{subsubsection.2.4.3.2}
-\contentsline {subsubsection}{\numberline {2.4.3.3}Row-Echelon Matrices}{66}{subsubsection.2.4.3.3}
-\contentsline {subsubsection}{\numberline {2.4.3.4}Problem Size Analysis}{67}{subsubsection.2.4.3.4}
+\contentsline {subsubsection}{\numberline {2.4.3.2}The complete solution to $\bm {Ax} = \bm {b}$}{63}{subsubsection.2.4.3.2}
+\contentsline {subsubsection}{\numberline {2.4.3.3}Row-Echelon Matrices}{65}{subsubsection.2.4.3.3}
+\contentsline {subsubsection}{\numberline {2.4.3.4}Problem Size Analysis}{66}{subsubsection.2.4.3.4}
 \contentsline {section}{\numberline {2.5}Assignment Three}{68}{section.2.5}
 \contentsline {chapter}{\numberline {3}Week3}{71}{chapter.3}
 \contentsline {section}{\numberline {3.1}Tuesday}{71}{section.3.1}
