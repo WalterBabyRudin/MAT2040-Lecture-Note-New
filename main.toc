@@ -65,11 +65,14 @@
 \contentsline {subsection}{\numberline {2.1.2}Special matrix multiplication case}{41}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Inverse}{44}{subsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.3.1}How to compute inverse? When does it exist?}{45}{subsubsection.2.1.3.1}
-\contentsline {section}{\numberline {2.2}Wednesday}{48}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Remarks on Gaussian Elimination}{48}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Properties of matrix}{49}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}matrix transpose}{51}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}symmetric matrix}{53}{subsubsection.2.2.3.1}
+\contentsline {section}{\numberline {2.2}Wednesday}{49}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Remarks on Gaussian Elimination}{49}{subsection.2.2.1}
+\contentsline {paragraph}{Computing Complexity}{49}{subsection.2.2.1}
+\contentsline {paragraph}{Large Scale Inverse Computation}{49}{subsection.2.2.1}
+\contentsline {paragraph}{Gaussian Elimination is just a sequence of matrix multiplications}{49}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Properties of matrix}{50}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}matrix transpose}{53}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}symmetric matrix}{54}{subsubsection.2.2.3.1}
 \contentsline {section}{\numberline {2.3}Assignment Two}{55}{section.2.3}
 \contentsline {section}{\numberline {2.4}Friday}{56}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}symmetric matrix}{56}{subsection.2.4.1}
