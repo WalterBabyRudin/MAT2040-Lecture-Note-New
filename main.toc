@@ -89,13 +89,22 @@
 \contentsline {chapter}{\numberline {3}Week3}{71}{chapter.3}
 \contentsline {section}{\numberline {3.1}Tuesday}{71}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Introduction}{71}{subsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.1}Why do we learn Linear Algebra?}{71}{subsubsection.3.1.1.1}
-\contentsline {subsubsection}{\numberline {3.1.1.2}What is LA?}{72}{subsubsection.3.1.1.2}
-\contentsline {subsection}{\numberline {3.1.2}Review of 2 weeks}{73}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Examples of solving equations}{74}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}What is G.E. doing? (Nonsingular case.)}{75}{subsubsection.3.1.3.1}
-\contentsline {subsubsection}{\numberline {3.1.3.2}Example for solving rectangular system of rref}{76}{subsubsection.3.1.3.2}
-\contentsline {subsection}{\numberline {3.1.4}How to solve a general rectangular}{79}{subsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Motivation of Linear Algebra}{71}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Preview of LA}{72}{subsubsection.3.1.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Review of 2 weeks}{72}{subsection.3.1.2}
+\contentsline {paragraph}{How to solve linear system equations?}{72}{subsection.3.1.2}
+\contentsline {paragraph}{How to solve linear singular system equations?}{73}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Examples of solving equations}{73}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1} Review of G.E. for Nonsingular case }{75}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Example for solving rectangular system of rref}{75}{subsubsection.3.1.3.2}
+\contentsline {paragraph}{Step 1: Find null space}{76}{exampleT.3.2}
+\contentsline {paragraph}{Step 2: Find one particular solution to $\bm {Rx} = \bm {c}$}{77}{exampleT.3.2}
+\contentsline {paragraph}{Final solution}{77}{exampleT.3.2}
+\contentsline {subsection}{\numberline {3.1.4}How to solve a general rectangular}{78}{subsection.3.1.4}
+\contentsline {paragraph}{Step 1: Gaussian Elimination}{78}{subsection.3.1.4}
+\contentsline {paragraph}{Step2: Compute null space $N(\bm {A})$}{79}{exampleT.3.4}
+\contentsline {paragraph}{Step3: Compute a particular solution $\bm {x}_p$}{81}{exampleT.3.6}
+\contentsline {paragraph}{Final step: Obtain complete solutions}{82}{exampleT.3.8}
 \contentsline {section}{\numberline {3.2}Thursday}{85}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Review}{85}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Remarks on solving linear system equations}{88}{subsection.3.2.2}
