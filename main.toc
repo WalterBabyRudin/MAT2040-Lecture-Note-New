@@ -105,14 +105,14 @@
 \contentsline {paragraph}{Step2: Compute null space $N(\bm {A})$}{79}{exampleT.3.4}
 \contentsline {paragraph}{Step3: Compute a particular solution $\bm {x}_p$}{81}{exampleT.3.6}
 \contentsline {paragraph}{Final step: Obtain complete solutions}{82}{exampleT.3.8}
-\contentsline {section}{\numberline {3.2}Thursday}{85}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Review}{85}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Remarks on solving linear system equations}{88}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}What is r?}{90}{subsubsection.3.2.2.1}
-\contentsline {subsection}{\numberline {3.2.3}Linearly dependence}{90}{subsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.3.1}Relation between \textit {lin.ind.} and \textit {equations}}{93}{subsubsection.3.2.3.1}
-\contentsline {subsection}{\numberline {3.2.4}Basis and dimension}{94}{subsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.4.1}What is rank?}{98}{subsubsection.3.2.4.1}
+\contentsline {section}{\numberline {3.2}Thursday}{83}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Review}{83}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Remarks on solving linear system equations}{86}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}What is r?}{88}{subsubsection.3.2.2.1}
+\contentsline {subsection}{\numberline {3.2.3}Linearly dependence}{88}{subsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3.1}Relation between \textit {lin.ind.} and \textit {equations}}{91}{subsubsection.3.2.3.1}
+\contentsline {subsection}{\numberline {3.2.4}Basis and dimension}{92}{subsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.4.1}What is rank?}{96}{subsubsection.3.2.4.1}
 \contentsline {section}{\numberline {3.3}Friday}{99}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Review}{99}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}More on basis and dimension}{100}{subsection.3.3.2}
