@@ -117,13 +117,15 @@
 \contentsline {paragraph}{Does plane has more point than a line?}{94}{exampleT.3.13}
 \contentsline {paragraph}{Plane and line have different dimensions}{94}{exampleT.3.13}
 \contentsline {paragraph}{What is rank?}{95}{Item.75}
-\contentsline {section}{\numberline {3.3}Friday}{99}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Review}{99}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}More on basis and dimension}{100}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Clarification of dimension}{102}{subsubsection.3.3.2.1}
-\contentsline {subsection}{\numberline {3.3.3}What is rank?}{102}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}What is null space dimension?}{106}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Matrices of rank 1}{108}{subsubsection.3.3.3.2}
+\contentsline {section}{\numberline {3.3}Friday}{96}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Review}{96}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}More on basis and dimension}{97}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Clarification of dimension}{98}{subsubsection.3.3.2.1}
+\contentsline {subsection}{\numberline {3.3.3}What is rank?}{99}{subsection.3.3.3}
+\contentsline {paragraph}{Wrong reason: $\bm {A}$ and $\bm {U}$ has the same column space}{101}{exampleT.3.17}
+\contentsline {paragraph}{Right reason: $\bm {Ax} = \bm {0}$ iff. $\bm {Ux} = \bm {0}$}{101}{exampleT.3.17}
+\contentsline {subsubsection}{\numberline {3.3.3.1}What is the null space dimension?}{103}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Matrices of rank 1}{105}{subsubsection.3.3.3.2}
 \contentsline {section}{\numberline {3.4}Assignment Four}{110}{section.3.4}
 \contentsline {chapter}{\numberline {4}Midterm}{113}{chapter.4}
 \contentsline {section}{\numberline {4.1}Sample Exam}{113}{section.4.1}
