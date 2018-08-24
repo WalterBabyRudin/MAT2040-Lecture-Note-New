@@ -155,17 +155,21 @@
 \contentsline {chapter}{\numberline {6}Week5}{147}{chapter.6}
 \contentsline {section}{\numberline {6.1}Tuesday}{147}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Formulas for Determinant}{147}{subsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.1.1}n by n formula}{150}{subsubsection.6.1.1.1}
-\contentsline {subsubsection}{\numberline {6.1.1.2}Complexity Analysis}{151}{subsubsection.6.1.1.2}
-\contentsline {subsubsection}{\numberline {6.1.1.3}Verify property}{151}{subsubsection.6.1.1.3}
+\contentsline {subsubsection}{\numberline {6.1.1.1}$n$ by $n$ formula of determinant}{150}{subsubsection.6.1.1.1}
+\contentsline {paragraph}{Complexity Analysis}{151}{definitionT.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1.2}Verify property}{151}{subsubsection.6.1.1.2}
 \contentsline {subsection}{\numberline {6.1.2}Determinant by Cofactors}{152}{subsection.6.1.2}
+\contentsline {paragraph}{Cofactors down a column}{152}{definitionT.6.2}
 \contentsline {subsection}{\numberline {6.1.3}Determinant Applications}{153}{subsection.6.1.3}
 \contentsline {subsubsection}{\numberline {6.1.3.1}Inverse}{153}{subsubsection.6.1.3.1}
 \contentsline {subsubsection}{\numberline {6.1.3.2}Cramer's Rule}{155}{subsubsection.6.1.3.2}
-\contentsline {subsection}{\numberline {6.1.4}Orthogonality and Projection}{156}{subsection.6.1.4}
-\contentsline {subsubsection}{\numberline {6.1.4.1}Function space}{157}{subsubsection.6.1.4.1}
+\contentsline {paragraph}{Cramer's Rule solves $\bm {Ax}=\bm {b}$}{155}{subsubsection.6.1.3.2}
+\contentsline {subsection}{\numberline {6.1.4}Orthogonality}{156}{subsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.4.1}Function space}{156}{subsubsection.6.1.4.1}
 \contentsline {subsubsection}{\numberline {6.1.4.2}Cauchy-Schwarz Inequality}{157}{subsubsection.6.1.4.2}
-\contentsline {subsubsection}{\numberline {6.1.4.3}Orthogonal for space}{158}{subsubsection.6.1.4.3}
+\contentsline {paragraph}{Cauchy-Schwarz inequality also holds for functions}{158}{theoremeT.6.1}
+\contentsline {paragraph}{The normalization of inner product is bounded by 1}{159}{theoremeT.6.1}
+\contentsline {subsubsection}{\numberline {6.1.4.3}Orthogonal for space}{159}{subsubsection.6.1.4.3}
 \contentsline {section}{\numberline {6.2}Thursday}{160}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Orthogonality and Projection}{160}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Least Squares Approximations}{165}{subsection.6.2.2}
