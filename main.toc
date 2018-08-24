@@ -171,12 +171,15 @@
 \contentsline {paragraph}{The normalization of inner product is bounded by 1}{159}{theoremeT.6.1}
 \contentsline {subsubsection}{\numberline {6.1.4.3}Orthogonal for space}{159}{subsubsection.6.1.4.3}
 \contentsline {section}{\numberline {6.2}Thursday}{160}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Orthogonality and Projection}{160}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Least Squares Approximations}{165}{subsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.2.1}Matrix Calculus}{166}{subsubsection.6.2.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2.2}Fit a stright line}{167}{subsubsection.6.2.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Projections}{168}{subsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.3.1}Observations}{169}{subsubsection.6.2.3.1}
+\contentsline {subsection}{\numberline {6.2.1}Orthogonality}{160}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Least Squares Approximations}{166}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}Least Squares by Convex Optimization}{166}{subsubsection.6.2.2.1}
+\contentsline {paragraph}{The Chian Rule}{166}{subsubsection.6.2.2.1}
+\contentsline {paragraph}{Examples of Matrix Derivative}{167}{subsubsection.6.2.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2.2}Fit a stright line}{168}{subsubsection.6.2.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Projections}{169}{subsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3.1}Observations}{170}{subsubsection.6.2.3.1}
+\contentsline {paragraph}{Changing an Orthogonal Basis}{171}{figure.6.3}
 \contentsline {section}{\numberline {6.3}Friday}{171}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Orthonormal basis}{171}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Gram-Schmidt Process}{174}{subsection.6.3.2}
