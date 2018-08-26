@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  24 AUG 2018 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  26 AUG 2018 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2004,8 +2004,17 @@ LaTeX Warning: Label `mdf@pagelabel-116' multiply defined.
 LaTeX Warning: Label `mdf@pagelabel-117' multiply defined.
 
 ) (./week4/Assignment_Five.aux) (./week5/Tuesday.aux) (./week5/Thursday.aux)
-(./week5/Friday.aux) (./week5/Assignment_Six.aux) (./week6/Tuesday.aux)
-(./week6/Thursday.aux) (./week6/Friday.aux) (./week6/Assignment_Seven.aux)
+(./week5/Friday.aux) (./week5/Assignment_Six.aux) (./week6/Tuesday.aux
+
+LaTeX Warning: Label `mdf@pagelabel-173' multiply defined.
+
+
+LaTeX Warning: Label `mdf@pagelabel-174' multiply defined.
+
+
+LaTeX Warning: Label `mdf@pagelabel-175' multiply defined.
+
+) (./week6/Thursday.aux) (./week6/Friday.aux) (./week6/Assignment_Seven.aux)
 (./week7/Tuesday.aux) (./week7/Thursday.aux) (./week7/Assignment_Eight.aux)
 (./exam/final/MAT2040_Sample_Exam.aux) (./exam/final/MAT2040_Final_Exam.aux)
 (./Solution/Solution_to_assignment_one.aux)
@@ -2244,7 +2253,7 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/pplx/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/pplx/b/it' tried instead on input line 35.
 
-<zh-hans_logo.png, id=53, 383.4325pt x 65.24374pt>
+<zh-hans_logo.png, id=61, 383.4325pt x 65.24374pt>
 File: zh-hans_logo.png Graphic file (type png)
  <use zh-hans_logo.png>
 Package pdftex.def Info: zh-hans_logo.png used on input line 35.
@@ -2311,35 +2320,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 187.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 187.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 187.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 187.
+(Font)              scaled to size 12.50409pt on input line 189.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 187.
+(Font)              scaled to size 9.37807pt on input line 189.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 187.
+(Font)              scaled to size 7.29405pt on input line 189.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 187.
+(Font)              scaled to size 12.50409pt on input line 189.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 187.
+(Font)              scaled to size 9.37807pt on input line 189.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 187.
+(Font)              scaled to size 7.29405pt on input line 189.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 187.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 187.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 187.
+(Font)              scaled to size 10.42007pt on input line 189.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 187.
+(Font)              scaled to size 7.91925pt on input line 189.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 187.
+(Font)              scaled to size 10.42007pt on input line 189.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 187.
+(Font)              scaled to size 7.91925pt on input line 189.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2494,25 +2503,48 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-\openout2 = `week5/Thursday.aux'.
+\openout2 = `week5/Friday.aux'.
 
 
-(./week5/Thursday.tex
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 13.
+(./week5/Friday.tex
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 13.
-Package mdframed Info: mdframed works in twoside mode on input line 39.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 5.
+Package mdframed Info: mdframed works in twoside mode on input line 11.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 39.
+(mdframed)              on input line 11.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 11.
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 12.
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 15.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 15.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 15.
+
+Package mdframed Info: mdframed works in twoside mode on input line 27.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 27.
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
+(mdframed)              on input line 47.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [160
+ [172
+
 
 
 
@@ -2534,28 +2566,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 51.
+Package mdframed Info: mdframed works in twoside mode on input line 83.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 51.
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 52.
+(mdframed)              on input line 83.
+Package mdframed Info: Not enough space on this page on input line 93.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ufplmbb.fd
-File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-)
-<week5/orthogonality.jpg, id=539, 160.34906pt x 186.6975pt>
-File: week5/orthogonality.jpg Graphic file (type jpg)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use week5/orthogonality.jpg>
-Package pdftex.def Info: week5/orthogonality.jpg used on input line 56.
-(pdftex.def)             Requested size: 160.34866pt x 186.69704pt.
-Package mdframed Info: mdframed works in twoside mode on input line 66.
+ [173]
+Package mdframed Info: Not enough space on this page on input line 93.
+Package mdframed Info: mdframed works in twoside mode on input line 109.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 66.
+(mdframed)              on input line 109.
+Package mdframed Info: mdframed works in twoside mode on input line 117.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 117.
 
-Underfull \vbox (badness 1264) has occurred while \output is active []
+
+Package mathptmx Warning: There are no bold math fonts on input line 119.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2563,25 +2597,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [161 <./week5/orthogonality.jpg>]
-Package mdframed Info: mdframed works in twoside mode on input line 87.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 87.
-Package mdframed Info: mdframed works in twoside mode on input line 94.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 94.
-Package mdframed Info: mdframed works in twoside mode on input line 99.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 99.
-Package mdframed Info: mdframed works in twoside mode on input line 104.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 104.
-
-Underfull \vbox (badness 5519) has occurred while \output is active []
+ [174]
+Underfull \vbox (badness 3323) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2589,153 +2606,159 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [162]
-Package mdframed Info: Not enough space on this page on input line 109.
+ [175]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [176]
+<week5/gram.jpg, id=579, 274.77657pt x 170.88844pt>
+File: week5/gram.jpg Graphic file (type jpg)
+ <use week5/gram.jpg>
+Package pdftex.def Info: week5/gram.jpg used on input line 203.
+(pdftex.def)             Requested size: 142.26378pt x 88.47919pt.
+
+<week5/nextgram.jpg, id=581, 195.73125pt x 272.51813pt>
+File: week5/nextgram.jpg Graphic file (type jpg)
+
+<use week5/nextgram.jpg>
+Package pdftex.def Info: week5/nextgram.jpg used on input line 217.
+(pdftex.def)             Requested size: 142.26378pt x 198.08412pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [177 <./week5/gram.jpg>] <week5/finalgram.jpg, id=588, 155.07938pt x 149.05687
+pt>
+File: week5/finalgram.jpg Graphic file (type jpg)
+
+<use week5/finalgram.jpg>
+Package pdftex.def Info: week5/finalgram.jpg used on input line 223.
+(pdftex.def)             Requested size: 142.26378pt x 136.73822pt.
+Package mdframed Info: mdframed works in twoside mode on input line 229.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 229.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [178 <./week5/nextgram.jpg> <./week5/finalgram.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [179]
+Overfull \hbox (5.97757pt too wide) in paragraph at lines 345--346
+\T1/pplx/m/n/10.95 (-20) easy to ver-ify that $[]\OMS/zplm/m/n/10.95 f[][]\OT1/
+pplx/m/n/10.95 (-20) , [] , [][]\OMS/zplm/m/n/10.95 g \OT1/zplm/m/n/10.95 = []\
+OMS/zplm/m/n/10.95 f[][]\OT1/pplx/m/n/10.95 (-20) , [] , [][]\OMS/zplm/m/n/10.9
+5 g$\T1/pplx/m/n/10.95 (-20) . Hence $[][] \OMS/zplm/m/n/10.95 2 []f[][]\OT1/pp
+lx/m/n/10.95 (-20) , [] , [][]\OMS/zplm/m/n/10.95 g$\T1/pplx/m/n/10.95 (-20) .
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 147.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [180]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 349.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 18.00587pt on input line 349.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 18.00587pt on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 349.
+
+Package mdframed Info: mdframed works in twoside mode on input line 361.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 147.
-Package mdframed Info: Not enough space on this page on input line 149.
+(mdframed)              on input line 361.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [163]
-Package mdframed Info: Not enough space on this page on input line 149.
-Package mdframed Info: mdframed works in twoside mode on input line 165.
+ [181]
+Package mdframed Info: mdframed works in twoside mode on input line 388.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 165.
-Package mdframed Info: mdframed works in twoside mode on input line 170.
+(mdframed)              on input line 388.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [182]
+Package mdframed Info: mdframed works in twoside mode on input line 436.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 170.
-Package mdframed Info: mdframed works in twoside mode on input line 186.
+(mdframed)              on input line 436.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [183]
+Package mdframed Info: mdframed works in twoside mode on input line 463.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 186.
+(mdframed)              on input line 463.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [164]
-Package mdframed Info: Not enough space on this page on input line 201.
-Package mdframed Info: mdframed works in twoside mode on input line 203.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [184]
+Package mdframed Info: mdframed works in twoside mode on input line 487.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 203.
-Package mdframed Info: mdframed works in twoside mode on input line 206.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 206.
-Package mdframed Info: mdframed works in twoside mode on input line 216.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 216.
+(mdframed)              on input line 487.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<week5/1810645243.jpg, id=631, 263.48438pt x 401.5pt>
+File: week5/1810645243.jpg Graphic file (type jpg)
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [165]
-Underfull \vbox (badness 4229) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [166]
-Package mdframed Info: mdframed works in twoside mode on input line 273.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 273.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [167]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [168]
-<week5/projection.jpg, id=614, 144.54pt x 164.11313pt>
-File: week5/projection.jpg Graphic file (type jpg)
-
-<use week5/projection.jpg>
-Package pdftex.def Info: week5/projection.jpg used on input line 343.
-(pdftex.def)             Requested size: 144.53963pt x 164.11272pt.
-Package mdframed Info: mdframed works in twoside mode on input line 346.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 346.
-Package mdframed Info: mdframed works in twoside mode on input line 359.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 359.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [169 <./week5/projection.jpg>]
-Package mdframed Info: Not enough space on this page on input line 366.
-Package mdframed Info: mdframed works in twoside mode on input line 367.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 367.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [170]
-<week5/projection_line.jpg, id=630, 213.79875pt x 149.05687pt>
-File: week5/projection_line.jpg Graphic file (type jpg)
-
-<use week5/projection_line.jpg>
-Package pdftex.def Info: week5/projection_line.jpg used on input line 403.
-(pdftex.def)             Requested size: 284.52756pt x 198.38188pt.
+<use week5/1810645243.jpg>
+Package pdftex.def Info: week5/1810645243.jpg used on input line 492.
+(pdftex.def)             Requested size: 85.35826pt x 130.06935pt.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [171 <./week5/projection_line.jpg>]
+ [185 <./week5/1810645243.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [374
-
 
 
 
@@ -2790,7 +2813,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FEAE83706B50CF6EFC45BB7B4702318E;500.
+(rerunfilecheck)             Checksum: 482871A06F92125996F64B3B8045D7DB;642.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2800,13 +2823,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 47856 strings out of 492995
- 997123 string characters out of 6132703
- 1425151 words of memory out of 5000000
- 49908 multiletter control sequences out of 15000+600000
- 113453 words of font info for 323 fonts, out of 8000000 for 9000
+ 47930 strings out of 492995
+ 998151 string characters out of 6132703
+ 1453274 words of memory out of 5000000
+ 49959 multiletter control sequences out of 15000+600000
+ 124574 words of font info for 360 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,98p,10504b,646s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,19n,98p,10504b,657s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{subsection.A.1.1} has been referenced but does no
 t exist, replaced by a fixed one
 
@@ -2966,22 +2989,16 @@ replaced by a fixed one
 pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.6.3.5} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.6.2.3} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.6.3.4} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.6.2.2} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.6.3.3} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.6.2.1} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.6.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.6.3.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
+pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.6.1.4} has been referenced but does not 
@@ -3207,10 +3224,10 @@ uper/sfsx2488.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/
 uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplbi8a
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (33 pages, 413369 bytes).
+Output written on main.pdf (35 pages, 465507 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
- 563 compressed objects within 6 object streams
- 198 named destinations out of 1000 (max. 500000)
- 74857 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 763 PDF objects out of 1000 (max. 8388607)
+ 561 compressed objects within 6 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 78462 words of extra memory for PDF output out of 89155 (max. 10000000)
 

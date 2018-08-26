@@ -180,13 +180,15 @@
 \contentsline {subsection}{\numberline {6.2.3}Projections}{169}{subsection.6.2.3}
 \contentsline {subsubsection}{\numberline {6.2.3.1}Observations}{170}{subsubsection.6.2.3.1}
 \contentsline {paragraph}{Changing an Orthogonal Basis}{171}{figure.6.3}
-\contentsline {section}{\numberline {6.3}Friday}{171}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Orthonormal basis}{171}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Gram-Schmidt Process}{174}{subsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.2.1}Gram-Schmidt process in general case}{179}{subsubsection.6.3.2.1}
-\contentsline {subsection}{\numberline {6.3.3}The Factorization $A=QR$.}{180}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.3}Friday}{172}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Orthonormal basis}{172}{subsection.6.3.1}
+\contentsline {paragraph}{When Least Squares Meet Orthogonality}{176}{proposition.6.2}
+\contentsline {subsubsection}{\numberline {6.3.1.1}Summary}{176}{subsubsection.6.3.1.1}
+\contentsline {subsection}{\numberline {6.3.2}Gram-Schmidt Process}{176}{subsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.2.1}Gram-Schmidt process in general case}{180}{subsubsection.6.3.2.1}
+\contentsline {subsection}{\numberline {6.3.3}The Factorization $A=QR$.}{181}{subsection.6.3.3}
 \contentsline {subsection}{\numberline {6.3.4}Function Space}{183}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Fourier Series}{184}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.5}Fourier Series}{185}{subsection.6.3.5}
 \contentsline {section}{\numberline {6.4}Assignment Six}{186}{section.6.4}
 \contentsline {chapter}{\numberline {7}Week6}{187}{chapter.7}
 \contentsline {section}{\numberline {7.1}Tuesday}{187}{section.7.1}
