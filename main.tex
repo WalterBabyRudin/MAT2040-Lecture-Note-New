@@ -1,16 +1,12 @@
-
 %% Run LaTeX on this file several times to get Table of Contents,
 \input{book_command}
-%\includeonly{week3/Tuesday}
-\includeonly{week6/Thursday}
+\usepackage{pdfpages}
+\includeonly{week7/Thursday}
 \begin{document}
 %Hello
 \frontmatter
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%Command
-%% Title Pages
-%% Wiley will provide title and copyright page, but you can make
-%% your own titlepages if you'd like anyway
+\includepdf[pages={1}]{book_cover/cover/FrontCover}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Setting up title pages, type in the appropriate names here:
 
 \booktitle{A First Course \\ In \\
@@ -20,46 +16,37 @@ Linear Algebra}
 
 \AuAff{Prof. Tom Luo\\ The Chinese University of Hongkong, Shenzhen}
 \AuAff{Prof. Ruoyu Sun\\ University of Illinois Urbana-Champaign}
-%\AuAff{Michael D. Logothetis\\ University of Patras}
-
 %% \\ will start a new line.
-%% You may add \affil{} for affiliation, ie,
-%\authors{Robert M. Groves\\
-%\affil{Universitat de les Illes Balears}
-%Floyd J. Fowler, Jr.\\
-%\affil{University of New Mexico}
-%}
+
 
 %% Print Half Title and Title Page:
 \halftitlepage
 \titlepage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Copyright Page
-
 %\begin{copyrightpage}{year}
 %Title, etc
 %\end{copyrightpage}
 
 % Note, you must use \ to start indented lines, ie,
 % 
- \begin{copyrightpage}{2004}
- Survey Methodology / Robert M. Groves . . . [et al.].
- \       p. cm.---(Wiley series in survey methodology)
- \    ``Wiley-Interscience."
- \    Includes bibliographical references and index.
- \    ISBN 0-471-48348-6 (pbk.)
- \    1. Surveys---Methodology.  2. Social 
- \  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
- Series.\\
+% \begin{copyrightpage}{2004}
+% Survey Methodology / Robert M. Groves . . . [et al.].
+% \       p. cm.---(Wiley series in survey methodology)
+% \    ``Wiley-Interscience."
+% \    Includes bibliographical references and index.
+% \    ISBN 0-471-48348-6 (pbk.)
+% \    1. Surveys---Methodology.  2. Social 
+% \  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
+% Series.\\
+%
+% HA31.2.S873 2004
+% 001.4'33---dc22                                             2004044064
+% \end{copyrightpage}
 
- HA31.2.S873 2004
- 001.4'33---dc22                                             2004044064
- \end{copyrightpage}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Only Dedication (optional) 
-
 %\dedication{To my parents}
 
 \tableofcontents
@@ -67,12 +54,7 @@ Linear Algebra}
 %\listoffigures %optional
 %\listoftables  %optional
 
-%% or Contributor Page for edited books
-%% before \tableofcontents
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  Contributors Page for Edited Book
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % If your book has chapters written by different authors,
 % you'll need a Contributors page.
@@ -81,31 +63,22 @@ Linear Algebra}
 % then enter each author with the \name{} command, followed
 % by the affiliation information.
 
- \begin{contributors}
- \name{Zhi-quan Luo,} Shenzhen Research Institute of Big Data, Lecturer
+% \begin{contributors}
+% \name{Zhi-quan Luo,} Shenzhen Research Institute of Big Data, Lecturer
+%
+% \name{Ruoyu Sun,} Industrial and Enterprise Systems Engineering, Lecturer
+%
+% \name{Jie Wang,} The Chinese University of Hongkong, Shenzhen, Typer
+% \end{contributors}
 
- \name{Ruoyu Sun,} Industrial and Enterprise Systems Engineering, Lecturer
-
- \name{Jie Wang,} The Chinese University of Hongkong, Shenzhen, Typer
- \end{contributors}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Optional Foreword:
-
-\begin{foreword}
-\lipsum[1-2]
-\end{foreword}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Optional Preface:
-
 \begin{preface}
-\lipsum[1-1]
+\input{preface.tex}
 \prefaceauthor{}
-\where{place\\
- date}
+\where{CUHK(SZ)\\
+ \today}
 \end{preface}
-
 % ie,
 % \begin{preface}
 % This is an example preface.
@@ -113,67 +86,44 @@ Linear Algebra}
 % \where{Durham, North Carolina\\
 % September, 2004}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Optional Acknowledgments:
 
 \acknowledgments
-\lipsum[1-2]
-\authorinitials{I. R. S.}  
+This book is from the MAT2040 in summer semester, 2017. It is revised in 2018 to correct some mistakes, and revise some proofs to give readers better insights on linear algebra.
+\authorinitials{CUHK(SZ)}  
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Glossary Type of Environment:
 
-% \begin{glossary}
-% \term{<term>}{<description>}
-% \end{glossary}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{acronyms}
-\acro{ASTA}{Arrivals See Time Averages}
-\acro{BHCA}{Busy Hour Call Attempts}
-\acro{BR}{Bandwidth Reservation}
-\acro{b.u.}{bandwidth unit(s)}
-\acro{CAC}{Call / Connection Admission Control}
-\acro{CBP}{Call Blocking Probability(-ies)}
-\acro{CCS}{Centum Call Seconds}
-\acro{CDTM}{Connection Dependent Threshold Model}
-\acro{CS}{Complete Sharing}
-\acro{DiffServ}{Differentiated Services}
-\acro{EMLM}{Erlang Multirate Loss Model}
-\acro{erl}{The Erlang unit of traffic-load}
-\acro{FIFO}{First in - First out}
-\acro{GB}{Global balance}
-\acro{GoS}{Grade of Service}
-\acro{ICT}{Information and Communication Technology}
-\acro{IntServ}{Integrated Services}
-\acro{IP}{Internet Protocol}
-\acro{ITU-T}{International Telecommunication Unit -- Standardization sector}
-\acro{LB}{Local balance}
-\acro{LHS}{Left hand side}
-\acro{LIFO}{Last in - First out}
-\acro{MMPP}{Markov Modulated Poisson Process}
-\acro{MPLS}{Multiple Protocol Labeling Switching}
-\acro{MRM}{Multi-Retry Model}
-\acro{MTM}{Multi-Threshold Model}
-\acro{PASTA}{Poisson Arrivals See Time Averages}
-\acro{PDF}{Probability Distribution Function}
-\acro{pdf}{probability density function}
-\acro{PFS}{Product Form Solution}
-\acro{QoS}{Quality of Service}
-\acro{r.v.}{random variable(s)}
-\acro{RED}{random early detection}
-\acro{RHS}{Right hand side}
-\acro{RLA}{Reduced Load Approximation}
-\acro{SIRO}{service in random order}
-\acro{SRM}{Single-Retry Model}
-\acro{STM}{Single-Threshold Model}
-\acro{TCP}{Transport Control Protocol}
-\acro{TH}{Threshold(s)}
-\acro{UDP}{User Datagram Protocol}
-\end{acronyms}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional notations:
+\begin{notations}
+\acro{$\mathbb{R}^n$}{$n$-dimensional real space}
+\acro{$\mathbb{C}^n$}{$n$-dimensional complex space}
+\acro{$\mathbb{R}^{m\times n}$}{set of all $m\times n$ real-valued matrices}
+\acro{$\mathbb{C}^{m\times n}$}{set of all $m\times n$ complex-valued matrices}
+\acro{$x_i$}{$i$th entry of column vector $\bm x$}
+\acro{$a_{ij}$}{$(i,j)$th entry of matrix $\bm A$}
+\acro{$\bm a_i$}{$i$th column of matrix $\bm A$}
+\acro{$\bm a_i\trans$}{$i$th row of matrix $\bm A$}
+\acro{$\mathbb{S}^n$}{set of all $n\times n$ real symmetric matrices, i.e., $\bm A\in\mathbb{R}^{n\times n}$ and $a_{ij}=a_{ji}$ for all $i,j$}
+\acro{$\mathbb{H}^n$}{set of all $n\times n$ complex Hermitian matrices, i.e., $\bm A\in\mathbb{C}^{n\times n}$ and $\bar{a}_{ij}=a_{ji}$ for all $i,j$}
+\acro{$\bm A\trans$}{transpose of $\bm A$, i.e, $\bm B=\bm A\trans$ means $b_{ji}=a_{ij}$ for all $i,j$}
+\acro{$\bm A\Her$}{Hermitian transpose of $\bm A$, i.e, $\bm B=\bm A\Her$ means $b_{ji}=\bar{a}_{ij}$ for all $i,j$}
+\acro{$\trace(\bm A)$}{sum of diagonal entries of square matrix $\bm A$}
+\acro{$\bm 1$}{A vector with all $1$ entries}
+\acro{$\bm 0$}{either a vector of all
+zeros, or a matrix of all zeros}
+\acro{$\bm e_i$}{a unit vector with the nonzero element at the $i$th entry}
+\acro{$\mathcal{C}(\bm A)$}{the column space of $\bm A$}
+\acro{$\mathcal{R}(\bm A)$}{the row space of $\bm A$}
+\acro{$\mathcal{N}(\bm A)$}{the null space of $\bm A$}
+\acro{$\Proj_{\mathcal{M}}(\bm A)$}{the projection of $\bm A$ onto the set $\mathcal{M}$}
+\end{notations}
 \mainmatter
 \setcounter{page}{1}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional introduction:
 %\begin{introduction}
 %
 %The word \textit {traffic} becomes \textit {teletraffic} in telecommunications, as communications becomes telecommunications to indicate technology use, e.g., conversation from some distance through phones or Internet. The term teletraffic covers all kinds of computer communication traffic and telecom traffic.  This book includes teletraffic loss models.
@@ -218,20 +168,6 @@ Linear Algebra}
 \include{week7/Tuesday}
 \include{week7/Thursday}
 \include{week7/Assignment_Eight}
-%\include{week8/Lecture_1}
-%\include{week8/Lecture_2}
-%\include{week9/Lecture_1}
-%\include{week9/Lecture_2}
-%\include{week10/Lecture_1}
-%\include{week10/Lecture_2}
-%\include{week11/Lecture_1}
-%\include{week11/Lecture_2}
-%\include{week12/Lecture_1}
-%\include{week12/Lecture_2}
-%\include{week13/Lecture_1}
-%\include{week13/Lecture_2}
-%\include{week14/Lecture_1}
-%\include{week14/Lecture_2}
 \include{exam/final/MAT2040_Sample_Exam}
 \include{exam/final/MAT2040_Final_Exam}
 \include{Solution/Solution_to_assignment_one}
@@ -249,9 +185,7 @@ Linear Algebra}
 
 
 \backmatter
-
-
-\include{app01}
+%\include{app01}
 %\includegraphics{AuthorIcon}
 
 \latexprintindex

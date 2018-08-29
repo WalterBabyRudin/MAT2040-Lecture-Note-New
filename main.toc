@@ -1,14 +1,10 @@
 \select@language {english}
 \vskip -8pt\relax \fontsize {12}{14}\selectfont \rmfamily \bfseries 
-\contentsline {schapter}{Contributors}{v}{chapter*.2}
+\contentsline {schapter}{Preface}{xi}{chapter*.2}
 \vskip -8pt
-\contentsline {schapter}{Foreword}{vii}{chapter*.3}
+\contentsline {schapter}{Acknowledgments}{xiii}{chapter*.3}
 \vskip -8pt
-\contentsline {schapter}{Preface}{ix}{chapter*.4}
-\vskip -8pt
-\contentsline {schapter}{Acknowledgments}{xi}{chapter*.5}
-\vskip -8pt
-\contentsline {schapter}{Acronyms}{xiii}{chapter*.6}
+\contentsline {schapter}{Notations}{xv}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Week1}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Tuesday}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Introduction}{1}{subsection.1.1.1}
@@ -73,18 +69,18 @@
 \contentsline {subsection}{\numberline {2.2.2}Properties of matrix}{50}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}matrix transpose}{53}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}symmetric matrix}{54}{subsubsection.2.2.3.1}
-\contentsline {section}{\numberline {2.3}Assignment Two}{55}{section.2.3}
-\contentsline {section}{\numberline {2.4}Friday}{56}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}symmetric matrix}{56}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Interaction of inverse and transpose}{57}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Vector Space}{58}{subsection.2.4.3}
-\contentsline {paragraph}{From Numbers to Vectors}{58}{subsection.2.4.3}
-\contentsline {paragraph}{Third Level Undetstanding}{58}{subsection.2.4.3}
-\contentsline {paragraph}{Notation}{58}{definitionT.2.7}
-\contentsline {subsubsection}{\numberline {2.4.3.1}The solution to $\bm {Ax}= \bm {0}$}{62}{subsubsection.2.4.3.1}
-\contentsline {subsubsection}{\numberline {2.4.3.2}The complete solution to $\bm {Ax} = \bm {b}$}{63}{subsubsection.2.4.3.2}
-\contentsline {subsubsection}{\numberline {2.4.3.3}Row-Echelon Matrices}{65}{subsubsection.2.4.3.3}
-\contentsline {subsubsection}{\numberline {2.4.3.4}Problem Size Analysis}{66}{subsubsection.2.4.3.4}
+\contentsline {section}{\numberline {2.3}Assignment Two}{56}{section.2.3}
+\contentsline {section}{\numberline {2.4}Friday}{57}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}symmetric matrix}{57}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Interaction of inverse and transpose}{58}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Vector Space}{59}{subsection.2.4.3}
+\contentsline {paragraph}{From Numbers to Vectors}{59}{subsection.2.4.3}
+\contentsline {paragraph}{Third Level Undetstanding}{59}{subsection.2.4.3}
+\contentsline {paragraph}{Notation}{59}{definitionT.2.8}
+\contentsline {subsubsection}{\numberline {2.4.3.1}The solution to $\bm {Ax}= \bm {0}$}{63}{subsubsection.2.4.3.1}
+\contentsline {subsubsection}{\numberline {2.4.3.2}The complete solution to $\bm {Ax} = \bm {b}$}{64}{subsubsection.2.4.3.2}
+\contentsline {subsubsection}{\numberline {2.4.3.3}Row-Echelon Matrices}{66}{subsubsection.2.4.3.3}
+\contentsline {subsubsection}{\numberline {2.4.3.4}Problem Size Analysis}{67}{subsubsection.2.4.3.4}
 \contentsline {section}{\numberline {2.5}Assignment Three}{68}{section.2.5}
 \contentsline {chapter}{\numberline {3}Week3}{71}{chapter.3}
 \contentsline {section}{\numberline {3.1}Tuesday}{71}{section.3.1}
@@ -116,7 +112,7 @@
 \contentsline {subsection}{\numberline {3.2.4}Basis and dimension}{90}{subsection.3.2.4}
 \contentsline {paragraph}{Does plane has more point than a line?}{94}{exampleT.3.13}
 \contentsline {paragraph}{Plane and line have different dimensions}{94}{exampleT.3.13}
-\contentsline {paragraph}{What is rank?}{95}{Item.75}
+\contentsline {paragraph}{What is rank?}{95}{Item.106}
 \contentsline {section}{\numberline {3.3}Friday}{96}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Review}{96}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}More on basis and dimension}{97}{subsection.3.3.2}
@@ -126,148 +122,144 @@
 \contentsline {paragraph}{Right reason: $\bm {Ax} = \bm {0}$ iff. $\bm {Ux} = \bm {0}$}{101}{exampleT.3.17}
 \contentsline {subsubsection}{\numberline {3.3.3.1}What is the null space dimension?}{103}{subsubsection.3.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.3.2}Matrices of rank 1}{105}{subsubsection.3.3.3.2}
-\contentsline {section}{\numberline {3.4}Assignment Four}{110}{section.3.4}
-\contentsline {chapter}{\numberline {4}Midterm}{113}{chapter.4}
-\contentsline {section}{\numberline {4.1}Sample Exam}{113}{section.4.1}
-\contentsline {section}{\numberline {4.2}Midterm Exam}{120}{section.4.2}
-\contentsline {chapter}{\numberline {5}Week4}{127}{chapter.5}
-\contentsline {section}{\numberline {5.1}Friday}{127}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Linear Transformation}{127}{subsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.1}The idea of linear transformation}{127}{subsubsection.5.1.1.1}
-\contentsline {subsubsection}{\numberline {5.1.1.2}Matrix defines linear transformation}{128}{subsubsection.5.1.1.2}
-\contentsline {subsection}{\numberline {5.1.2}Example: differentiation}{129}{subsection.5.1.2}
-\contentsline {paragraph}{Derivative is a linear transformation}{129}{subsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.2.1}The inverse of the derivative.}{131}{subsubsection.5.1.2.1}
-\contentsline {paragraph}{The \textbf {integral} is the inverse of the derivative. }{131}{subsubsection.5.1.2.1}
-\contentsline {paragraph}{The derivative and the integration are essentially matrix multiplication}{132}{subsubsection.5.1.2.1}
-\contentsline {paragraph}{The integral of the derivative of 1 is zero}{132}{subsubsection.5.1.2.1}
-\contentsline {paragraph}{Summary:}{132}{subsubsection.5.1.2.1}
-\contentsline {subsection}{\numberline {5.1.3}Basis Change}{134}{subsection.5.1.3}
-\contentsline {paragraph}{Basis Change is essentially matrix multiplication}{134}{subsection.5.1.3}
-\contentsline {paragraph}{We can express linear transformation in terms of different basis}{135}{equation.5.1.2}
-\contentsline {subsection}{\numberline {5.1.4}Determinant}{136}{subsection.5.1.4}
-\contentsline {paragraph}{The determinant is zero if and only if the matrix has no inverse}{136}{subsection.5.1.4}
-\contentsline {paragraph}{It can be used to calculate the area or volumn of a box}{136}{subsection.5.1.4}
-\contentsline {paragraph}{The product of all the pivots $=(\pm 1)\times $the determinant}{137}{figure.5.1}
-\contentsline {paragraph}{Compute determinants to find $\bm {A}^{-1}$ and $\bm {A}^{-1}\bm {b}$}{137}{figure.5.1}
-\contentsline {subsubsection}{\numberline {5.1.4.1}The properties of the Determinant}{137}{subsubsection.5.1.4.1}
-\contentsline {section}{\numberline {5.2}Assignment Five}{144}{section.5.2}
-\contentsline {chapter}{\numberline {6}Week5}{147}{chapter.6}
-\contentsline {section}{\numberline {6.1}Tuesday}{147}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Formulas for Determinant}{147}{subsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.1.1}$n$ by $n$ formula of determinant}{150}{subsubsection.6.1.1.1}
-\contentsline {paragraph}{Complexity Analysis}{151}{definitionT.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1.2}Verify property}{151}{subsubsection.6.1.1.2}
-\contentsline {subsection}{\numberline {6.1.2}Determinant by Cofactors}{152}{subsection.6.1.2}
-\contentsline {paragraph}{Cofactors down a column}{152}{definitionT.6.2}
-\contentsline {subsection}{\numberline {6.1.3}Determinant Applications}{153}{subsection.6.1.3}
-\contentsline {subsubsection}{\numberline {6.1.3.1}Inverse}{153}{subsubsection.6.1.3.1}
-\contentsline {subsubsection}{\numberline {6.1.3.2}Cramer's Rule}{155}{subsubsection.6.1.3.2}
-\contentsline {paragraph}{Cramer's Rule solves $\bm {Ax}=\bm {b}$}{155}{subsubsection.6.1.3.2}
-\contentsline {subsection}{\numberline {6.1.4}Orthogonality}{156}{subsection.6.1.4}
-\contentsline {subsubsection}{\numberline {6.1.4.1}Function space}{156}{subsubsection.6.1.4.1}
-\contentsline {subsubsection}{\numberline {6.1.4.2}Cauchy-Schwarz Inequality}{157}{subsubsection.6.1.4.2}
-\contentsline {paragraph}{Cauchy-Schwarz inequality also holds for functions}{158}{theoremeT.6.1}
-\contentsline {paragraph}{The normalization of inner product is bounded by 1}{159}{theoremeT.6.1}
-\contentsline {subsubsection}{\numberline {6.1.4.3}Orthogonal for space}{159}{subsubsection.6.1.4.3}
-\contentsline {section}{\numberline {6.2}Thursday}{160}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Orthogonality}{160}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Least Squares Approximations}{166}{subsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.2.1}Least Squares by Convex Optimization}{166}{subsubsection.6.2.2.1}
-\contentsline {paragraph}{The Chian Rule}{166}{subsubsection.6.2.2.1}
-\contentsline {paragraph}{Examples of Matrix Derivative}{167}{subsubsection.6.2.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2.2}Fit a stright line}{168}{subsubsection.6.2.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Projections}{169}{subsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.3.1}Observations}{170}{subsubsection.6.2.3.1}
-\contentsline {paragraph}{Changing an Orthogonal Basis}{171}{figure.6.3}
-\contentsline {section}{\numberline {6.3}Friday}{172}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Orthonormal basis}{172}{subsection.6.3.1}
-\contentsline {paragraph}{When Least Squares Meet Orthogonality}{176}{proposition.6.2}
-\contentsline {subsubsection}{\numberline {6.3.1.1}Summary}{176}{subsubsection.6.3.1.1}
-\contentsline {subsection}{\numberline {6.3.2}Gram-Schmidt Process}{176}{subsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.2.1}Gram-Schmidt process in general case}{180}{subsubsection.6.3.2.1}
-\contentsline {subsection}{\numberline {6.3.3}The Factorization $A=QR$.}{181}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Function Space}{183}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Fourier Series}{185}{subsection.6.3.5}
-\contentsline {section}{\numberline {6.4}Assignment Six}{186}{section.6.4}
-\contentsline {chapter}{\numberline {7}Week6}{187}{chapter.7}
-\contentsline {section}{\numberline {7.1}Tuesday}{187}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Summary of previous weeks}{187}{subsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.1.1}Determinants}{187}{subsubsection.7.1.1.1}
-\contentsline {subsubsection}{\numberline {7.1.1.2}Linear Transformation}{187}{subsubsection.7.1.1.2}
-\contentsline {subsubsection}{\numberline {7.1.1.3}Orthogonality}{188}{subsubsection.7.1.1.3}
-\contentsline {subsection}{\numberline {7.1.2}Eigenvalues and eigenvectors}{191}{subsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.2.1}Why do we study eigenvalues and eigenvectors?}{191}{subsubsection.7.1.2.1}
-\contentsline {subsubsection}{\numberline {7.1.2.2}Calculation for eigen-pairs}{192}{subsubsection.7.1.2.2}
-\contentsline {subsubsection}{\numberline {7.1.2.3}Possible difficulty: how to solve $\qopname \relax m{det}(\lambda \bm {I}-\bm {A})=0$?}{194}{subsubsection.7.1.2.3}
-\contentsline {paragraph}{Implication}{194}{theoremeT.7.1}
-\contentsline {subsection}{\numberline {7.1.3}Products and Sums of Eigenvalue}{195}{subsection.7.1.3}
-\contentsline {paragraph}{The coefficient of the highest order for the characteristic polynomial is 1}{195}{subsection.7.1.3}
-\contentsline {paragraph}{The sum of eigenvalues equals to the sum of the $n$ diagonal entries of $\bm {A}$}{195}{equation.7.1.4}
-\contentsline {paragraph}{The product of the eigenvalues equals to the determinant of $\bm {A}$}{196}{equation.7.1.4}
-\contentsline {subsection}{\numberline {7.1.4}Application: Page Rank and Web Search}{196}{subsection.7.1.4}
-\contentsline {paragraph}{PageRank Model}{196}{figure.7.5}
-\contentsline {paragraph}{PageRank Problem}{198}{figure.7.6}
-\contentsline {section}{\numberline {7.2}Thursday}{199}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Review}{199}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Similarity}{199}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Diagonalization}{201}{subsection.7.2.3}
-\contentsline {paragraph}{Question 1}{201}{subsection.7.2.3}
-\contentsline {paragraph}{Question 2}{201}{subsection.7.2.3}
-\contentsline {paragraph}{Diagonalizable matrix is very useful}{204}{equation.7.2.9}
-\contentsline {subsection}{\numberline {7.2.4}Powers of $A$}{206}{subsection.7.2.4}
-\contentsline {paragraph}{Matrix Powers}{206}{subsection.7.2.4}
-\contentsline {paragraph}{Eigenvalues of matrix powers}{206}{subsection.7.2.4}
-\contentsline {subsection}{\numberline {7.2.5}Nondiagonalizable Matrices}{207}{subsection.7.2.5}
-\contentsline {section}{\numberline {7.3}Friday}{210}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Review}{210}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Fibonacci Numbers}{210}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Imaginary Eigenvalues}{212}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}Complex Numbers}{214}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Complex Vectors}{214}{subsection.7.3.5}
-\contentsline {subsubsection}{\numberline {7.3.5.1}Hermitian of matrix}{218}{subsubsection.7.3.5.1}
-\contentsline {subsection}{\numberline {7.3.6}Spectral Theorem}{220}{subsection.7.3.6}
-\contentsline {subsection}{\numberline {7.3.7}Hermitian matrix}{221}{subsection.7.3.7}
-\contentsline {section}{\numberline {7.4}Assignment Seven}{223}{section.7.4}
-\contentsline {chapter}{\numberline {8}Week7}{227}{chapter.8}
-\contentsline {section}{\numberline {8.1}Tuesday}{227}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Quadratic form}{227}{subsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.1.1}Matrix Calculus}{230}{subsubsection.8.1.1.1}
-\contentsline {subsubsection}{\numberline {8.1.1.2}Second optimality condition}{231}{subsubsection.8.1.1.2}
-\contentsline {subsection}{\numberline {8.1.2}Positive Definite Matrices}{232}{subsection.8.1.2}
-\contentsline {section}{\numberline {8.2}Thursday}{241}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}SVD: Singular Value Decomposition}{241}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Remark on SVD decomposition}{245}{subsection.8.2.2}
-\contentsline {subsubsection}{\numberline {8.2.2.1}Remark 1}{245}{subsubsection.8.2.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2.2}Remark 2: Four fundamental subspaces}{249}{subsubsection.8.2.2.2}
-\contentsline {subsubsection}{\numberline {8.2.2.3}Remark 3: vector form}{250}{subsubsection.8.2.2.3}
-\contentsline {subsubsection}{\numberline {8.2.2.4}Compact SVD}{251}{subsubsection.8.2.2.4}
-\contentsline {subsection}{\numberline {8.2.3}Best Low-Rank Approximation}{253}{subsection.8.2.3}
-\contentsline {subsubsection}{\numberline {8.2.3.1}Analogy with least square problem}{253}{subsubsection.8.2.3.1}
-\contentsline {section}{\numberline {8.3}Assignment Eight}{255}{section.8.3}
-\contentsline {chapter}{\numberline {9}Final Exam}{257}{chapter.9}
-\contentsline {section}{\numberline {9.1}Sample Exam}{257}{section.9.1}
-\contentsline {section}{\numberline {9.2}Final Exam}{264}{section.9.2}
-\contentsline {chapter}{\numberline {10}Solution}{271}{chapter.10}
-\contentsline {section}{\numberline {10.1}Assignment Solutions}{271}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Solution to Assignment One}{271}{subsection.10.1.1}
-\contentsline {subsection}{\numberline {10.1.2}Solution to Assignment Two}{277}{subsection.10.1.2}
-\contentsline {subsection}{\numberline {10.1.3}Solution to Assignment Three}{280}{subsection.10.1.3}
-\contentsline {subsection}{\numberline {10.1.4}Solution to Assignment Four}{286}{subsection.10.1.4}
-\contentsline {subsection}{\numberline {10.1.5}Solution to Assignment Five}{297}{subsection.10.1.5}
-\contentsline {subsection}{\numberline {10.1.6}Solution to Assignment Six}{303}{subsection.10.1.6}
-\contentsline {subsection}{\numberline {10.1.7}Solution to Assignment Seven}{311}{subsection.10.1.7}
-\contentsline {subsection}{\numberline {10.1.8}Solution to Assignment Eight}{321}{subsection.10.1.8}
-\contentsline {section}{\numberline {10.2}Midterm Exam Solutions}{328}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}Sample Exam Solution}{328}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}Midterm Exam Solution}{338}{subsection.10.2.2}
-\contentsline {section}{\numberline {10.3}Final Exam Solutions}{346}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}Sample Exam Solution}{346}{subsection.10.3.1}
-\contentsline {subsection}{\numberline {10.3.2}Final Exam Solution}{357}{subsection.10.3.2}
-\contentsline {chapter}{\numberline {A}This is Appendix Title}{371}{appendix.A}
-\contentsline {section}{\numberline {A.1}This is First Level Heading}{371}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}This is Second Level Heading}{372}{subsection.A.1.1}
-\contentsline {subsubsection}{\numberline {A.1.1.1}This is Third Level Heading}{372}{subsubsection.A.1.1.1}
-\contentsline {paragraph}{This is Fourth Level Heading}{372}{subsubsection.A.1.1.1}
-\contentsline {subparagraph}{This is Fifth Level Heading}{373}{subsubsection.A.1.1.1}
+\contentsline {section}{\numberline {3.4}Assignment Four}{107}{section.3.4}
+\contentsline {chapter}{\numberline {4}Midterm}{109}{chapter.4}
+\contentsline {section}{\numberline {4.1}Sample Exam}{109}{section.4.1}
+\contentsline {section}{\numberline {4.2}Midterm Exam}{116}{section.4.2}
+\contentsline {chapter}{\numberline {5}Week4}{123}{chapter.5}
+\contentsline {section}{\numberline {5.1}Friday}{123}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Linear Transformation}{123}{subsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}The idea of linear transformation}{123}{subsubsection.5.1.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.2}Matrix defines linear transformation}{124}{subsubsection.5.1.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Example: differentiation}{125}{subsection.5.1.2}
+\contentsline {paragraph}{Derivative is a linear transformation}{125}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}The inverse of the derivative.}{127}{subsubsection.5.1.2.1}
+\contentsline {paragraph}{The \textbf {integral} is the inverse of the derivative. }{127}{subsubsection.5.1.2.1}
+\contentsline {paragraph}{The derivative and the integration are essentially matrix multiplication}{128}{subsubsection.5.1.2.1}
+\contentsline {paragraph}{The integral of the derivative of 1 is zero}{128}{subsubsection.5.1.2.1}
+\contentsline {paragraph}{Summary:}{128}{subsubsection.5.1.2.1}
+\contentsline {subsection}{\numberline {5.1.3}Basis Change}{130}{subsection.5.1.3}
+\contentsline {paragraph}{Basis Change is essentially matrix multiplication}{130}{subsection.5.1.3}
+\contentsline {paragraph}{We can express linear transformation in terms of different basis}{131}{equation.5.1.2}
+\contentsline {subsection}{\numberline {5.1.4}Determinant}{132}{subsection.5.1.4}
+\contentsline {paragraph}{The determinant is zero if and only if the matrix has no inverse}{132}{subsection.5.1.4}
+\contentsline {paragraph}{It can be used to calculate the area or volumn of a box}{132}{subsection.5.1.4}
+\contentsline {paragraph}{The product of all the pivots $=(\pm 1)\times $the determinant}{133}{figure.5.1}
+\contentsline {paragraph}{Compute determinants to find $\bm {A}^{-1}$ and $\bm {A}^{-1}\bm {b}$}{133}{figure.5.1}
+\contentsline {subsubsection}{\numberline {5.1.4.1}The properties of the Determinant}{133}{subsubsection.5.1.4.1}
+\contentsline {section}{\numberline {5.2}Assignment Five}{138}{section.5.2}
+\contentsline {chapter}{\numberline {6}Week5}{141}{chapter.6}
+\contentsline {section}{\numberline {6.1}Tuesday}{141}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Formulas for Determinant}{141}{subsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.1}$n$ by $n$ formula of determinant}{144}{subsubsection.6.1.1.1}
+\contentsline {paragraph}{Complexity Analysis}{145}{definitionT.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1.2}Verify property}{145}{subsubsection.6.1.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Determinant by Cofactors}{146}{subsection.6.1.2}
+\contentsline {paragraph}{Cofactors down a column}{146}{definitionT.6.2}
+\contentsline {subsection}{\numberline {6.1.3}Determinant Applications}{147}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}Inverse}{147}{subsubsection.6.1.3.1}
+\contentsline {subsubsection}{\numberline {6.1.3.2}Cramer's Rule}{149}{subsubsection.6.1.3.2}
+\contentsline {paragraph}{Cramer's Rule solves $\bm {Ax}=\bm {b}$}{149}{subsubsection.6.1.3.2}
+\contentsline {subsection}{\numberline {6.1.4}Orthogonality}{150}{subsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.4.1}Function space}{150}{subsubsection.6.1.4.1}
+\contentsline {subsubsection}{\numberline {6.1.4.2}Cauchy-Schwarz Inequality}{151}{subsubsection.6.1.4.2}
+\contentsline {paragraph}{Cauchy-Schwarz inequality also holds for functions}{152}{theoremeT.6.1}
+\contentsline {paragraph}{The normalization of inner product is bounded by 1}{153}{theoremeT.6.1}
+\contentsline {subsubsection}{\numberline {6.1.4.3}Orthogonal for space}{153}{subsubsection.6.1.4.3}
+\contentsline {section}{\numberline {6.2}Thursday}{154}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Orthogonality}{154}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Least Squares Approximations}{160}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}Least Squares by Convex Optimization}{160}{subsubsection.6.2.2.1}
+\contentsline {paragraph}{The Chian Rule}{160}{subsubsection.6.2.2.1}
+\contentsline {paragraph}{Examples of Matrix Derivative}{161}{subsubsection.6.2.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2.2}Fit a stright line}{162}{subsubsection.6.2.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Projections}{163}{subsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3.1}Observations}{164}{subsubsection.6.2.3.1}
+\contentsline {paragraph}{Changing an Orthogonal Basis}{165}{figure.6.3}
+\contentsline {section}{\numberline {6.3}Friday}{166}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Orthonormal basis}{166}{subsection.6.3.1}
+\contentsline {paragraph}{When Least Squares Meet Orthogonality}{170}{proposition.6.2}
+\contentsline {subsubsection}{\numberline {6.3.1.1}Summary}{170}{subsubsection.6.3.1.1}
+\contentsline {subsection}{\numberline {6.3.2}Gram-Schmidt Process}{170}{subsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.2.1}Gram-Schmidt process in general case}{174}{subsubsection.6.3.2.1}
+\contentsline {subsection}{\numberline {6.3.3}The Factorization $A=QR$.}{175}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Function Space}{177}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Fourier Series}{179}{subsection.6.3.5}
+\contentsline {section}{\numberline {6.4}Assignment Six}{180}{section.6.4}
+\contentsline {chapter}{\numberline {7}Week6}{181}{chapter.7}
+\contentsline {section}{\numberline {7.1}Tuesday}{181}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Summary of previous weeks}{181}{subsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.1.1}Determinants}{181}{subsubsection.7.1.1.1}
+\contentsline {subsubsection}{\numberline {7.1.1.2}Linear Transformation}{181}{subsubsection.7.1.1.2}
+\contentsline {subsubsection}{\numberline {7.1.1.3}Orthogonality}{182}{subsubsection.7.1.1.3}
+\contentsline {subsection}{\numberline {7.1.2}Eigenvalues and eigenvectors}{185}{subsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.2.1}Why do we study eigenvalues and eigenvectors?}{185}{subsubsection.7.1.2.1}
+\contentsline {subsubsection}{\numberline {7.1.2.2}Calculation for eigen-pairs}{186}{subsubsection.7.1.2.2}
+\contentsline {subsubsection}{\numberline {7.1.2.3}Possible difficulty: how to solve $\qopname \relax m{det}(\lambda \bm {I}-\bm {A})=0$?}{188}{subsubsection.7.1.2.3}
+\contentsline {paragraph}{Implication}{188}{theoremeT.7.1}
+\contentsline {subsection}{\numberline {7.1.3}Products and Sums of Eigenvalue}{189}{subsection.7.1.3}
+\contentsline {paragraph}{The coefficient of the highest order for the characteristic polynomial is 1}{189}{subsection.7.1.3}
+\contentsline {paragraph}{The sum of eigenvalues equals to the sum of the $n$ diagonal entries of $\bm {A}$}{189}{equation.7.1.4}
+\contentsline {paragraph}{The product of the eigenvalues equals to the determinant of $\bm {A}$}{190}{equation.7.1.4}
+\contentsline {subsection}{\numberline {7.1.4}Application: Page Rank and Web Search}{190}{subsection.7.1.4}
+\contentsline {paragraph}{PageRank Model}{190}{figure.7.5}
+\contentsline {paragraph}{PageRank Problem}{192}{figure.7.6}
+\contentsline {section}{\numberline {7.2}Thursday}{193}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Review}{193}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Similarity}{193}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Diagonalization}{195}{subsection.7.2.3}
+\contentsline {paragraph}{Question 1}{195}{subsection.7.2.3}
+\contentsline {paragraph}{Question 2}{195}{subsection.7.2.3}
+\contentsline {paragraph}{Diagonalizable matrix is very useful}{198}{equation.7.2.9}
+\contentsline {subsection}{\numberline {7.2.4}Powers of $A$}{200}{subsection.7.2.4}
+\contentsline {paragraph}{Matrix Powers}{200}{subsection.7.2.4}
+\contentsline {paragraph}{Eigenvalues of matrix powers}{200}{subsection.7.2.4}
+\contentsline {subsection}{\numberline {7.2.5}Nondiagonalizable Matrices}{201}{subsection.7.2.5}
+\contentsline {section}{\numberline {7.3}Friday}{205}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Review}{205}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Fibonacci Numbers}{205}{subsection.7.3.2}
+\contentsline {paragraph}{Every new Fibonacci number come from two previous ones}{205}{subsection.7.3.2}
+\contentsline {paragraph}{How to compute $\bm {F}_{100}$ without computing $\bm {F}_2$ to $\bm {F}_{99}$?}{205}{subsection.7.3.2}
+\contentsline {paragraph}{Another way to compute $\bm {F}_{100}$}{206}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Imaginary Eigenvalues}{207}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Complex Numbers and vectors}{208}{subsection.7.3.4}
+\contentsline {subsubsection}{\numberline {7.3.4.1}Hermitian transpose for matrix}{212}{subsubsection.7.3.4.1}
+\contentsline {subsection}{\numberline {7.3.5}Spectral Theorem}{214}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}Hermitian matrix}{216}{subsection.7.3.6}
+\contentsline {section}{\numberline {7.4}Assignment Seven}{219}{section.7.4}
+\contentsline {chapter}{\numberline {8}Week7}{223}{chapter.8}
+\contentsline {section}{\numberline {8.1}Tuesday}{223}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Quadratic form}{223}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Convex Optimization Preliminaries}{225}{subsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.2.1}Second optimality condition}{227}{subsubsection.8.1.2.1}
+\contentsline {subsection}{\numberline {8.1.3}Positive Definite Matrices}{228}{subsection.8.1.3}
+\contentsline {section}{\numberline {8.2}Thursday}{237}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}SVD: Singular Value Decomposition}{237}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Remark on SVD decomposition}{241}{subsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.2.1}Remark 1: Different Ways of Writing out SVD}{241}{subsubsection.8.2.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2.2}Remark 2: SVD and Eigen-decomposition}{242}{subsubsection.8.2.2.2}
+\contentsline {subsubsection}{\numberline {8.2.2.3}Remark 3: SVD and Subspace}{242}{subsubsection.8.2.2.3}
+\contentsline {subsubsection}{\numberline {8.2.2.4}Compact SVD}{245}{subsubsection.8.2.2.4}
+\contentsline {subsection}{\numberline {8.2.3}Best Low-Rank Approximation}{246}{subsection.8.2.3}
+\contentsline {subsubsection}{\numberline {8.2.3.1}Analogy with least square problem}{247}{subsubsection.8.2.3.1}
+\contentsline {section}{\numberline {8.3}Assignment Eight}{250}{section.8.3}
+\contentsline {chapter}{\numberline {9}Final Exam}{253}{chapter.9}
+\contentsline {section}{\numberline {9.1}Sample Exam}{253}{section.9.1}
+\contentsline {section}{\numberline {9.2}Final Exam}{260}{section.9.2}
+\contentsline {chapter}{\numberline {10}Solution}{267}{chapter.10}
+\contentsline {section}{\numberline {10.1}Assignment Solutions}{267}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Solution to Assignment One}{267}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Solution to Assignment Two}{273}{subsection.10.1.2}
+\contentsline {subsection}{\numberline {10.1.3}Solution to Assignment Three}{277}{subsection.10.1.3}
+\contentsline {subsection}{\numberline {10.1.4}Solution to Assignment Four}{283}{subsection.10.1.4}
+\contentsline {subsection}{\numberline {10.1.5}Solution to Assignment Five}{294}{subsection.10.1.5}
+\contentsline {subsection}{\numberline {10.1.6}Solution to Assignment Six}{300}{subsection.10.1.6}
+\contentsline {subsection}{\numberline {10.1.7}Solution to Assignment Seven}{308}{subsection.10.1.7}
+\contentsline {subsection}{\numberline {10.1.8}Solution to Assignment Eight}{318}{subsection.10.1.8}
+\contentsline {section}{\numberline {10.2}Midterm Exam Solutions}{325}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}Sample Exam Solution}{325}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}Midterm Exam Solution}{335}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Final Exam Solutions}{343}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Sample Exam Solution}{343}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Final Exam Solution}{354}{subsection.10.3.2}
 \contentsfinish 

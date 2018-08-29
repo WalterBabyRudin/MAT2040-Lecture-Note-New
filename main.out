@@ -1,11 +1,7 @@
-\BOOKMARK [0][-]{chapter*.2}{Contributors}{}% 1
-\BOOKMARK [0][-]{chapter*.3}{Foreword}{}% 2
-\BOOKMARK [0][-]{chapter*.4}{Preface}{}% 3
-\BOOKMARK [0][-]{chapter*.5}{Acknowledgments}{}% 4
-\BOOKMARK [0][-]{chapter*.6}{Acronyms}{}% 5
-\BOOKMARK [1][-]{section.7.2}{Thursday}{chapter*.6}% 88
-\BOOKMARK [2][-]{subsection.7.2.1}{Review}{section.7.2}% 89
-\BOOKMARK [2][-]{subsection.7.2.2}{Similarity}{section.7.2}% 90
-\BOOKMARK [2][-]{subsection.7.2.3}{Diagonalization}{section.7.2}% 91
-\BOOKMARK [2][-]{subsection.7.2.4}{Powers of A}{section.7.2}% 92
-\BOOKMARK [2][-]{subsection.7.2.5}{Nondiagonalizable Matrices}{section.7.2}% 93
+\BOOKMARK [0][-]{chapter*.2}{Preface}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Acknowledgments}{}% 2
+\BOOKMARK [0][-]{chapter*.4}{Notations}{}% 3
+\BOOKMARK [1][-]{section.8.2}{Thursday}{chapter*.4}% 106
+\BOOKMARK [2][-]{subsection.8.2.1}{SVD: Singular Value Decomposition}{section.8.2}% 107
+\BOOKMARK [2][-]{subsection.8.2.2}{Remark on SVD decomposition}{section.8.2}% 108
+\BOOKMARK [2][-]{subsection.8.2.3}{Best Low-Rank Approximation}{section.8.2}% 109

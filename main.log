@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  27 AUG 2018 03:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  29 AUG 2018 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1963,67 +1963,34 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count383
 ))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
+\AM@pagewidth=\dimen407
+\AM@pageheight=\dimen408
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box87
+\AM@global@opts=\toks75
+\AM@toc@title=\toks76
+\c@AM@survey=\count384
+\AM@templatesizebox=\box88
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./main.aux
-(./week1/Tuesday.aux) (./week1/Thursday.aux) (./week1/Friday.aux)
+
+(./main.aux (./week1/Tuesday.aux) (./week1/Thursday.aux) (./week1/Friday.aux)
 (./week1/Assignment_One.aux) (./week2/Tuesday.aux) (./week2/Wednesday.aux)
-(./week2/Assignment_Two.aux) (./week2/Friday.aux
-
-LaTeX Warning: Label `mdf@pagelabel-49' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-50' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-51' multiply defined.
-
-) (./week2/Assignment_Three.aux) (./week3/Tuesday.aux
-
-LaTeX Warning: Label `mdf@pagelabel-71' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-72' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-73' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-74' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-75' multiply defined.
-
-) (./week3/Thursday.aux) (./week3/Friday.aux) (./week3/Assignment_Four.aux)
-(./exam/midterm/MAT2040_Sample_Exam.aux)
-(./exam/midterm/MAT2040_Midterm_Exam.aux) (./week4/Friday.aux
-
-LaTeX Warning: Label `mdf@pagelabel-116' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-117' multiply defined.
-
-) (./week4/Assignment_Five.aux) (./week5/Tuesday.aux) (./week5/Thursday.aux)
-(./week5/Friday.aux) (./week5/Assignment_Six.aux) (./week6/Tuesday.aux
-
-LaTeX Warning: Label `mdf@pagelabel-173' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-174' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-175' multiply defined.
-
-) (./week6/Thursday.aux) (./week6/Friday.aux
-
-LaTeX Warning: Label `mdf@pagelabel-187' multiply defined.
-
-
-LaTeX Warning: Label `mdf@pagelabel-188' multiply defined.
-
-) (./week6/Assignment_Seven.aux) (./week7/Tuesday.aux) (./week7/Thursday.aux)
-(./week7/Assignment_Eight.aux) (./exam/final/MAT2040_Sample_Exam.aux)
-(./exam/final/MAT2040_Final_Exam.aux)
+(./week2/Assignment_Two.aux) (./week2/Friday.aux) (./week2/Assignment_Three.aux
+) (./week3/Tuesday.aux) (./week3/Thursday.aux) (./week3/Friday.aux)
+(./week3/Assignment_Four.aux) (./exam/midterm/MAT2040_Sample_Exam.aux)
+(./exam/midterm/MAT2040_Midterm_Exam.aux) (./week4/Friday.aux)
+(./week4/Assignment_Five.aux) (./week5/Tuesday.aux) (./week5/Thursday.aux)
+(./week5/Friday.aux) (./week5/Assignment_Six.aux) (./week6/Tuesday.aux)
+(./week6/Thursday.aux) (./week6/Friday.aux) (./week6/Assignment_Seven.aux)
+(./week7/Tuesday.aux) (./week7/Thursday.aux) (./week7/Assignment_Eight.aux)
+(./exam/final/MAT2040_Sample_Exam.aux) (./exam/final/MAT2040_Final_Exam.aux)
 (./Solution/Solution_to_assignment_one.aux)
 (./Solution/Solution_to_assignment_two.aux)
 (./Solution/Solution_to_assignment_three.aux)
@@ -2033,41 +2000,41 @@ LaTeX Warning: Label `mdf@pagelabel-188' multiply defined.
 (./Solution/Solution_to_assignment_seven.aux)
 (./Solution/Solution_to_assignment_eight.aux)
 (./Solution/Sample_midterm_solution.aux) (./Solution/midterm_solution.aux)
-(./Solution/Sample_final_solution.aux) (./Solution/Final_solution.aux)
-(./app01.aux))
+(./Solution/Sample_final_solution.aux) (./Solution/Final_solution.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 6.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pplx.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 5.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count384
-\scratchdimen=\dimen407
-\scratchbox=\box87
-\nofMPsegments=\count385
-\nofMParguments=\count386
-\everyMPshowfont=\toks75
-\MPscratchCnt=\count387
-\MPscratchDim=\dimen408
-\MPnumerator=\count388
-\makeMPintoPDFobject=\count389
-\everyMPtoPDFconversion=\toks76
+\scratchcounter=\count385
+\scratchdimen=\dimen409
+\scratchbox=\box89
+\nofMPsegments=\count386
+\nofMParguments=\count387
+\everyMPshowfont=\toks77
+\MPscratchCnt=\count388
+\MPscratchDim=\dimen410
+\MPnumerator=\count389
+\makeMPintoPDFobject=\count390
+\everyMPtoPDFconversion=\toks78
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -2119,8 +2086,8 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count390
-LaTeX Info: Redefining \microtypecontext on input line 6.
+\c@lstlisting=\count391
+LaTeX Info: Redefining \microtypecontext on input line 5.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2133,42 +2100,42 @@ Package microtype Info: No adjustment of character kerning.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 6.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 6.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 6.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 6.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 6.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 6.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -2177,7 +2144,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 6.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -2188,25 +2155,25 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 6.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.43799pt on input line 6.
+Package xypdf Info: Line width: 0.43799pt on input line 5.
 
 ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.14} into 
 your preamble.
- on input line 6.
+ on input line 5.
 
-\AtBeginShipoutBox=\box88
+\AtBeginShipoutBox=\box90
 (/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-Package hyperref Info: Link coloring ON on input line 6.
+Package hyperref Info: Link coloring ON on input line 5.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2214,24 +2181,73 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count391
+\c@section@level=\count392
 )
-LaTeX Info: Redefining \ref on input line 6.
-LaTeX Info: Redefining \pageref on input line 6.
-LaTeX Info: Redefining \nameref on input line 6.
+LaTeX Info: Redefining \ref on input line 5.
+LaTeX Info: Redefining \pageref on input line 5.
+LaTeX Info: Redefining \nameref on input line 5.
 
 (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 34.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+<book_cover/cover/FrontCover.pdf, id=35, 442.65375pt x 668.4975pt>
+File: book_cover/cover/FrontCover.pdf Graphic file (type pdf)
+
+<use book_cover/cover/FrontCover.pdf>
+Package pdftex.def Info: book_cover/cover/FrontCover.pdf used on input line 8.
+(pdftex.def)             Requested size: 442.65265pt x 668.49586pt.
+File: book_cover/cover/FrontCover.pdf Graphic file (type pdf)
+ <use book_cover/cover/FrontCover.pdf>
+Package pdftex.def Info: book_cover/cover/FrontCover.pdf used on input line 8.
+(pdftex.def)             Requested size: 442.65265pt x 668.49586pt.
+
+<book_cover/cover/FrontCover.pdf, id=38, page=1, 442.65375pt x 668.4975pt>
+File: book_cover/cover/FrontCover.pdf Graphic file (type pdf)
+
+<use book_cover/cover/FrontCover.pdf, page 1>
+Package pdftex.def Info: book_cover/cover/FrontCover.pdf, page1 used on input l
+ine 8.
+(pdftex.def)             Requested size: 442.65265pt x 668.49586pt.
+File: book_cover/cover/FrontCover.pdf Graphic file (type pdf)
+
+<use book_cover/cover/FrontCover.pdf, page 1>
+Package pdftex.def Info: book_cover/cover/FrontCover.pdf, page1 used on input l
+ine 8.
+(pdftex.def)             Requested size: 559.96883pt x 845.66725pt.
+File: book_cover/cover/FrontCover.pdf Graphic file (type pdf)
+
+<use book_cover/cover/FrontCover.pdf, page 1>
+Package pdftex.def Info: book_cover/cover/FrontCover.pdf, page1 used on input l
+ine 8.
+(pdftex.def)             Requested size: 559.96883pt x 845.66725pt.
+File: book_cover/cover/FrontCover.pdf Graphic file (type pdf)
+
+<use book_cover/cover/FrontCover.pdf, page 1>
+Package pdftex.def Info: book_cover/cover/FrontCover.pdf, page1 used on input l
+ine 8.
+(pdftex.def)             Requested size: 559.96883pt x 845.66725pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+File: book_cover/cover/FrontCover.pdf Graphic file (type pdf)
+
+<use book_cover/cover/FrontCover.pdf, page 1>
+Package pdftex.def Info: book_cover/cover/FrontCover.pdf, page1 used on input l
+ine 8.
+(pdftex.def)             Requested size: 559.96883pt x 845.66725pt.
  [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -2244,7 +2260,11 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+ <./book_cover/cover/FrontCover.pdf{/usr/local/texlive/2017/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map}>]
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 23.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2252,18 +2272,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 35.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 35.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 35.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/pplx/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/it' tried instead on input line 35.
+(Font)              Font shape `T1/pplx/b/it' tried instead on input line 24.
 
-<zh-hans_logo.png, id=61, 383.4325pt x 65.24374pt>
+<zh-hans_logo.png, id=59, 383.4325pt x 65.24374pt>
 File: zh-hans_logo.png Graphic file (type png)
  <use zh-hans_logo.png>
-Package pdftex.def Info: zh-hans_logo.png used on input line 35.
+Package pdftex.def Info: zh-hans_logo.png used on input line 24.
 (pdftex.def)             Requested size: 383.43156pt x 65.24358pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2272,34 +2292,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./zh-hans_logo.png>]
-LaTeX Font Info:    Try loading font information for OMS+pplx on input line 58.
-
-LaTeX Font Info:    No file OMSpplx.fd. on input line 58.
-
-
-LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 58.
-
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <8> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 58.
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 65.
+ [4
+
+]
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 52.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2317,9 +2318,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5
-
-]
+ [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2327,35 +2326,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 189.
+(Font)              scaled to size 12.50409pt on input line 185.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 189.
+(Font)              scaled to size 9.37807pt on input line 185.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 189.
+(Font)              scaled to size 7.29405pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 189.
+(Font)              scaled to size 12.50409pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 189.
+(Font)              scaled to size 9.37807pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 189.
+(Font)              scaled to size 7.29405pt on input line 185.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 185.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 189.
+(Font)              scaled to size 10.42007pt on input line 185.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 189.
+(Font)              scaled to size 7.91925pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 189.
+(Font)              scaled to size 10.42007pt on input line 185.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 189.
+(Font)              scaled to size 7.91925pt on input line 185.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2373,9 +2372,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout7 = `main.toc'.
 
 
-Underfull \vbox (badness 1253) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2387,96 +2383,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
+ [10
+
+]
 
 Package hyperref Warning: bookmark level for unknown schapter defaults to 0.
 
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplx/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(./preface.tex
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 4.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 4.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 4.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.90  \end{contributors}
-                         [5
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.vi}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.95 \begin{foreword}
-                      [6
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.vii}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.97 \end{foreword}
-                    [7
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.viii}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.102 \begin{preface}
-                      [8
-
-]
+)
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.ix}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.107 \end{preface}
-                    [9
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.x}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.119 \acknowledgments
-                       [10
-
-]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2498,9 +2424,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [13
 
 ]
@@ -2509,38 +2432,57 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
-\openout2 = `week6/Thursday.aux'.
+ [14
 
-
-(./week6/Thursday.tex
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 6.
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 14.
-
+]
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 100
+.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-Package mdframed Info: mdframed works in twoside mode on input line 27.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16
+
+]
+\openout2 = `week7/Thursday.aux'.
+
+
+(./week7/Thursday.tex
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 8.
+Package mdframed Info: mdframed works in twoside mode on input line 20.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 27.
+(mdframed)              on input line 20.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 27.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 33.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 33.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 20.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package mathptmx Warning: There are no bold math fonts on input line 21.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [199
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [237
+
+
+
 
 
 
@@ -2566,66 +2508,133 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [200]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [201]
-Package mdframed Info: mdframed works in twoside mode on input line 138.
+Package mdframed Info: mdframed works in twoside mode on input line 62.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 138.
-Package mdframed Info: mdframed works in twoside mode on input line 156.
+(mdframed)              on input line 62.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 66.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 66.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 66.
+
+
+Underfull \vbox (badness 1783) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [238]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [239]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [240]
+Package mdframed Info: mdframed works in twoside mode on input line 209.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 156.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [202]
-Package mdframed Info: mdframed works in twoside mode on input line 202.
+(mdframed)              on input line 209.
+Package mdframed Info: mdframed works in twoside mode on input line 239.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 202.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [203]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [204]
-Package mdframed Info: mdframed works in twoside mode on input line 274.
+(mdframed)              on input line 239.
+Package mdframed Info: mdframed works in twoside mode on input line 245.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 274.
+(mdframed)              on input line 245.
 
-Overfull \hbox (6.93735pt too wide) in paragraph at lines 298--299
-[]\T1/pplx/m/n/10.95 (-20) Since $\OML/zplm/m/it/10.95 ^^U[] \OMS/zplm/m/n/10.9
-5 6\OT1/zplm/m/n/10.95 = \OML/zplm/m/it/10.95 ^^U[]$ \T1/pplx/m/n/10.95 (-20) a
-nd $[] \OMS/zplm/m/n/10.95 6\OT1/zplm/m/n/10.95 = []$\T1/pplx/m/n/10.95 (-20) ,
- we de-rive $\OML/zplm/m/it/10.95 c[] \OT1/zplm/m/n/10.95 = \OT1/pplx/m/n/10.95
- (-20) 0$\T1/pplx/m/n/10.95 (-20) . Sim-i-larly, if we let Eq.([][]7.10[][])$\O
-MS/zplm/m/n/10.95 ^^B\OML/zplm/m/it/10.95 ^^U[]\OMS/zplm/m/n/10.95 ^^@$\T1/pplx
-/m/n/10.95 (-20) Eq.([][]7.11[][])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [241]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [242]
+<week7/fundamental.jpg, id=583, 358.33875pt x 250.68657pt>
+File: week7/fundamental.jpg Graphic file (type jpg)
+
+<use week7/fundamental.jpg>
+Package pdftex.def Info: week7/fundamental.jpg used on input line 319.
+(pdftex.def)             Requested size: 284.52756pt x 199.06152pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [243 <./week7/fundamental.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [244]
+Package mdframed Info: mdframed works in twoside mode on input line 383.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 383.
+Package mdframed Info: mdframed works in twoside mode on input line 387.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 387.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [245]
+Package mdframed Info: mdframed works in twoside mode on input line 419.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 419.
+Package mdframed Info: mdframed works in twoside mode on input line 425.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 425.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [246]
+<week7/least_square.jpg, id=608, 377.15906pt x 194.22563pt>
+File: week7/least_square.jpg Graphic file (type jpg)
+
+<use week7/least_square.jpg>
+Package pdftex.def Info: week7/least_square.jpg used on input line 441.
+(pdftex.def)             Requested size: 377.15814pt x 194.22514pt.
+
+<week7/rank_r.jpg, id=609, 439.6425pt x 283.0575pt>
+File: week7/rank_r.jpg Graphic file (type jpg)
+ <use week7/rank_r.jpg>
+Package pdftex.def Info: week7/rank_r.jpg used on input line 461.
+(pdftex.def)             Requested size: 439.64142pt x 283.0568pt.
+
+Overfull \hbox (24.23099pt too wide) in paragraph at lines 461--462
+ [][] 
  []
 
 
@@ -2634,61 +2643,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [205]
-Package mdframed Info: mdframed works in twoside mode on input line 325.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 325.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 328.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 18.00587pt on input line 328.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 18.00587pt on input line 328.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 328.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 328.
-
-
+ [247 <./week7/least_square.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [206]
+ [248 <./week7/rank_r.jpg>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [207]
-Package mdframed Info: mdframed works in twoside mode on input line 365.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 365.
-)
+ [249]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [208]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [374
-
-
-
-
-
+ [368
 
 
 
@@ -2708,8 +2681,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 No file main.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
 (./main.aux (./week1/Tuesday.aux) (./week1/Thursday.aux) (./week1/Friday.aux)
 (./week1/Assignment_One.aux) (./week2/Tuesday.aux) (./week2/Wednesday.aux)
 (./week2/Assignment_Two.aux) (./week2/Friday.aux) (./week2/Assignment_Three.aux
@@ -2730,39 +2703,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
 (./Solution/Solution_to_assignment_seven.aux)
 (./Solution/Solution_to_assignment_eight.aux)
 (./Solution/Sample_midterm_solution.aux) (./Solution/midterm_solution.aux)
-(./Solution/Sample_final_solution.aux) (./Solution/Final_solution.aux)
-(./app01.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
+(./Solution/Sample_final_solution.aux) (./Solution/Final_solution.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CC585402AAA39B5AA82A870DC4847DCD;624.
+(rerunfilecheck)             Checksum: 2DB8AD1773FF9A231B788A59AE27BC0D;448.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 47938 strings out of 492995
- 997840 string characters out of 6132703
- 1423047 words of memory out of 5000000
- 49935 multiletter control sequences out of 15000+600000
- 124166 words of font info for 395 fonts, out of 8000000 for 9000
+ 48460 strings out of 492995
+ 1006939 string characters out of 6132703
+ 1435694 words of memory out of 5000000
+ 50476 multiletter control sequences out of 15000+600000
+ 111582 words of font info for 343 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,20n,98p,10504b,644s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.A.1.1} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.A.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.10.3.2} has been referenced but does not
- exist, replaced by a fixed one
+ 71i,21n,98p,10504b,644s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.10.3.2} has been referenced but does n
+ot exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.10.3.1} has been referenced but does not
  exist, replaced by a fixed one
@@ -2821,17 +2781,8 @@ replaced by a fixed one
 pdfTeX warning (dest): name{section.8.3} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.8.2.3} has been referenced but does not 
+pdfTeX warning (dest): name{subsection.8.1.3} has been referenced but does not 
 exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.8.2.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.8.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.8.2} has been referenced but does not exist
-, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.8.1.2} has been referenced but does not 
 exist, replaced by a fixed one
@@ -2847,9 +2798,6 @@ replaced by a fixed one
 
 pdfTeX warning (dest): name{section.7.4} has been referenced but does not exist
 , replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.7.3.7} has been referenced but does not 
-exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.7.3.6} has been referenced but does not 
 exist, replaced by a fixed one
@@ -2870,6 +2818,24 @@ pdfTeX warning (dest): name{subsection.7.3.1} has been referenced but does not
 exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{section.7.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.7.1.4} has been referenced but does not 
@@ -3123,32 +3089,32 @@ replaced by a fixed one
 
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
 usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2017/texmf-dist/font
-s/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/
-fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2017/texmf-dist/fo
-nts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2017/texmf-dist/font
-s/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2017/texmf-dist/fonts/
-type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
-1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
-public/cm-super/sfsx1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
-blic/cm-super/sfsx1728.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
-ic/cm-super/sfsx2074.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
-/cm-super/sfsx2488.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/pala
-tino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/up
-lbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (31 pages, 358769 bytes).
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/pal
+atino/uplbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/
+uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a
+.pfb>
+Output written on main.pdf (30 pages, 1897090 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 555 compressed objects within 6 object streams
- 184 named destinations out of 1000 (max. 500000)
- 76906 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 744 PDF objects out of 1000 (max. 8388607)
+ 546 compressed objects within 6 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 70765 words of extra memory for PDF output out of 74296 (max. 10000000)
 

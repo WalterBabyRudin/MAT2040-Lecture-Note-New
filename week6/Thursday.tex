@@ -361,12 +361,128 @@ For example, given $\bm A=\begin{bmatrix}
 c\\0
 \end{bmatrix}$.
 
-This $2\times 2$ matrix cannot be diagonalized. Why? Let's introduce a definition first:
-\begin{definition}[Eigenspace]
-Suppose $\bm A\in\mathbb{R}^{n\times n}$ has $k$ distinct eigenvalues $\lambda_1,\dots,\lambda_k$. Then the eigenspace for $\bm A$ associated with $\lambda_i$ is the collection of all eigenvectors associated with the eigenvalue $\lambda_i$, i.e., the null space $N(\lambda_i\bm I-\bm A)$.
-\end{definition}
+This $2\times 2$ matrix cannot be diagonalized. Why? Let's introduce the definition for multiplicity first:
+%\begin{definition}[Eigenspace]
+%Suppose $\bm A\in\mathbb{R}^{n\times n}$ has $k$ distinct eigenvalues $\lambda_1,\dots,\lambda_k$. Then the eigenspace for $\bm A$ associated with $\lambda_i$ is the collection of all eigenvectors associated with the eigenvalue $\lambda_i$, i.e., the null space $N(\lambda_i\bm I-\bm A)$.
+%\end{definition}
+%
+%Why does this 2 by 2 matrix $\bm A$ cannot be diagonalizable? Because the the dimension of its eigenspace is too small, i.e., $\mbox{eigenspace}(\bm A,\lambda=0)=1<2$. In general, if the dimension of eigenspace associated with the eigenvalue $\lambda_i$ is less than the multiplicity of this eigenvalue, then this matrix cannot be diagonalizable. We will discuss it in the next lecture.
 
-Why does this 2 by 2 matrix $\bm A$ cannot be diagonalizable? Because the the dimension of its eigenspace is too small, i.e., $\mbox{eigenspace}(\bm A,\lambda=0)=1<2$. In general, if the dimension of eigenspace associated with the eigenvalue $\lambda_i$ is less than the multiplicity of this eigenvalue, then this matrix cannot be diagonalizable. We will discuss it in the next lecture.
+\begin{definition}[Multiplicity]
+Suppose matrix $\bm A\in\mathbb{R}^{n\times n}$ has $k$ \emph{distinct} eigenvalues $\lambda_i$ for $i=1,2,\dots,k$.
+\begin{itemize}
+\item
+The \emph{algebraic multiplicity} of an eigenvalue $\lambda_i,i\in\{1,2,\dots,k\}$ is defined as the \textit{number of times that $\lambda_i$ appears as a root of the $\det(\bm A-\lambda\bm I)$}. We denote the \textit{algebraic multiplicity of $\lambda_i$} as $m_i$. In other words, we denote $m_i$ as the number of repeated eigenvalues of $\lambda_i$.
+\item
+The \emph{geometric multiplicity} of an eigenvalue $\lambda_i,i\in\{1,2,\dots,k\}$ is defined as the \textit{maximal number of \emph{linearly independent} eigenvectors associated with $\lambda_i$}. We denote the \textit{geometric multiplicity of $\lambda_i$} as $q_i$. Note that $q_i=\dim(N(\bm A-\lambda_i\bm I)).$
+\end{itemize}
+\end{definition}
+\begin{proposition}
+We have $m_i\ge q_i$ for $i=1,2,\dots,k$.
+\end{proposition}
+The implication is that \emph{the number of repeated eigenvalues of $\lambda_i$} $\ge$ \emph{the number of linearly independent eigenvectors associated with $\lambda_i$.}
+
+Note that $m_i>q_i$ is possible, let's raise an example:
+\begin{example}
+\[
+\bm A=\begin{bmatrix}
+0&0&1\\0&0&0\\0&0&0
+\end{bmatrix}
+\]
+We can verify that the roots of $\det(\bm A-\lambda\bm I)$ are $\lambda_1=\lambda_2=\lambda_3=0$. Thus we have $k=1,m_1=3$.\\
+However, we can also verify that
+\[
+N(\lambda-\lambda_1\bm I)=N(\bm A)=\Span\left\{
+\begin{pmatrix}
+1\\0\\0
+\end{pmatrix},\begin{pmatrix}
+0\\1\\0
+\end{pmatrix}
+\right\}
+\]
+Consequently, $q_1=\dim(N(\bm A-\lambda_1\bm I))=2.$ Thus $m_1>q_1$.
+\end{example}
+\begin{proof}[Proof for proposition]
+For convenience, we let $\lambda_0\in\{\lambda_1,\dots,\lambda_k\}$ be any eigenvalue of $\bm A$, and we denote $q=\dim(N(\bm A-\lambda_0\bm I))$. We only need to show that $\det(\bm A-\lambda\bm I)$ has at least $q$ repeated roots for $\lambda=\lambda_0$.\\
+Firstly, let's focus on \emph{real} eigenvalues and \emph{real} eigenvectors:
+\begin{itemize}
+\item
+From concepts for subspace, we can find a collection of \emph{orthonormal} vectors $\bm v_1,\dots,\bm v_q\in N(\bm A-\lambda_0\bm I)$ and a collection of vectors $\bm v_{q+1},\dots,\bm v_n\in\mathbb{R}^n$ such that
+\[
+\bm V=\begin{bmatrix}
+\bm v_1&\bm v_2&\cdots&\bm v_n
+\end{bmatrix}\text{ is orthogonal}.
+\]
+Let $\bm V_1=\begin{bmatrix}
+\bm v_1&\bm v_2&\cdots&\bm v_q
+\end{bmatrix}$, $\bm V_2=\begin{bmatrix}
+\bm v_{q+1}&\bm v_{q+2}&\cdots&\bm v_{n}
+\end{bmatrix}$ and note $\bm V=\begin{bmatrix}
+\bm V_1&\bm V_2
+\end{bmatrix}$.\\
+Thus we have
+\[
+\bm V\trans\bm A\bm V=\begin{bmatrix}
+\bm V_1\trans\\\bm V_2\trans
+\end{bmatrix}\begin{bmatrix}
+\bm A\bm V_1&\bm A\bm V_2
+\end{bmatrix}=\begin{bmatrix}
+\bm V_1\trans\bm A\bm V_1
+&
+\bm V_1\trans\bm A\bm V_2\\
+\bm V_2\trans\bm A\bm V_1&
+\bm V_2\trans\bm A\bm V_2
+\end{bmatrix}
+\]
+Since $\bm A\bm v_i=\lambda_0\bm v_i$ for $i=1,2,\dots,q$, we get $\bm A\bm V_1=\lambda_0\bm V_1$. By also noting that $\bm V_1\trans\bm V_1=\bm I$ and $\bm V_2\trans\bm V_1=\bm0$, we can simplify the above matrix equation into:
+\[
+\bm V\trans\bm A\bm V=
+\begin{bmatrix}
+\lambda_0\bm I
+&
+\bm V_1\trans\bm A\bm V_2\\
+\bm0&
+\bm V_2\trans\bm A\bm V_2
+\end{bmatrix}
+\]
+It follows that
+\begin{align*}
+\det(\bm A-\lambda\bm I)&=
+\det(\bm V\trans(\bm A-\lambda\bm I)\bm V)
+=\det(\bm V\trans\bm A\bm V-\lambda\bm I)\\
+&=\det\begin{pmatrix}
+(\lambda_0-\lambda)\bm I
+&
+\bm V_1\trans\bm A\bm V_2\\
+\bm0&
+\bm V_2\trans\bm A\bm V_2-\lambda\bm I
+\end{pmatrix}\\
+&=(\lambda_0-\lambda)^q\det(\bm V_2\trans\bm A\bm V_2-\lambda\bm I)
+\end{align*}
+Here $\det(\bm V_2\trans\bm A\bm V_2-\lambda\bm I)$ is a polynomial of degree of $n-q$. From the above equation we see that $\det(\bm A-\lambda\bm I)$ has at least $q$ repeated roots for $\lambda=\lambda_0$.
+\end{itemize}
+Secondly, the complex eigenvalues and eigenvectors could be proved by extending \emph{orthogonal} matrix into \emph{unitary} matrix.\\
+The proof is complete.
+\end{proof}
+\begin{proposition}
+A matrix is not diagonalizable if and only if there exists an eigenvalue such that its corresponding algebraic multiplicity is strictly larger than the corresponding geometric multiplicity.
+\end{proposition}
+\begin{proof}
+The following statements are equivalent:
+\begin{itemize}
+\item
+The matrix $\bm A\in\mathbb{n\times n}$ is not diagonalizble
+\item
+Any $n$ eigenvectors of $\bm A$ cannot be independent.
+\item
+The sum of the dimensions of all eigenspace of $\bm A$ is strictly less than $n$, i.e., the sum of the algebraic multiplicity of all eigenvalues of $\bm A$
+\item
+There exists an eigenvalue such that the corresponding geometric multiplicity is strictly less than the corresponding algebraic multiplicity.
+
+
+
+\end{itemize}
+\end{proof}
 
 
 

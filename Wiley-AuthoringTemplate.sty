@@ -556,7 +556,7 @@
 \def\preface{\startonoddpage
 \chapter*{Preface}
 \global\titletrue
-\addtocontents{toc}{\vskip-8pt}
+\addtocontents{toc}{\vskip-8pt\large\rmfamily\bfseries}
 \addcontentsline{toc}{schapter}{Preface}}
 
 \def\prefacefirst{\startonoddpage
@@ -572,11 +572,11 @@
 \def\prefaceauthor#1{\vskip14pt\hbox to\textwidth{\hfill\small\sc #1}}
 
 
-\def\acronyms{\startonoddpage
+\def\notations{\startonoddpage
 \global\titletrue
-\chapter*{Acronyms}
+\chapter*{Notations and Conventions}
 \addtocontents{toc}{\vskip-8pt}
-\addcontentsline{toc}{schapter}{Acronyms}}
+\addcontentsline{toc}{schapter}{Notations}}
 
 \def\introduction{\startonoddpage
 \global\titletrue
