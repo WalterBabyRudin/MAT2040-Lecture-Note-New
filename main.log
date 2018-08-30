@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  29 AUG 2018 09:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  29 AUG 2018 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2297,9 +2297,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4
-
-]
+ [4]
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 52.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmss.fd
@@ -2318,7 +2316,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+ [5
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -7500,11 +7500,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 51189 strings out of 492995
- 1046526 string characters out of 6132703
- 1522639 words of memory out of 5000000
- 51303 multiletter control sequences out of 15000+600000
- 162552 words of font info for 708 fonts, out of 8000000 for 9000
+ 51193 strings out of 492995
+ 1046584 string characters out of 6132703
+ 1522641 words of memory out of 5000000
+ 51305 multiletter control sequences out of 15000+600000
+ 164613 words of font info for 711 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,25n,98p,10504b,2066s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -7537,10 +7537,10 @@ w/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palat
 ino/uplbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/up
 lr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on main.pdf (384 pages, 3722210 bytes).
+Output written on main.pdf (384 pages, 3722265 bytes).
 PDF statistics:
  4071 PDF objects out of 4296 (max. 8388607)
  3428 compressed objects within 35 object streams
  1531 named destinations out of 1728 (max. 500000)
- 82603 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 83115 words of extra memory for PDF output out of 89155 (max. 10000000)
 
