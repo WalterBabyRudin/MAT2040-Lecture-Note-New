@@ -41,16 +41,16 @@ Define $\kappa=\{\bm{Ax}|\bm x\in\mathbb{R}^{2\x 1}\}$.\\
 Find the best approximation of $\bm B=\begin{bmatrix}
 1&2\\7&1
 \end{bmatrix}$ in the space $\kappa$.\\
-\textit{Hint: Consider $\begin{bmatrix}
-1&2\\7&1
-\end{bmatrix}$ and $\begin{bmatrix}
-a+b&a-b\\-2a+4b&0
-\end{bmatrix}$ as $\mathbb{R}^{4\x 1}$ vector.\\
-Then you only need to find the best approximation of $\begin{pmatrix}
-1\\2\\7\\1
-\end{pmatrix}$ onto the set $\{\bm{Ax}|\bm x\in\mathbb{R}^{2\x 1}\}$, where $\bm A=\begin{bmatrix}
-1&1\\1&-1\\-2&4\\0&0
-\end{bmatrix}.$}
+%\textit{Hint: Consider $\begin{bmatrix}
+%1&2\\7&1
+%\end{bmatrix}$ and $\begin{bmatrix}
+%a+b&a-b\\-2a+4b&0
+%\end{bmatrix}$ as $\mathbb{R}^{4\x 1}$ vector.\\
+%Then you only need to find the best approximation of $\begin{pmatrix}
+%1\\2\\7\\1
+%\end{pmatrix}$ onto the set $\{\bm{Ax}|\bm x\in\mathbb{R}^{2\x 1}\}$, where $\bm A=\begin{bmatrix}
+%1&1\\1&-1\\-2&4\\0&0
+%\end{bmatrix}.$}
 \end{enumerate}
 \newpage
 \item \textbf{(20 points)} \\
@@ -95,13 +95,13 @@ Second, find the (\textit{orthonormal}) columns of $\bm U$.
 \begin{enumerate}
 \item
 Suppose $\bm A,\bm B\in\mathbb{R}^{n\x n}$ can can be \textit{diagonalized} by the same matrix, prove that $\bm{AB}=\bm{BA}.$\\
-\textit{Hint: Note that $\bm A$ is said to be diagonalized by $\bm S$ if $\bm S^{-1}\bm A\bm S$ is diagonal.}\\
+%\textit{Hint: Note that $\bm A$ is said to be diagonalized by $\bm S$ if $\bm S^{-1}\bm A\bm S$ is diagonal.}\\
 \item
 Suppose $\bm A,\bm B\in\mathbb{R}^{n\x n}$ satisfy $\bm{AB}=\bm{BA}$, and both $\bm A$ and $\bm B$ are diagonalizable. $\bm A$ has $n$ \textit{distinct} eigenvalues. Prove that $\bm A,\bm B$ can can be \textit{diagonalized} by the same matrix.\\
-\textit{Hint: Suppose $\bm A$ has eigenvectors $\bm v_1,\dots,\bm v_n$. You can express $\bm B\bm v_i$ as linear combination of $\bm v_1,\dots,\bm v_n$. Then you can express $\bm A(\bm B\bm v_i)$ and $\bm B(\bm A\bm v_i)$. Finally compute $\bm A(\bm B\bm v_i)-\bm B(\bm A\bm v_i)$ to derive something.}\\
+%\textit{Hint: Suppose $\bm A$ has eigenvectors $\bm v_1,\dots,\bm v_n$. You can express $\bm B\bm v_i$ as linear combination of $\bm v_1,\dots,\bm v_n$. Then you can express $\bm A(\bm B\bm v_i)$ and $\bm B(\bm A\bm v_i)$. Finally compute $\bm A(\bm B\bm v_i)-\bm B(\bm A\bm v_i)$ to derive something.}\\
 \item \textbf{(bonus question)}\\
 Prove part $(b)$ without the assumption that $\bm A$ has $n$ \textit{distinct} eigenvalues. (i.e. $\bm A$ might have \emph{repeated} eigenvalues)\\
-\textit{Hint: Since $\bm A$ is diagonalizable, there exists $\bm Q$ such that $\bm Q^{-1}\bm A\bm Q=\bm D$, where $\bm D$ is diagonal. Then you should express $\bm D$. Then you compute $\bm Q^{-1}\bm B\bm Q=\bm C$, i.e. partition $\bm C$ in the same way of $\bm D$. Next you should show us that $\bm C$ is block diagonal. Then you construct \emph{diagonal} matrix $\bm T_*$ that diagonalize $\bm C$. Finally you construct $\bm P$ that diagonalize both $\bm A$ and $\bm B$.}
+%\textit{Hint: Since $\bm A$ is diagonalizable, there exists $\bm Q$ such that $\bm Q^{-1}\bm A\bm Q=\bm D$, where $\bm D$ is diagonal. Then you should express $\bm D$. Then you compute $\bm Q^{-1}\bm B\bm Q=\bm C$, i.e. partition $\bm C$ in the same way of $\bm D$. Next you should show us that $\bm C$ is block diagonal. Then you construct \emph{diagonal} matrix $\bm T_*$ that diagonalize $\bm C$. Finally you construct $\bm P$ that diagonalize both $\bm A$ and $\bm B$.}
 \end{enumerate}
 \newpage
 \item \textbf{(10 points)} \textit{Positive definite}\\
@@ -128,13 +128,13 @@ Prove the following statements:
 \item
 $\rank(\bm A\circ\bm B)\le\rank(\bm A)\rank(\bm B)$;
 \\
-\textit{Hint: Extend Hadamard product into vector. Then it's easy to verify that $(\bm A\circ\bm B)\circ\bm C=\bm A\circ\bm C+\bm B\circ\bm C$ and $(\bm u_1\bm v_1\trans)\circ(\bm u_2\circ\bm v_2\trans)=(\bm u_1\circ\bm u_2)\x(\bm v_1\circ\bm v_2)\trans$. Then you can do SVD decomposition for $\bm A$ and $\bm B$ (vector form, related to rank.) Then you can express $\bm A\circ\bm B$ as the sum of some matrices with rank 1.}
+%\textit{Hint: Extend Hadamard product into vector. Then it's easy to verify that $(\bm A\circ\bm B)\circ\bm C=\bm A\circ\bm C+\bm B\circ\bm C$ and $(\bm u_1\bm v_1\trans)\circ(\bm u_2\circ\bm v_2\trans)=(\bm u_1\circ\bm u_2)\x(\bm v_1\circ\bm v_2)\trans$. Then you can do SVD decomposition for $\bm A$ and $\bm B$ (vector form, related to rank.) Then you can express $\bm A\circ\bm B$ as the sum of some matrices with rank 1.}
 \\
 \item
 If $\bm A\succeq0,\bm B\succeq0$ and $\bm A,\bm B$ are \textit{symmetric matrix}, prove that
 \[
 \bm A\circ\bm B\succeq0.
 \]
-\textit{Hint: Note that $\bm A=\bm R\trans\bm R$, where $\bm R$ is square. Then you should express $\bm R\trans\bm R$ into vector form. Similarly, you can express $\bm B$ into vector form. Then you compute $\bm A\circ\bm B$ and show it is PSD by definition.}
+%\textit{Hint: Note that $\bm A=\bm R\trans\bm R$, where $\bm R$ is square. Then you should express $\bm R\trans\bm R$ into vector form. Similarly, you can express $\bm B$ into vector form. Then you compute $\bm A\circ\bm B$ and show it is PSD by definition.}
 \end{enumerate}
 \end{enumerate}

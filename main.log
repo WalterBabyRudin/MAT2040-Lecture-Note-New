@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  24 MAY 2022 06:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.25)  24 MAY 2022 06:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6101,6 +6101,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--32
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 39--54
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -6159,12 +6164,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--102
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [264]
+Underfull \hbox (badness 10000) in paragraph at lines 129--134
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 129--134
 
  []
@@ -7500,11 +7515,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 51189 strings out of 492995
- 1046526 string characters out of 6132703
+ 51181 strings out of 492995
+ 1046452 string characters out of 6132703
  1522753 words of memory out of 5000000
  51303 multiletter control sequences out of 15000+600000
- 162552 words of font info for 708 fonts, out of 8000000 for 9000
+ 162132 words of font info for 702 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,25n,98p,10504b,2066s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -7537,7 +7552,7 @@ w/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palat
 ino/uplbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/up
 lr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on main.pdf (384 pages, 3723681 bytes).
+Output written on main.pdf (384 pages, 3721022 bytes).
 PDF statistics:
  4071 PDF objects out of 4296 (max. 8388607)
  3428 compressed objects within 35 object streams
